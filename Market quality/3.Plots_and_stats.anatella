@@ -1,0 +1,2391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ANATELLA version='2.27'>
+<GlobalParameters wDirLoc='1' dataDirWrite=':/Plots/Freq' fileParameterDir='C:\Users\Nicolas\Documents\Test'>
+</GlobalParameters>
+<WorkingSpace>AAAA/wAAAAD9AAAAAgAAAAEAAAEPAAACTvwCAAAAAfsAAAAcAEEAbABsAEEAYwB0AGkAbwBuAHMARABvAGMAawEAAABeAAACTgAAAHgA////AAAAAwAAB4AAAAEo/AEAAAAC+wAAACgAQQBjAHQAaQBvAG4AUAByAG8AcABlAHIAdABpAGUAcwBEAG8AYwBrAQAAAAAAAANfAAACfQD////8AAADZQAABBsAAAIiAP////oAAAABAQAAAAL7AAAADgBMAG8AZwBEAG8AYwBrAQAAAAD/////AAAAhQD////7AAAAGgBEAGEAdABhAFQAYQBiAGwAZQBEAG8AYwBrAQAAAAD/////AAACIgD///8AAAZrAAACTgAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAADAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAABYAdABlAHgAdABUAG8AbwBsAEIAYQByAQAAAzv/////AAAAAAAAAAAAAAAeAGcAcgBvAHUAcABCAG8AeABUAG8AbwBsAEIAYQByAQAABhD/////AAAAAAAAAAA=</WorkingSpace>
+<ACTIONS>
+<Python idx='0' x='-361' y='-126' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots/Plots trade/BTC/BTC_amount.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<ChangeDataType idx='7' x='-212' y='-127' floatToString='%f'>
+<toStringFromFloat><c>amount</c></toStringFromFloat>
+</ChangeDataType>
+<Python idx='8' x='-361' y='-27' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots/Plots trade/BTC/BTC_price.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='9' x='-362' y='72' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots/Plots trade/BTC/BTC_volume.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='11' x='-362' y='307' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots/Plots trade/BCH/BCH_price.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='12' x='-362' y='938' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots/Plots trade/XRP/XRP_price.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='13' x='-361' y='394' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots/Plots trade/BCH/BCH_volume.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='14' x='-361' y='522' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots/Plots trade/EOS/EOS_amount.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='15' x='-360' y='613' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots/Plots trade/EOS/EOS_price.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='16' x='-361' y='701' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots/Plots trade/EOS/EOS_volume.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='17' x='-359' y='847' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots/Plots trade/XRP/XRP_amount.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='18' x='-362' y='1031' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots/Plots trade/XRP/XRP_volume.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='19' x='-362' y='1212' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots/Plots trade/ETH/ETH_amount.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='20' x='-366' y='1398' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots/Plots trade/ETH/ETH_volume.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='21' x='-363' y='1307' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots/Plots trade/ETH/ETH_price.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<ChangeDataType idx='22' x='-210' y='-25' floatToString='%f'>
+<toStringFromFloat><c>price</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='23' x='-210' y='73' floatToString='%f'>
+<toStringFromFloat><c>volume</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='24' x='-209' y='218' floatToString='%f'>
+<toStringFromFloat><c>amount</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='25' x='-214' y='309' floatToString='%f'>
+<toStringFromFloat><c>price</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='26' x='-209' y='397' floatToString='%f'>
+<toStringFromFloat><c>volume</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='27' x='-205' y='521' floatToString='%f'>
+<toStringFromFloat><c>amount</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='28' x='-208' y='614' floatToString='%f'>
+<toStringFromFloat><c>price</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='29' x='-207' y='703' floatToString='%f'>
+<toStringFromFloat><c>volume</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='30' x='-197' y='848' floatToString='%f'>
+<toStringFromFloat><c>amount</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='31' x='-196' y='935' floatToString='%f'>
+<toStringFromFloat><c>price</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='32' x='-196' y='1026' floatToString='%f'>
+<toStringFromFloat><c>volume</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='33' x='-189' y='1213' floatToString='%f'>
+<toStringFromFloat><c>amount</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='34' x='-194' y='1308' floatToString='%f'>
+<toStringFromFloat><c>price</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='35' x='-203.609' y='1392.38' floatToString='%f'>
+<toStringFromFloat><c>volume</c></toStringFromFloat>
+</ChangeDataType>
+<writeCSV idx='36' x='-57' y='-127' sep=',' segmentSize='0.1' filename=':/Plots/BTC/statsdes_amount.csv'/>
+<writeCSV idx='37' x='-57' y='-25' sep=',' segmentSize='0.1' filename=':/Plots/BTC/statsdes_price.csv'/>
+<writeCSV idx='38' x='-59' y='72' sep=',' segmentSize='0.1' filename=':/Plots/BTC/statsdes_volume.csv'/>
+<writeCSV idx='39' x='-56' y='218' sep=',' segmentSize='0.1' filename=':/Plots/BCH/statsdes_amount.csv'/>
+<writeCSV idx='40' x='-56' y='310' sep=',' segmentSize='0.1' filename=':/Plots/BCH/statsdes_price.csv'/>
+<writeCSV idx='41' x='-57' y='400' sep=',' segmentSize='0.1' filename=':/Plots/BCH/statsdes_volume.csv'/>
+<writeCSV idx='42' x='-57' y='520' sep=',' segmentSize='0.1' filename=':/Plots/EOS/statsdes_amount.csv'/>
+<writeCSV idx='43' x='-52' y='614' sep=',' segmentSize='0.1' filename=':/Plots/EOS/statsdes_price.csv'/>
+<writeCSV idx='44' x='-55' y='704' sep=',' segmentSize='0.1' filename=':/Plots/EOS/statsdes_volume.csv'/>
+<writeCSV idx='45' x='-56' y='850' sep=',' segmentSize='0.1' filename=':/Plots/XRP/statsdes_amount.csv'/>
+<writeCSV idx='46' x='-56' y='945' sep=',' segmentSize='0.1' filename=':/Plots/XRP/statsdes_price.csv'/>
+<writeCSV idx='47' x='-55' y='1036' sep=',' segmentSize='0.1' filename=':/Plots/XRP/statsdes_volume.csv'/>
+<writeCSV idx='48' x='-47' y='1214' sep=',' segmentSize='0.1' filename=':/Plots/ETH/statsdes_amount.csv'/>
+<writeCSV idx='49' x='-50' y='1308' sep=',' segmentSize='0.1' filename=':/Plots/ETH/statsdes_price.csv'/>
+<writeCSV idx='50' x='-52.7682' y='1393.7' sep=',' segmentSize='0.1' filename=':/Plots/ETH/statsdes_volume.csv'/>
+<Python idx='52' x='-355' y='217' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots/Plots trade/BCH/BCH_amount.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<readCSV idx='147' x='584.72' y='226.839' fileName=':/Data Cleaned V2/BCH_trade.csv'/>
+<readCSV idx='148' x='569.72' y='-125.161' fileName=':/Data Cleaned V2/BTC_trade.csv'/>
+<readCSV idx='149' x='577.72' y='544.839' fileName=':/Data Cleaned V2/EOS_trade.csv'/>
+<readCSV idx='150' x='592.72' y='1218.84' fileName=':/Data Cleaned V2/ETH_trade.csv'/>
+<readCSV idx='151' x='569.72' y='856.839' fileName=':/Data Cleaned V2/XRP_trade.csv'/>
+<SelectColumns module='DefaultActions' idx='152' x='721.72' y='226.839' keep='1'>
+ <c>datetime</c>
+ <c>price</c>
+</SelectColumns>
+<aggregate idx='153' x='1138.72' y='219.839' inRAMAlgo='0'>
+ <OneAggregate counts='1'>
+  <GroupBy>
+   <v name='datetime' type='0'/>
+  </GroupBy>
+  <OutputVars>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<ReplaceStrings module='DefaultActions' idx='154' x='861.72' y='224.839'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeLast='9'>
+<c>datetime</c></Processing></ReplaceStrings>
+<sort idx='155' x='999.72' y='220.839' action='S'>
+  <field type='A'>datetime</field>
+</sort>
+<SelectColumns module='DefaultActions' idx='156' x='710.72' y='-124.161' keep='1'>
+ <c>datetime</c>
+ <c>price</c>
+</SelectColumns>
+<ReplaceStrings module='DefaultActions' idx='157' x='850.72' y='-122.161'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeLast='9'>
+<c>datetime</c></Processing></ReplaceStrings>
+<SelectColumns module='DefaultActions' idx='159' x='716.72' y='544.839' keep='1'>
+ <c>datetime</c>
+ <c>price</c>
+</SelectColumns>
+<ReplaceStrings module='DefaultActions' idx='160' x='868.72' y='540.839'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeLast='9'>
+<c>datetime</c></Processing></ReplaceStrings>
+<sort idx='161' x='1007.72' y='542.839' action='S'>
+  <field type='A'>datetime</field>
+</sort>
+<aggregate idx='162' x='1158.72' y='537.839' inRAMAlgo='0'>
+ <OneAggregate counts='1'>
+  <GroupBy>
+   <v name='datetime' type='0'/>
+  </GroupBy>
+  <OutputVars>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<SelectColumns module='DefaultActions' idx='163' x='711.72' y='859.839' keep='1'>
+ <c>datetime</c>
+ <c>price</c>
+</SelectColumns>
+<ReplaceStrings module='DefaultActions' idx='164' x='865.72' y='858.839'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeLast='9'>
+<c>datetime</c></Processing></ReplaceStrings>
+<sort idx='165' x='1015.72' y='855.839' action='S'>
+  <field type='A'>datetime</field>
+</sort>
+<aggregate idx='166' x='1168.72' y='854.839' inRAMAlgo='0'>
+ <OneAggregate counts='1'>
+  <GroupBy>
+   <v name='datetime' type='0'/>
+  </GroupBy>
+  <OutputVars>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<SelectColumns module='DefaultActions' idx='167' x='733.72' y='1217.84' keep='1'>
+ <c>datetime</c>
+ <c>price</c>
+</SelectColumns>
+<ReplaceStrings module='DefaultActions' idx='168' x='876.72' y='1219.84'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeLast='9'>
+<c>datetime</c></Processing></ReplaceStrings>
+<sort idx='169' x='1268.72' y='217.839' action='S'>
+  <field type='A'>datetime</field>
+</sort>
+<writeCSV idx='174' x='2011.98' y='117.029' sep=',' segmentSize='0.1' filename=':/Plots/Freq/BCH_freq.csv'/>
+<sort idx='175' x='994.72' y='-123.161' action='S'>
+  <field type='A'>datetime</field>
+</sort>
+<aggregate idx='176' x='1136.72' y='-124.161' inRAMAlgo='0'>
+ <OneAggregate counts='1'>
+  <GroupBy>
+   <v name='datetime' type='0'/>
+  </GroupBy>
+  <OutputVars>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<sort idx='177' x='1271.72' y='-123.161' action='S'>
+  <field type='A'>datetime</field>
+</sort>
+<sort idx='179' x='1298.72' y='532.839' action='S'>
+  <field type='A'>datetime</field>
+</sort>
+<sort idx='181' x='1305.72' y='851.839' action='S'>
+  <field type='A'>datetime</field>
+</sort>
+<sort idx='183' x='1020.72' y='1215.84' action='S'>
+  <field type='A'>datetime</field>
+</sort>
+<aggregate idx='184' x='1175.72' y='1209.84' inRAMAlgo='0'>
+ <OneAggregate counts='1'>
+  <GroupBy>
+   <v name='datetime' type='0'/>
+  </GroupBy>
+  <OutputVars>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<sort idx='185' x='1325.72' y='1209.84' action='S'>
+  <field type='A'>datetime</field>
+</sort>
+<Python idx='267' x='-361.246' y='1550.01' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots2/BTC_PA1.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='268' x='-362.63' y='1660.74' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots2/BTC_QA1.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='269' x='-364.014' y='1768.7' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots2/BTC_PB1.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='270' x='-364.014' y='1871.12' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots2/BTC_QB1.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='271' x='-368.166' y='2069.04' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots2/BCH_PA1.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='272' x='-361.246' y='2172.85' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots2/BCH_QA1.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='273' x='-364.014' y='2275.27' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots2/BCH_PB1.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='274' x='-361.246' y='2377.7' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots2/BCH_QB1.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='275' x='-359.862' y='2563.16' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots2/EOS_PA1.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='276' x='-354.325' y='2680.81' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots2/EOS_QA1.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='277' x='-351.557' y='2801.22' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots2/EOS_PB1.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='278' x='-351.557' y='2916.1' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots2/EOS_QB1.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='279' x='-357.093' y='3119.56' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots2/XRP_PA1.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='283' x='-357.093' y='3241.36' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots2/XRP_QA1.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='284' x='-361.246' y='3365.93' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots2/XRP_PB1.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='285' x='-358.478' y='3480.81' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots2/XRP_QB1.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='286' x='-361.246' y='3705.03' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots2/ETH_PA1.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='287' x='-361.246' y='3821.29' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots2/ETH_QA1.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='288' x='-357.093' y='3940.33' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots2/ETH_PB1.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<Python idx='289' x='-359.862' y='4051.05' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+dataset = pandas.read_csv('D:/Mémoire/Plots2/ETH_QB1.csv', engine = 'python')
+test = dataset.describe()
+print(test)
+Py_Output = test
+</Script>
+</Python>
+<ChangeDataType idx='290' x='-207.612' y='1550.01' floatToString='%f'>
+<toStringFromFloat><c>PA01</c></toStringFromFloat>
+</ChangeDataType>
+<writeCSV idx='291' x='-48.4429' y='1551.4' sep=',' segmentSize='0.1' filename=':/Plots/BTC/BTC_PA1_stats.csv'/>
+<ChangeDataType idx='292' x='-204.844' y='1659.36' floatToString='%f'>
+<toStringFromFloat><c>QA01</c></toStringFromFloat>
+</ChangeDataType>
+<writeCSV idx='293' x='-48.4429' y='1659.36' sep=',' segmentSize='0.1' filename=':/Plots/BTC/BTC_QA1_stats.csv'/>
+<ChangeDataType idx='294' x='-202.076' y='1761.78' floatToString='%f'>
+<toStringFromFloat><c>PB01</c></toStringFromFloat>
+</ChangeDataType>
+<writeCSV idx='295' x='-47.0588' y='1759.01' sep=',' segmentSize='0.1' filename=':/Plots/BTC/BTC_PB1_stats.csv'/>
+<ChangeDataType idx='296' x='-203.46' y='1869.74' floatToString='%f'>
+<toStringFromFloat><c>QB01</c></toStringFromFloat>
+</ChangeDataType>
+<writeCSV idx='297' x='-45.6747' y='1868.35' sep=',' segmentSize='0.1' filename=':/Plots/BTC/BTC_QB1_stats.csv'/>
+<ChangeDataType idx='298' x='-199.308' y='2069.04' floatToString='%f'>
+<toStringFromFloat><c>PA01</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='299' x='-192.388' y='2179.77' floatToString='%f'>
+<toStringFromFloat><c>QA01</c></toStringFromFloat>
+</ChangeDataType>
+<writeCSV idx='300' x='-41.5225' y='2066.28' sep=',' segmentSize='0.1' filename=':/Plots/BCH/BCH_PA1_stats.csv'/>
+<ChangeDataType idx='302' x='-189.619' y='2282.19' floatToString='%f'>
+<toStringFromFloat><c>PB01</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='303' x='-188.235' y='2384.62' floatToString='%f'>
+<toStringFromFloat><c>QB01</c></toStringFromFloat>
+</ChangeDataType>
+<writeCSV idx='304' x='-38.7543' y='2186.69' sep=',' segmentSize='0.1' filename=':/Plots/BCH/BCH_QA1_stats.csv'/>
+<writeCSV idx='305' x='-34.6021' y='2280.81' sep=',' segmentSize='0.1' filename=':/Plots/BCH/BCH_PB1_stats.csv'/>
+<writeCSV idx='306' x='-37.3702' y='2383.23' sep=',' segmentSize='0.1' filename=':/Plots/BCH/BCH_QB1_stats.csv'/>
+<ChangeDataType idx='307' x='-195.156' y='2563.16' floatToString='%f'>
+<toStringFromFloat><c>PA01</c></toStringFromFloat>
+</ChangeDataType>
+<writeCSV idx='308' x='-27.6817' y='2563.16' sep=',' segmentSize='0.1' filename=':/Plots/EOS/EOS_PA1_stats.csv'/>
+<ChangeDataType idx='309' x='-191.003' y='2682.19' floatToString='%f'>
+<toStringFromFloat><c>QA01</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='310' x='-182.699' y='2808.15' floatToString='%f'>
+<toStringFromFloat><c>PB01</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='311' x='-182.699' y='2914.72' floatToString='%f'>
+<toStringFromFloat><c>QB01</c></toStringFromFloat>
+</ChangeDataType>
+<writeCSV idx='312' x='-27.6817' y='2679.43' sep=',' segmentSize='0.1' filename=':/Plots/EOS/EOS_QA1_stats.csv'/>
+<writeCSV idx='313' x='-27.6817' y='2803.99' sep=',' segmentSize='0.1' filename='C:/Users/nicol/OneDrive/Documents/Mémoire/Ob_stats/EOS_PB1_stats.csv'/>
+<writeCSV idx='314' x='-24.9135' y='2916.1' sep=',' segmentSize='0.1' filename=':/Plots/EOS/EOS_QB1_stats.csv'/>
+<ChangeDataType idx='315' x='-173.01' y='3120.95' floatToString='%f'>
+<toStringFromFloat><c>PA01</c></toStringFromFloat>
+</ChangeDataType>
+<writeCSV idx='316' x='-8.3045' y='3119.56' sep=',' segmentSize='0.1' filename=':/Plots/XRP/XRP_PA1_stats.csv'/>
+<ChangeDataType idx='317' x='-171.626' y='3241.36' floatToString='%f'>
+<toStringFromFloat><c>QA01</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='318' x='-167.474' y='3367.31' floatToString='%f'>
+<toStringFromFloat><c>PB01</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='319' x='-168.858' y='3478.04' floatToString='%f'>
+<toStringFromFloat><c>QB01</c></toStringFromFloat>
+</ChangeDataType>
+<writeCSV idx='320' x='-9.68858' y='3238.6' sep=',' segmentSize='0.1' filename=':/Plots/XRP/XRP_QA1_stats.csv'/>
+<writeCSV idx='321' x='-8.3045' y='3357.63' sep=',' segmentSize='0.1' filename=':/Plots/XRP/XRP_PB1_stats.csv'/>
+<writeCSV idx='322' x='-4.15225' y='3484.96' sep=',' segmentSize='0.1' filename=':/Plots/XRP/XRP_QB1_stats.csv'/>
+<ChangeDataType idx='323' x='-170.242' y='3702.26' floatToString='%f'>
+<toStringFromFloat><c>PA01</c></toStringFromFloat>
+</ChangeDataType>
+<writeCSV idx='324' x='15.2249' y='3703.65' sep=',' segmentSize='0.1' filename=':/Plots/ETH/ETH_PA1_stats.csv'/>
+<ChangeDataType idx='325' x='-168.858' y='3824.06' floatToString='%f'>
+<toStringFromFloat><c>QA01</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='326' x='-167.474' y='3945.86' floatToString='%f'>
+<toStringFromFloat><c>PB01</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='327' x='-167.474' y='4052.44' floatToString='%f'>
+<toStringFromFloat><c>QB01</c></toStringFromFloat>
+</ChangeDataType>
+<writeCSV idx='328' x='12.4567' y='3824.06' sep=',' segmentSize='0.1' filename=':/Plots/ETH/ETH_QA1_stats.csv'/>
+<writeCSV idx='329' x='11.0727' y='3940.33' sep=',' segmentSize='0.1' filename=':/Plots/ETH/ETH_PB1_stats.csv'/>
+<writeCSV idx='330' x='8.3045' y='4055.2' sep=',' segmentSize='0.1' filename=':/Plots/ETH/ETH_QB1_stats.csv'/>
+<readCSV idx='331' x='654.428' y='2189.46' fileName=':/Data Cleaned V2/BCH_ob.csv'/>
+<readCSV idx='332' x='642.298' y='1694.59' fileName=':/Data Cleaned V2/BTC_ob.csv'/>
+<readCSV idx='333' x='669.69' y='2732.89' fileName=':/Data Cleaned V2/EOS_ob.csv'/>
+<readCSV idx='334' x='678.138' y='3852.78' fileName=':/Data Cleaned V2/ETH_ob.csv'/>
+<readCSV idx='335' x='682.28' y='3302.57' fileName=':/Data Cleaned V2/XRP_ob.csv'/>
+<SelectColumns module='DefaultActions' idx='341' x='798.138' y='2191.74' keep='1'>
+ <c>datetime</c>
+</SelectColumns>
+<ReplaceStrings module='DefaultActions' idx='345' x='940.518' y='2191.5'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeLast='9'>
+<c>datetime</c></Processing></ReplaceStrings>
+<sort idx='349' x='1082.77' y='2188.27' action='S'>
+  <field type='A'>datetime</field>
+</sort>
+<aggregate idx='350' x='1234.32' y='2187.9' inRAMAlgo='0'>
+ <OneAggregate counts='1'>
+  <GroupBy>
+   <v name='datetime' type='0'/>
+  </GroupBy>
+  <OutputVars>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<sort idx='351' x='1381.31' y='2184.43' action='S'>
+  <field type='A'>datetime</field>
+</sort>
+<SelectColumns module='DefaultActions' idx='355' x='816.411' y='2736.1' keep='1'>
+ <c>datetime</c>
+</SelectColumns>
+<ReplaceStrings module='DefaultActions' idx='356' x='955.433' y='2736.1'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeLast='9'>
+<c>datetime</c></Processing></ReplaceStrings>
+<sort idx='357' x='1099.67' y='2734.36' action='S'>
+  <field type='A'>datetime</field>
+</sort>
+<aggregate idx='358' x='1245.64' y='2734.36' inRAMAlgo='0'>
+ <OneAggregate counts='1'>
+  <GroupBy>
+   <v name='datetime' type='0'/>
+  </GroupBy>
+  <OutputVars>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<sort idx='359' x='1403.78' y='2725.67' action='S'>
+  <field type='A'>datetime</field>
+</sort>
+<SelectColumns module='DefaultActions' idx='363' x='820.243' y='3304.25' keep='1'>
+ <c>datetime</c>
+</SelectColumns>
+<ReplaceStrings module='DefaultActions' idx='364' x='959.265' y='3299.04'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeLast='9'>
+<c>datetime</c></Processing></ReplaceStrings>
+<sort idx='365' x='1108.71' y='3286.87' action='S'>
+  <field type='A'>datetime</field>
+</sort>
+<aggregate idx='366' x='1254.69' y='3292.08' inRAMAlgo='0'>
+ <OneAggregate counts='1'>
+  <GroupBy>
+   <v name='datetime' type='0'/>
+  </GroupBy>
+  <OutputVars>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<sort idx='367' x='1397.19' y='3288.61' action='S'>
+  <field type='A'>datetime</field>
+</sort>
+<SelectColumns module='DefaultActions' idx='369' x='826.481' y='3858.11' keep='1'>
+ <c>datetime</c>
+</SelectColumns>
+<ReplaceStrings module='DefaultActions' idx='370' x='972.454' y='3849.42'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeLast='9'>
+<c>datetime</c></Processing></ReplaceStrings>
+<sort idx='371' x='1120.17' y='3851.16' action='S'>
+  <field type='A'>datetime</field>
+</sort>
+<aggregate idx='372' x='1274.82' y='3847.68' inRAMAlgo='0'>
+ <OneAggregate counts='1'>
+  <GroupBy>
+   <v name='datetime' type='0'/>
+  </GroupBy>
+  <OutputVars>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<sort idx='373' x='1426.01' y='3851.16' action='S'>
+  <field type='A'>datetime</field>
+</sort>
+<SelectColumns module='DefaultActions' idx='376' x='778.194' y='1694.09' keep='1'>
+ <c>datetime</c>
+</SelectColumns>
+<ReplaceStrings module='DefaultActions' idx='377' x='913.552' y='1691.21'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeLast='9'>
+<c>datetime</c></Processing></ReplaceStrings>
+<sort idx='378' x='1052.67' y='1689.57' action='S'>
+  <field type='A'>datetime</field>
+</sort>
+<aggregate idx='379' x='1200.36' y='1685.93' inRAMAlgo='0'>
+ <OneAggregate counts='1'>
+  <GroupBy>
+   <v name='datetime' type='0'/>
+  </GroupBy>
+  <OutputVars>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<sort idx='380' x='1362.31' y='1682.69' action='S'>
+  <field type='A'>datetime</field>
+</sort>
+<Python idx='418' x='1003' y='110' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+
+d = datetime.timedelta(days = 1)
+date_start = datetime.datetime.strptime( "11/08/2017 00:00:00", '%d/%m/%Y %H:%M:%S')
+date = datetime.datetime.strptime( "11/08/2017 00:00:00", '%d/%m/%Y %H:%M:%S')
+date_end =datetime.datetime.strptime( "22/07/2018 00:00:00", '%d/%m/%Y %H:%M:%S')
+liste = []
+
+while(date &lt; date_end) :
+    liste.append(str(date.strftime('%d/%m/%Y %H:%M:%S')))
+    date = date + d
+    print(date)
+
+df = pandas.DataFrame(liste)
+Py_Output = df
+</Script>
+</Python>
+<ReplaceStrings module='DefaultActions' idx='420' x='1142' y='112'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeLast='9'>
+<c>C0</c></Processing></ReplaceStrings>
+<sort idx='421' x='1271' y='109' action='S'>
+  <field type='A'>C0</field>
+</sort>
+<Join module='DefaultActions' idx='422' x='1471' y='109' joinMode='0' keyA='C0' new='1'>
+<SlaveKeys><c>datetime</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<ChangeDataType idx='423' x='1612' y='110'>
+<toZeroDouble><c>count</c></toZeroDouble>
+</ChangeDataType>
+<Python idx='424' x='1012.94' y='422.471' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+
+d = datetime.timedelta(days = 1)
+date_start = datetime.datetime.strptime( "11/08/2017 00:00:00", '%d/%m/%Y %H:%M:%S')
+date = datetime.datetime.strptime( "11/08/2017 00:00:00", '%d/%m/%Y %H:%M:%S')
+date_end =datetime.datetime.strptime( "22/07/2018 00:00:00", '%d/%m/%Y %H:%M:%S')
+liste = []
+
+while(date &lt; date_end) :
+    liste.append(str(date.strftime('%d/%m/%Y %H:%M:%S')))
+    date = date + d
+    print(date)
+
+df = pandas.DataFrame(liste)
+Py_Output = df
+</Script>
+</Python>
+<ReplaceStrings module='DefaultActions' idx='425' x='1162.35' y='420.118'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeLast='9'>
+<c>C0</c></Processing></ReplaceStrings>
+<sort idx='426' x='1301.18' y='420.118' action='S'>
+  <field type='A'>C0</field>
+</sort>
+<Join module='DefaultActions' idx='427' x='1472.94' y='408.353' joinMode='0' keyA='C0' new='1'>
+<SlaveKeys><c>datetime</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<ChangeDataType idx='428' x='1605.88' y='410.706'>
+<toZeroDouble><c>count</c></toZeroDouble>
+</ChangeDataType>
+<sort idx='430' x='1745.24' y='114.059' action='S'>
+  <field type='I' dateFormat='dd/MM/yyyy'>C0</field>
+</sort>
+<ColumnRename module='DefaultActions' idx='431' x='1874.71' y='114.412'><before>
+<c>C0</c></before><after>
+<c>Datetime</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<sort idx='432' x='1743.53' y='408.353' action='S'>
+  <field type='I' dateFormat='dd/MM/yyyy'>C0</field>
+</sort>
+<ColumnRename module='DefaultActions' idx='433' x='1883.53' y='410.706'><before>
+<c>C0</c></before><after>
+<c>Datetime</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<writeCSV idx='434' x='2010.59' y='404.824' sep=',' segmentSize='0.1' filename=':/Plots/Freq/EOS_freq.csv'/>
+<Python idx='435' x='1014' y='739' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+
+d = datetime.timedelta(days = 1)
+date_start = datetime.datetime.strptime( "11/08/2017 00:00:00", '%d/%m/%Y %H:%M:%S')
+date = datetime.datetime.strptime( "11/08/2017 00:00:00", '%d/%m/%Y %H:%M:%S')
+date_end =datetime.datetime.strptime( "22/07/2018 00:00:00", '%d/%m/%Y %H:%M:%S')
+liste = []
+
+while(date &lt; date_end) :
+    liste.append(str(date.strftime('%d/%m/%Y %H:%M:%S')))
+    date = date + d
+    print(date)
+
+df = pandas.DataFrame(liste)
+Py_Output = df
+</Script>
+</Python>
+<ReplaceStrings module='DefaultActions' idx='436' x='1163' y='735'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeLast='9'>
+<c>C0</c></Processing></ReplaceStrings>
+<sort idx='437' x='1299' y='731' action='S'>
+  <field type='A'>C0</field>
+</sort>
+<Join module='DefaultActions' idx='438' x='1454' y='727' joinMode='0' keyA='C0' new='1'>
+<SlaveKeys><c>datetime</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<ChangeDataType idx='439' x='1613' y='722'>
+<toZeroDouble><c>count</c></toZeroDouble>
+</ChangeDataType>
+<sort idx='440' x='1760' y='719' action='S'>
+  <field type='I' dateFormat='dd/MM/yyyy'>C0</field>
+</sort>
+<ColumnRename module='DefaultActions' idx='441' x='1898' y='719'><before>
+<c>C0</c></before><after>
+<c>Datetime</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<writeCSV idx='442' x='2021' y='712' sep=',' segmentSize='0.1' filename=':/Plots/Freq/XRP_freq.csv'/>
+<Python idx='443' x='1021' y='1092' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+
+d = datetime.timedelta(days = 1)
+date_start = datetime.datetime.strptime( "11/08/2017 00:00:00", '%d/%m/%Y %H:%M:%S')
+date = datetime.datetime.strptime( "11/08/2017 00:00:00", '%d/%m/%Y %H:%M:%S')
+date_end =datetime.datetime.strptime( "22/07/2018 00:00:00", '%d/%m/%Y %H:%M:%S')
+liste = []
+
+while(date &lt; date_end) :
+    liste.append(str(date.strftime('%d/%m/%Y %H:%M:%S')))
+    date = date + d
+    print(date)
+
+df = pandas.DataFrame(liste)
+Py_Output = df
+</Script>
+</Python>
+<ReplaceStrings module='DefaultActions' idx='444' x='1177' y='1087'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeLast='9'>
+<c>C0</c></Processing></ReplaceStrings>
+<sort idx='445' x='1314' y='1084' action='S'>
+  <field type='A'>C0</field>
+</sort>
+<Join module='DefaultActions' idx='446' x='1465' y='1084' joinMode='0' keyA='C0' new='1'>
+<SlaveKeys><c>datetime</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<ChangeDataType idx='447' x='1623' y='1080'>
+<toZeroDouble><c>count</c></toZeroDouble>
+</ChangeDataType>
+<sort idx='448' x='1763' y='1084' action='S'>
+  <field type='I' dateFormat='dd/MM/yyyy'>C0</field>
+</sort>
+<ColumnRename module='DefaultActions' idx='449' x='1901' y='1081'><before>
+<c>C0</c></before><after>
+<c>Datetime</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<writeCSV idx='450' x='2038' y='1076' sep=',' segmentSize='0.1' filename=':/Plots/Freq/ETH_freq.csv'/>
+<Python idx='451' x='994' y='-247' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+
+d = datetime.timedelta(days = 1)
+date_start = datetime.datetime.strptime( "11/08/2017 00:00:00", '%d/%m/%Y %H:%M:%S')
+date = datetime.datetime.strptime( "11/08/2017 00:00:00", '%d/%m/%Y %H:%M:%S')
+date_end =datetime.datetime.strptime( "22/07/2018 00:00:00", '%d/%m/%Y %H:%M:%S')
+liste = []
+
+while(date &lt; date_end) :
+    liste.append(str(date.strftime('%d/%m/%Y %H:%M:%S')))
+    date = date + d
+    print(date)
+
+df = pandas.DataFrame(liste)
+Py_Output = df
+</Script>
+</Python>
+<ReplaceStrings module='DefaultActions' idx='452' x='1137' y='-249'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeLast='9'>
+<c>C0</c></Processing></ReplaceStrings>
+<sort idx='453' x='1268' y='-254' action='S'>
+  <field type='A'>C0</field>
+</sort>
+<Join module='DefaultActions' idx='454' x='1455' y='-259' joinMode='0' keyA='C0' new='1'>
+<SlaveKeys><c>datetime</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<ChangeDataType idx='455' x='1612' y='-263'>
+<toZeroDouble><c>count</c></toZeroDouble>
+</ChangeDataType>
+<sort idx='456' x='1743' y='-261' action='S'>
+  <field type='I' dateFormat='dd/MM/yyyy'>C0</field>
+</sort>
+<ColumnRename module='DefaultActions' idx='457' x='1878' y='-256'><before>
+<c>C0</c></before><after>
+<c>Datetime</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<writeCSV idx='458' x='2008' y='-259' sep=',' segmentSize='0.1' filename=':/Plots/Freq/BTC_freq.csv'/>
+<Python idx='459' x='1044.98' y='1572.16' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+
+d = datetime.timedelta(days = 1)
+date_start = datetime.datetime.strptime( "11/08/2017 00:00:00", '%d/%m/%Y %H:%M:%S')
+date = datetime.datetime.strptime( "11/08/2017 00:00:00", '%d/%m/%Y %H:%M:%S')
+date_end =datetime.datetime.strptime( "22/07/2018 00:00:00", '%d/%m/%Y %H:%M:%S')
+liste = []
+
+while(date &lt; date_end) :
+    liste.append(str(date.strftime('%d/%m/%Y %H:%M:%S')))
+    date = date + d
+    print(date)
+
+df = pandas.DataFrame(liste)
+Py_Output = df
+</Script>
+</Python>
+<ReplaceStrings module='DefaultActions' idx='460' x='1195.85' y='1563.85'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeLast='9'>
+<c>C0</c></Processing></ReplaceStrings>
+<sort idx='461' x='1353.63' y='1569.39' action='S'>
+  <field type='A'>C0</field>
+</sort>
+<Join module='DefaultActions' idx='462' x='1508.65' y='1570.78' joinMode='0' keyA='C0' new='1'>
+<SlaveKeys><c>datetime</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<ChangeDataType idx='463' x='1658.13' y='1563.85'>
+<toZeroDouble><c>count</c></toZeroDouble>
+</ChangeDataType>
+<sort idx='464' x='1792.39' y='1563.85' action='S'>
+  <field type='I' dateFormat='dd/MM/yyyy'>C0</field>
+</sort>
+<ColumnRename module='DefaultActions' idx='465' x='1940.48' y='1563.85'><before>
+<c>C0</c></before><after>
+<c>Datetime</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<writeCSV idx='466' x='2085.81' y='1556.93' sep=',' segmentSize='0.1' filename=':/Plots/Freq/BTC_ob_freq.csv'/>
+<Python idx='469' x='1085.54' y='2047.91' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+
+d = datetime.timedelta(days = 1)
+date_start = datetime.datetime.strptime( "11/08/2017 00:00:00", '%d/%m/%Y %H:%M:%S')
+date = datetime.datetime.strptime( "11/08/2017 00:00:00", '%d/%m/%Y %H:%M:%S')
+date_end =datetime.datetime.strptime( "22/07/2018 00:00:00", '%d/%m/%Y %H:%M:%S')
+liste = []
+
+while(date &lt; date_end) :
+    liste.append(str(date.strftime('%d/%m/%Y %H:%M:%S')))
+    date = date + d
+    print(date)
+
+df = pandas.DataFrame(liste)
+Py_Output = df
+</Script>
+</Python>
+<ReplaceStrings module='DefaultActions' idx='470' x='1235.27' y='2047.91'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeLast='9'>
+<c>C0</c></Processing></ReplaceStrings>
+<sort idx='471' x='1372.52' y='2038.55' action='S'>
+  <field type='A'>C0</field>
+</sort>
+<Join module='DefaultActions' idx='472' x='1544.09' y='2038.55' joinMode='0' keyA='C0' new='1'>
+<SlaveKeys><c>datetime</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<ChangeDataType idx='473' x='1693.82' y='2038.55'>
+<toZeroDouble><c>count</c></toZeroDouble>
+</ChangeDataType>
+<sort idx='474' x='1846.67' y='2035.43' action='S'>
+  <field type='I' dateFormat='dd/MM/yyyy'>C0</field>
+</sort>
+<ColumnRename module='DefaultActions' idx='475' x='2005.76' y='2029.19'><before>
+<c>C0</c></before><after>
+<c>Datetime</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<writeCSV idx='476' x='2143.01' y='2022.95' sep=',' segmentSize='0.1' filename=':/Plots/Freq/BCH_ob_freq.csv'/>
+<Python idx='477' x='1104.91' y='2578.42' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+
+d = datetime.timedelta(days = 1)
+date_start = datetime.datetime.strptime( "11/08/2017 00:00:00", '%d/%m/%Y %H:%M:%S')
+date = datetime.datetime.strptime( "11/08/2017 00:00:00", '%d/%m/%Y %H:%M:%S')
+date_end =datetime.datetime.strptime( "22/07/2018 00:00:00", '%d/%m/%Y %H:%M:%S')
+liste = []
+
+while(date &lt; date_end) :
+    liste.append(str(date.strftime('%d/%m/%Y %H:%M:%S')))
+    date = date + d
+    print(date)
+
+df = pandas.DataFrame(liste)
+Py_Output = df
+</Script>
+</Python>
+<ReplaceStrings module='DefaultActions' idx='478' x='1247.94' y='2574.84'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeLast='9'>
+<c>C0</c></Processing></ReplaceStrings>
+<sort idx='479' x='1394.54' y='2564.11' action='S'>
+  <field type='A'>C0</field>
+</sort>
+<Join module='DefaultActions' idx='480' x='1555.45' y='2578.42' joinMode='0' keyA='C0' new='1'>
+<SlaveKeys><c>datetime</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<ChangeDataType idx='481' x='1705.63' y='2574.84'>
+<toZeroDouble><c>count</c></toZeroDouble>
+</ChangeDataType>
+<sort idx='482' x='1852.24' y='2567.69' action='S'>
+  <field type='I' dateFormat='dd/MM/yyyy'>C0</field>
+</sort>
+<ColumnRename module='DefaultActions' idx='483' x='2005.99' y='2567.69'><before>
+<c>C0</c></before><after>
+<c>Datetime</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<writeCSV idx='484' x='2156.18' y='2564.11' sep=',' segmentSize='0.1' filename=':/Plots/Freq/EOS_ob_freq.csv'/>
+<Python idx='485' x='1105.06' y='3155.19' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+
+d = datetime.timedelta(days = 1)
+date_start = datetime.datetime.strptime( "11/08/2017 00:00:00", '%d/%m/%Y %H:%M:%S')
+date = datetime.datetime.strptime( "11/08/2017 00:00:00", '%d/%m/%Y %H:%M:%S')
+date_end =datetime.datetime.strptime( "22/07/2018 00:00:00", '%d/%m/%Y %H:%M:%S')
+liste = []
+
+while(date &lt; date_end) :
+    liste.append(str(date.strftime('%d/%m/%Y %H:%M:%S')))
+    date = date + d
+    print(date)
+
+df = pandas.DataFrame(liste)
+Py_Output = df
+</Script>
+</Python>
+<ReplaceStrings module='DefaultActions' idx='486' x='1261.13' y='3155.19'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeLast='9'>
+<c>C0</c></Processing></ReplaceStrings>
+<sort idx='487' x='1399.58' y='3155.19' action='S'>
+  <field type='A'>C0</field>
+</sort>
+<Join module='DefaultActions' idx='488' x='1553.13' y='3150.16' joinMode='0' keyA='C0' new='1'>
+<SlaveKeys><c>datetime</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<ChangeDataType idx='489' x='1706.68' y='3150.16'>
+<toZeroDouble><c>count</c></toZeroDouble>
+</ChangeDataType>
+<sort idx='490' x='1850.16' y='3142.61' action='S'>
+  <field type='I' dateFormat='dd/MM/yyyy'>C0</field>
+</sort>
+<ColumnRename module='DefaultActions' idx='491' x='1996.16' y='3132.54'><before>
+<c>C0</c></before><after>
+<c>Datetime</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<writeCSV idx='492' x='2149.72' y='3137.57' sep=',' segmentSize='0.1' filename=':/Plots/Freq/XRP_ob_freq.csv'/>
+<Python idx='493' x='1126.6' y='3704.54' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+
+d = datetime.timedelta(days = 1)
+date_start = datetime.datetime.strptime( "11/08/2017 00:00:00", '%d/%m/%Y %H:%M:%S')
+date = datetime.datetime.strptime( "11/08/2017 00:00:00", '%d/%m/%Y %H:%M:%S')
+date_end =datetime.datetime.strptime( "22/07/2018 00:00:00", '%d/%m/%Y %H:%M:%S')
+liste = []
+
+while(date &lt; date_end) :
+    liste.append(str(date.strftime('%d/%m/%Y %H:%M:%S')))
+    date = date + d
+    print(date)
+
+df = pandas.DataFrame(liste)
+Py_Output = df
+</Script>
+</Python>
+<ReplaceStrings module='DefaultActions' idx='494' x='1272.13' y='3704.54'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeLast='9'>
+<c>C0</c></Processing></ReplaceStrings>
+<sort idx='495' x='1430.21' y='3699.53' action='S'>
+  <field type='A'>C0</field>
+</sort>
+<Join module='DefaultActions' idx='496' x='1590.79' y='3702.03' joinMode='0' keyA='C0' new='1'>
+<SlaveKeys><c>datetime</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<ChangeDataType idx='497' x='1748.87' y='3704.54'>
+<toZeroDouble><c>count</c></toZeroDouble>
+</ChangeDataType>
+<sort idx='498' x='1899.42' y='3707.05' action='S'>
+  <field type='I' dateFormat='dd/MM/yyyy'>C0</field>
+</sort>
+<ColumnRename module='DefaultActions' idx='499' x='2037.42' y='3702.03'><before>
+<c>C0</c></before><after>
+<c>Datetime</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<writeCSV idx='500' x='2190.48' y='3697.02' sep=',' segmentSize='0.1' filename=':/Plots/Freq/ETH_ob_freq.csv'/>
+<readCSV idx='511' x='589.844' y='4413.54' fileName=':/Plots/Freq/BCH_freq.csv'/>
+<readCSV idx='512' x='896.314' y='4396.28' fileName=':/Plots/Freq/BCH_freq_ob.csv'/>
+<readCSV idx='513' x='592.844' y='4266.54' fileName=':/Plots/Freq/BTC_freq.csv'/>
+<readCSV idx='514' x='903.314' y='4265.28' fileName=':/Plots/Freq/BTC_freq_ob.csv'/>
+<readCSV idx='515' x='588.844' y='4535.54' fileName=':/Plots/Freq/EOS_freq.csv'/>
+<readCSV idx='516' x='904.314' y='4505.28' fileName=':/Plots/Freq/EOS_freq_ob.csv'/>
+<readCSV idx='517' x='594.844' y='4751.54' fileName=':/Plots/Freq/ETH_freq.csv'/>
+<readCSV idx='518' x='905.314' y='4749.28' fileName=':/Plots/Freq/ETH_freq_ob.csv'/>
+<readCSV idx='519' x='601.844' y='4648.54' fileName=':/Plots/Freq/XRP_freq.csv'/>
+<readCSV idx='520' x='903.314' y='4637.28' fileName=':/Plots/Freq/XRP_freq_ob.csv'/>
+<aggregate idx='521' x='725.547' y='4268.27' inRAMAlgo='1'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='count' mean='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<aggregate idx='522' x='1038.21' y='4267.86' inRAMAlgo='1'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='count' mean='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<aggregate idx='523' x='730.932' y='4405.98' inRAMAlgo='1'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='count' mean='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<aggregate idx='524' x='735.215' y='4529.1' inRAMAlgo='1'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='count' mean='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<aggregate idx='525' x='727.72' y='4644.73' inRAMAlgo='1'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='count' mean='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<aggregate idx='526' x='723.438' y='4759.29' inRAMAlgo='1'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='count' mean='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<aggregate idx='527' x='1039.28' y='4388.85' inRAMAlgo='1'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='count' mean='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<aggregate idx='528' x='1041.42' y='4500.19' inRAMAlgo='1'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='count' mean='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<aggregate idx='529' x='1040.35' y='4628.67' inRAMAlgo='1'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='count' mean='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<aggregate idx='530' x='1048.92' y='4749.66' inRAMAlgo='1'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='count' mean='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+</ACTIONS>
+<CONNECTORS>
+<Connection idxSrc='0' idxDest='7'/>
+<Connection idxSrc='8' idxDest='22'/>
+<Connection idxSrc='9' idxDest='23'/>
+<Connection idxSrc='15' idxDest='28'/>
+<Connection idxSrc='16' idxDest='29'/>
+<Connection idxSrc='18' idxDest='32'/>
+<Connection idxSrc='20' idxDest='35'/>
+<Connection idxSrc='21' idxDest='34'/>
+<Connection idxSrc='19' idxDest='33'/>
+<Connection idxSrc='12' idxDest='31'/>
+<Connection idxSrc='17' idxDest='30'/>
+<Connection idxSrc='14' idxDest='27'/>
+<Connection idxSrc='13' idxDest='26'/>
+<Connection idxSrc='11' idxDest='25'/>
+<Connection idxSrc='7' idxDest='36'/>
+<Connection idxSrc='22' idxDest='37'/>
+<Connection idxSrc='23' idxDest='38'/>
+<Connection idxSrc='24' idxDest='39'/>
+<Connection idxSrc='25' idxDest='40'/>
+<Connection idxSrc='26' idxDest='41'/>
+<Connection idxSrc='27' idxDest='42'/>
+<Connection idxSrc='28' idxDest='43'/>
+<Connection idxSrc='29' idxDest='44'/>
+<Connection idxSrc='30' idxDest='45'/>
+<Connection idxSrc='31' idxDest='46'/>
+<Connection idxSrc='32' idxDest='47'/>
+<Connection idxSrc='33' idxDest='48'/>
+<Connection idxSrc='34' idxDest='49'/>
+<Connection idxSrc='35' idxDest='50'/>
+<Connection idxSrc='52' idxDest='24'/>
+<Connection idxSrc='147' idxDest='152'/>
+<Connection idxSrc='152' idxDest='154'/>
+<Connection idxSrc='154' idxDest='155'/>
+<Connection idxSrc='155' idxDest='153'/>
+<Connection idxSrc='153' idxDest='169'/>
+<Connection idxSrc='148' idxDest='156'/>
+<Connection idxSrc='156' idxDest='157'/>
+<Connection idxSrc='157' idxDest='175'/>
+<Connection idxSrc='175' idxDest='176'/>
+<Connection idxSrc='176' idxDest='177'/>
+<Connection idxSrc='149' idxDest='159'/>
+<Connection idxSrc='159' idxDest='160'/>
+<Connection idxSrc='160' idxDest='161'/>
+<Connection idxSrc='161' idxDest='162'/>
+<Connection idxSrc='162' idxDest='179'/>
+<Connection idxSrc='151' idxDest='163'/>
+<Connection idxSrc='163' idxDest='164'/>
+<Connection idxSrc='164' idxDest='165'/>
+<Connection idxSrc='165' idxDest='166'/>
+<Connection idxSrc='166' idxDest='181'/>
+<Connection idxSrc='150' idxDest='167'/>
+<Connection idxSrc='167' idxDest='168'/>
+<Connection idxSrc='168' idxDest='183'/>
+<Connection idxSrc='183' idxDest='184'/>
+<Connection idxSrc='184' idxDest='185'/>
+<Connection idxSrc='267' idxDest='290'/>
+<Connection idxSrc='290' idxDest='291'/>
+<Connection idxSrc='268' idxDest='292'/>
+<Connection idxSrc='292' idxDest='293'/>
+<Connection idxSrc='269' idxDest='294'/>
+<Connection idxSrc='294' idxDest='295'/>
+<Connection idxSrc='270' idxDest='296'/>
+<Connection idxSrc='296' idxDest='297'/>
+<Connection idxSrc='271' idxDest='298'/>
+<Connection idxSrc='298' idxDest='300'/>
+<Connection idxSrc='272' idxDest='299'/>
+<Connection idxSrc='299' idxDest='304'/>
+<Connection idxSrc='273' idxDest='302'/>
+<Connection idxSrc='302' idxDest='305'/>
+<Connection idxSrc='274' idxDest='303'/>
+<Connection idxSrc='303' idxDest='306'/>
+<Connection idxSrc='275' idxDest='307'/>
+<Connection idxSrc='307' idxDest='308'/>
+<Connection idxSrc='276' idxDest='309'/>
+<Connection idxSrc='309' idxDest='312'/>
+<Connection idxSrc='277' idxDest='310'/>
+<Connection idxSrc='310' idxDest='313'/>
+<Connection idxSrc='278' idxDest='311'/>
+<Connection idxSrc='311' idxDest='314'/>
+<Connection idxSrc='284' idxDest='318'/>
+<Connection idxSrc='279' idxDest='315'/>
+<Connection idxSrc='283' idxDest='317'/>
+<Connection idxSrc='285' idxDest='319'/>
+<Connection idxSrc='315' idxDest='316'/>
+<Connection idxSrc='317' idxDest='320'/>
+<Connection idxSrc='318' idxDest='321'/>
+<Connection idxSrc='319' idxDest='322'/>
+<Connection idxSrc='326' idxDest='329'/>
+<Connection idxSrc='327' idxDest='330'/>
+<Connection idxSrc='286' idxDest='323'/>
+<Connection idxSrc='323' idxDest='324'/>
+<Connection idxSrc='287' idxDest='325'/>
+<Connection idxSrc='325' idxDest='328'/>
+<Connection idxSrc='288' idxDest='326'/>
+<Connection idxSrc='289' idxDest='327'/>
+<Connection idxSrc='331' idxDest='341'/>
+<Connection idxSrc='341' idxDest='345'/>
+<Connection idxSrc='345' idxDest='349'/>
+<Connection idxSrc='349' idxDest='350'/>
+<Connection idxSrc='350' idxDest='351'/>
+<Connection idxSrc='333' idxDest='355'/>
+<Connection idxSrc='355' idxDest='356'/>
+<Connection idxSrc='356' idxDest='357'/>
+<Connection idxSrc='357' idxDest='358'/>
+<Connection idxSrc='358' idxDest='359'/>
+<Connection idxSrc='335' idxDest='363'/>
+<Connection idxSrc='363' idxDest='364'/>
+<Connection idxSrc='364' idxDest='365'/>
+<Connection idxSrc='365' idxDest='366'/>
+<Connection idxSrc='366' idxDest='367'/>
+<Connection idxSrc='334' idxDest='369'/>
+<Connection idxSrc='369' idxDest='370'/>
+<Connection idxSrc='370' idxDest='371'/>
+<Connection idxSrc='371' idxDest='372'/>
+<Connection idxSrc='372' idxDest='373'/>
+<Connection idxSrc='332' idxDest='376'/>
+<Connection idxSrc='376' idxDest='377'/>
+<Connection idxSrc='377' idxDest='378'/>
+<Connection idxSrc='378' idxDest='379'/>
+<Connection idxSrc='379' idxDest='380'/>
+<Connection idxSrc='418' idxDest='420'/>
+<Connection idxSrc='420' idxDest='421'/>
+<Connection idxSrc='421' idxDest='422'/>
+<Connection idxSrc='169' idxDest='422' idxPinIn='1'/>
+<Connection idxSrc='422' idxDest='423'/>
+<Connection idxSrc='424' idxDest='425'/>
+<Connection idxSrc='425' idxDest='426'/>
+<Connection idxSrc='426' idxDest='427'/>
+<Connection idxSrc='427' idxDest='428'/>
+<Connection idxSrc='423' idxDest='430'/>
+<Connection idxSrc='430' idxDest='431'/>
+<Connection idxSrc='431' idxDest='174'/>
+<Connection idxSrc='179' idxDest='427' idxPinIn='1'/>
+<Connection idxSrc='428' idxDest='432'/>
+<Connection idxSrc='432' idxDest='433'/>
+<Connection idxSrc='433' idxDest='434'/>
+<Connection idxSrc='435' idxDest='436'/>
+<Connection idxSrc='436' idxDest='437'/>
+<Connection idxSrc='437' idxDest='438'/>
+<Connection idxSrc='181' idxDest='438' idxPinIn='1'/>
+<Connection idxSrc='438' idxDest='439'/>
+<Connection idxSrc='439' idxDest='440'/>
+<Connection idxSrc='440' idxDest='441'/>
+<Connection idxSrc='441' idxDest='442'/>
+<Connection idxSrc='443' idxDest='444'/>
+<Connection idxSrc='444' idxDest='445'/>
+<Connection idxSrc='445' idxDest='446'/>
+<Connection idxSrc='185' idxDest='446' idxPinIn='1'/>
+<Connection idxSrc='446' idxDest='447'/>
+<Connection idxSrc='447' idxDest='448'/>
+<Connection idxSrc='448' idxDest='449'/>
+<Connection idxSrc='449' idxDest='450'/>
+<Connection idxSrc='454' idxDest='455'/>
+<Connection idxSrc='451' idxDest='452'/>
+<Connection idxSrc='452' idxDest='453'/>
+<Connection idxSrc='453' idxDest='454'/>
+<Connection idxSrc='177' idxDest='454' idxPinIn='1'/>
+<Connection idxSrc='455' idxDest='456'/>
+<Connection idxSrc='456' idxDest='457'/>
+<Connection idxSrc='457' idxDest='458'/>
+<Connection idxSrc='459' idxDest='460'/>
+<Connection idxSrc='460' idxDest='461'/>
+<Connection idxSrc='461' idxDest='462'/>
+<Connection idxSrc='462' idxDest='463'/>
+<Connection idxSrc='463' idxDest='464'/>
+<Connection idxSrc='464' idxDest='465'/>
+<Connection idxSrc='465' idxDest='466'/>
+<Connection idxSrc='380' idxDest='462' idxPinIn='1'/>
+<Connection idxSrc='469' idxDest='470'/>
+<Connection idxSrc='470' idxDest='471'/>
+<Connection idxSrc='471' idxDest='472'/>
+<Connection idxSrc='351' idxDest='472' idxPinIn='1'/>
+<Connection idxSrc='472' idxDest='473'/>
+<Connection idxSrc='473' idxDest='474'/>
+<Connection idxSrc='474' idxDest='475'/>
+<Connection idxSrc='475' idxDest='476'/>
+<Connection idxSrc='477' idxDest='478'/>
+<Connection idxSrc='478' idxDest='479'/>
+<Connection idxSrc='479' idxDest='480'/>
+<Connection idxSrc='359' idxDest='480' idxPinIn='1'/>
+<Connection idxSrc='480' idxDest='481'/>
+<Connection idxSrc='481' idxDest='482'/>
+<Connection idxSrc='482' idxDest='483'/>
+<Connection idxSrc='483' idxDest='484'/>
+<Connection idxSrc='485' idxDest='486'/>
+<Connection idxSrc='486' idxDest='487'/>
+<Connection idxSrc='487' idxDest='488'/>
+<Connection idxSrc='367' idxDest='488' idxPinIn='1'/>
+<Connection idxSrc='488' idxDest='489'/>
+<Connection idxSrc='489' idxDest='490'/>
+<Connection idxSrc='490' idxDest='491'/>
+<Connection idxSrc='491' idxDest='492'/>
+<Connection idxSrc='493' idxDest='494'/>
+<Connection idxSrc='494' idxDest='495'/>
+<Connection idxSrc='495' idxDest='496'/>
+<Connection idxSrc='373' idxDest='496' idxPinIn='1'>
+  <Point x='1526.27' y='3866.12'/>
+</Connection>
+<Connection idxSrc='496' idxDest='497'/>
+<Connection idxSrc='497' idxDest='498'/>
+<Connection idxSrc='498' idxDest='499'/>
+<Connection idxSrc='499' idxDest='500'/>
+<Connection idxSrc='513' idxDest='521'/>
+<Connection idxSrc='511' idxDest='523'/>
+<Connection idxSrc='515' idxDest='524'/>
+<Connection idxSrc='519' idxDest='525'/>
+<Connection idxSrc='517' idxDest='526'/>
+<Connection idxSrc='512' idxDest='527'/>
+<Connection idxSrc='516' idxDest='528'/>
+<Connection idxSrc='520' idxDest='529'/>
+<Connection idxSrc='518' idxDest='530'/>
+<Connection idxSrc='514' idxDest='522'/>
+</CONNECTORS>
+<TEXTANNOTATIONS>
+  <Annotation x='-497' y='-85'>BTC - amount</Annotation>
+  <Annotation x='-496' y='9'>BTC - price</Annotation>
+  <Annotation x='-497' y='110'>BTC - volume</Annotation>
+  <Annotation x='-500' y='246'>BCH - amount</Annotation>
+  <Annotation x='-501' y='341'>BCH - price</Annotation>
+  <Annotation x='-502' y='421'>BCH - volume</Annotation>
+  <Annotation x='-505' y='554'>EOS - amount</Annotation>
+  <Annotation x='-503' y='644'>EOS - price</Annotation>
+  <Annotation x='-501' y='725'>EOS - volume</Annotation>
+  <Annotation x='-501' y='878'>XRP - amount</Annotation>
+  <Annotation x='-504' y='972'>XRP - price</Annotation>
+  <Annotation x='-506' y='1061'>XRP - volume</Annotation>
+  <Annotation x='-508' y='1235'>ETH - amount</Annotation>
+  <Annotation x='-510' y='1327'>ETH - price</Annotation>
+  <Annotation x='-513' y='1432'>ETH - volume</Annotation>
+  <Annotation x='-787.486' y='-116.665' size='20' bold='1'>Trade Data
+- Stat des</Annotation>
+  <Annotation x='529.778' y='1240.89'>ETH</Annotation>
+  <Annotation x='520.889' y='872.889'>XRP</Annotation>
+  <Annotation x='528' y='554.667'>EOS</Annotation>
+  <Annotation x='528' y='254.222'>BCH</Annotation>
+  <Annotation x='524.445' y='-104.889'>BTC</Annotation>
+  <Annotation x='195.156' y='-128.72' size='20' bold='1'>Trade Data
+-Group 
+observations 
+by day for 
+frequency plots</Annotation>
+  <Annotation x='-738.734' y='1551.23' size='20' bold='1'>OB Data
+- Stat des</Annotation>
+  <Annotation x='-486.578' y='1574.43'>BTC - PA1</Annotation>
+  <Annotation x='-486.578' y='1696.07'>BTC - QA1</Annotation>
+  <Annotation x='-488.316' y='1805.55'>BTC - PB1</Annotation>
+  <Annotation x='-483.102' y='1902.87'>BTC - QB1</Annotation>
+  <Annotation x='-479.627' y='2085.33'>BCH - PA1</Annotation>
+  <Annotation x='-483.102' y='2196.55'>BCH - QA1</Annotation>
+  <Annotation x='-483.102' y='2300.82'>BCH - PB1</Annotation>
+  <Annotation x='-472.676' y='2408.56'>BCH - QB1</Annotation>
+  <Annotation x='-479.627' y='2592.77'>EOS - PA1</Annotation>
+  <Annotation x='-479.627' y='2716.15'>EOS - QA1</Annotation>
+  <Annotation x='-479.627' y='2820.41'>EOS - PB1</Annotation>
+  <Annotation x='-479.627' y='2935.11'>EOS - QB1</Annotation>
+  <Annotation x='222.763' y='1536.3' size='20' bold='1'>OB Data
+-Group 
+observations 
+by day for 
+frequency plots</Annotation>
+  <Annotation x='554.693' y='1725.07'>BTC</Annotation>
+  <Annotation x='566.31' y='2218.77'>BCH</Annotation>
+  <Annotation x='569.537' y='2766.32'>EOS</Annotation>
+  <Annotation x='586.142' y='3324.24'>XRP</Annotation>
+  <Annotation x='587.802' y='3883.81'>ETH</Annotation>
+  <Annotation x='-481.533' y='3136.61'>XRP - PA1</Annotation>
+  <Annotation x='-473.231' y='3271.1'>XRP - QA1</Annotation>
+  <Annotation x='-474.891' y='3385.67'>XRP - PB1</Annotation>
+  <Annotation x='-468.249' y='3508.55'>XRP - QB1</Annotation>
+  <Annotation x='-471.57' y='3736.03'>ETH - PA1</Annotation>
+  <Annotation x='-471.57' y='3850.6'>ETH - QA1</Annotation>
+  <Annotation x='-471.57' y='3961.85'>ETH - PB1</Annotation>
+  <Annotation x='-471.57' y='4066.46'>ETH - QB1</Annotation>
+  <Annotation x='1256.8' y='4329.85' size='10' bold='1'>Average observations per day</Annotation>
+</TEXTANNOTATIONS>
+<GROUPBOXANNOTATIONS>
+  <Groupbox x='-524.991' y='-127.27' w='707.942' h='1601.49' color='#afeeee'/>
+  <Groupbox x='521.109' y='-127.879' w='1093.07' h='1600.16' color='#ffdab9'/>
+  <Groupbox x='-513.211' y='1525.57' w='703.028' h='2629.33' color='#c1cdc1'/>
+  <Groupbox x='528.256' y='1533.97' w='1229.21' h='2595.56' color='#87cefa'/>
+  <Groupbox x='543.551' y='4207.88' w='1219.68' h='676.124' color='#7fffd4'/>
+</GROUPBOXANNOTATIONS>
+</ANATELLA>

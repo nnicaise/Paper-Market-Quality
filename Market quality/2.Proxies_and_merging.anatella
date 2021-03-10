@@ -1,0 +1,3529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ANATELLA version='2.27'>
+<GlobalParameters wDirLoc='1' dataDirWrite=':/Merged'>
+</GlobalParameters>
+<WorkingSpace>AAAA/wAAAAD9AAAAAgAAAAEAAAEPAAACRPwCAAAAAfsAAAAcAEEAbABsAEEAYwB0AGkAbwBuAHMARABvAGMAawEAAABeAAACRAAAAHgA////AAAAAwAAB4AAAAEy/AEAAAAC+wAAACgAQQBjAHQAaQBvAG4AUAByAG8AcABlAHIAdABpAGUAcwBEAG8AYwBrAQAAAAAAAANfAAACfQD////8AAADZQAABBsAAAIiAP////oAAAABAQAAAAL7AAAADgBMAG8AZwBEAG8AYwBrAQAAAAD/////AAAAhQD////7AAAAGgBEAGEAdABhAFQAYQBiAGwAZQBEAG8AYwBrAQAAAAD/////AAACIgD///8AAAZrAAACRAAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAADAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAABYAdABlAHgAdABUAG8AbwBsAEIAYQByAQAAAzv/////AAAAAAAAAAAAAAAeAGcAcgBvAHUAcABCAG8AeABUAG8AbwBsAEIAYQByAQAABhD/////AAAAAAAAAAA=</WorkingSpace>
+<ACTIONS>
+<readCSV idx='0' x='-1384.68' y='-47.959' fileName=':/Data Cleaned V2/BCH_ob.csv'/>
+<readCSV idx='1' x='-1395' y='-296' fileName=':/Data Cleaned V2/BCH_trade.csv'/>
+<InsertKey module='DefaultActions' idx='7' x='-1249.91' y='-48.604' startCount='0' columnName='Key'/>
+<SelectColumns module='DefaultActions' idx='8' x='-1099.91' y='63.437' keep='1'>
+ <c>Key</c>
+ <c>datetime</c>
+</SelectColumns>
+<readCSV idx='10' x='-97.3353' y='636.29' fileName=':/Data Cleaned V2/BTC_ob.csv'/>
+<readCSV idx='11' x='-1413.48' y='315.662' fileName=':/Data Cleaned V2/BTC_trade.csv'/>
+<readCSV idx='12' x='-1380.42' y='1255.33' fileName=':/Data Cleaned V2/EOS_ob.csv'/>
+<readCSV idx='13' x='-1370.42' y='987.325' fileName=':/Data Cleaned V2/EOS_trade.csv'/>
+<readCSV idx='14' x='-1368.99' y='2591.4' fileName=':/Data Cleaned V2/ETH_ob.csv'/>
+<readCSV idx='15' x='-1364.99' y='2336.4' fileName=':/Data Cleaned V2/ETH_trade.csv'/>
+<readCSV idx='16' x='-1381.49' y='1937.73' fileName=':/Data Cleaned V2/XRP_ob.csv'/>
+<readCSV idx='17' x='-1375.49' y='1646.73' fileName=':/Data Cleaned V2/XRP_trade.csv'/>
+<InsertKey module='DefaultActions' idx='18' x='-1260' y='-296' startCount='0' columnName='Key'/>
+<SelectColumns module='DefaultActions' idx='19' x='-1102' y='-195' keep='1'>
+ <c>Key</c>
+ <c>datetime</c>
+</SelectColumns>
+<InsertKey module='DefaultActions' idx='21' x='40.6647' y='637.29' startCount='0' columnName='Key'/>
+<SelectColumns module='DefaultActions' idx='22' x='189.665' y='751.29' keep='1'>
+ <c>Key</c>
+ <c>datetime</c>
+</SelectColumns>
+<Join module='DefaultActions' idx='25' x='-505' y='-45' joinMode='0' keyA='Key' new='1'>
+<SlaveKeys><c>Key</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<sort idx='26' x='-1099' y='-46' action='S'>
+  <field type='0'>Key</field>
+</sort>
+<sort idx='27' x='-667' y='64' action='S'>
+  <field type='0'>Key</field>
+</sort>
+<SelectColumns module='DefaultActions' idx='30' x='138.522' y='453.662' keep='1'>
+ <c>Key</c>
+ <c>datetime</c>
+</SelectColumns>
+<sort idx='32' x='443.522' y='452.662' action='S'>
+  <field type='0'>Key</field>
+</sort>
+<Join module='DefaultActions' idx='33' x='635.522' y='349.662' joinMode='0' keyA='Key' new='1'>
+<SlaveKeys><c>Key</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<sort idx='34' x='-1111' y='-297' action='S'>
+  <field type='0'>Key</field>
+</sort>
+<sort idx='36' x='-808' y='-194' action='S'>
+  <field type='0'>Key</field>
+</sort>
+<Join module='DefaultActions' idx='37' x='-620' y='-299' joinMode='0' keyA='Key' new='1'>
+<SlaveKeys><c>Key</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<sort idx='39' x='187.665' y='636.29' action='S'>
+  <field type='0'>Key</field>
+</sort>
+<sort idx='40' x='514.665' y='751.29' action='S'>
+  <field type='0'>Key</field>
+</sort>
+<Join module='DefaultActions' idx='41' x='639.279' y='641.804' joinMode='0' keyA='Key' new='1'>
+<SlaveKeys><c>Key</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<InsertKey module='DefaultActions' idx='42' x='-1231.42' y='987.325' startCount='0' columnName='Key'/>
+<SelectColumns module='DefaultActions' idx='43' x='-1081.42' y='1113.33' keep='1'>
+ <c>Key</c>
+ <c>datetime</c>
+</SelectColumns>
+<sort idx='45' x='-753.415' y='1107.33' action='S'>
+  <field type='0'>Key</field>
+</sort>
+<Join module='DefaultActions' idx='46' x='-581.415' y='989.325' joinMode='0' keyA='Key' new='1'>
+<SlaveKeys><c>Key</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<InsertKey module='DefaultActions' idx='47' x='-1229.42' y='1252.33' startCount='0' columnName='Key'/>
+<SelectColumns module='DefaultActions' idx='48' x='-1076.42' y='1366.33' keep='1'>
+ <c>Key</c>
+ <c>datetime</c>
+</SelectColumns>
+<sort idx='50' x='-770.415' y='1368.33' action='S'>
+  <field type='0'>Key</field>
+</sort>
+<Join module='DefaultActions' idx='51' x='-588.415' y='1258.33' joinMode='0' keyA='Key' new='1'>
+<SlaveKeys><c>Key</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<InsertKey module='DefaultActions' idx='52' x='-1226.49' y='1649.73' startCount='0' columnName='Key'/>
+<SelectColumns module='DefaultActions' idx='53' x='-1061.49' y='1764.73' keep='1'>
+ <c>Key</c>
+ <c>datetime</c>
+</SelectColumns>
+<sort idx='55' x='-752.491' y='1754.67' action='S'>
+  <field type='0'>Key</field>
+</sort>
+<Join module='DefaultActions' idx='56' x='-576.491' y='1654.73' joinMode='0' keyA='Key' new='1'>
+<SlaveKeys><c>Key</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<InsertKey module='DefaultActions' idx='57' x='-1222.49' y='1939.73' startCount='0' columnName='Key'/>
+<SelectColumns module='DefaultActions' idx='58' x='-1070.49' y='2039.73' keep='1'>
+ <c>Key</c>
+ <c>datetime</c>
+</SelectColumns>
+<sort idx='60' x='-754.491' y='2038.73' action='S'>
+  <field type='0'>Key</field>
+</sort>
+<Join module='DefaultActions' idx='61' x='-557.491' y='1929.73' joinMode='0' keyA='Key' new='1'>
+<SlaveKeys><c>Key</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<InsertKey module='DefaultActions' idx='62' x='-1206.99' y='2337.4' startCount='0' columnName='Key'/>
+<SelectColumns module='DefaultActions' idx='63' x='-1049.99' y='2433.4' keep='1'>
+ <c>Key</c>
+ <c>datetime</c>
+</SelectColumns>
+<sort idx='65' x='-734.994' y='2429.4' action='S'>
+  <field type='0'>Key</field>
+</sort>
+<Join module='DefaultActions' idx='66' x='-530.994' y='2332.4' joinMode='0' keyA='Key' new='1'>
+<SlaveKeys><c>Key</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<InsertKey module='DefaultActions' idx='67' x='-1204.99' y='2594.4' startCount='0' columnName='Key'/>
+<SelectColumns module='DefaultActions' idx='68' x='-1046.99' y='2722.4' keep='1'>
+ <c>Key</c>
+ <c>datetime</c>
+</SelectColumns>
+<sort idx='70' x='-725.994' y='2717.4' action='S'>
+  <field type='0'>Key</field>
+</sort>
+<Join module='DefaultActions' idx='71' x='-524.994' y='2596.4' joinMode='0' keyA='Key' new='1'>
+<SlaveKeys><c>Key</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<sort idx='72' x='-1083.42' y='989.325' action='S'>
+  <field type='0'>Key</field>
+</sort>
+<sort idx='73' x='-1077.42' y='1254.33' action='S'>
+  <field type='0'>Key</field>
+</sort>
+<sort idx='74' x='-1066.49' y='1649.73' action='S'>
+  <field type='0'>Key</field>
+</sort>
+<sort idx='75' x='-1066.49' y='1936.73' action='S'>
+  <field type='0'>Key</field>
+</sort>
+<sort idx='76' x='-1051.99' y='2338.4' action='S'>
+  <field type='0'>Key</field>
+</sort>
+<sort idx='77' x='-1048.99' y='2595.4' action='S'>
+  <field type='0'>Key</field>
+</sort>
+<SelectColumns module='DefaultActions' idx='81' x='-479' y='-299' keep='1'>
+ <c>Rounded Time</c>
+ <c>price</c>
+ <c>amount</c>
+ <c>sell</c>
+ <c>volume</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='82' x='-360' y='-50' keep='1'>
+ <c>Rounded Time 5min</c>
+ <c>PB01</c>
+ <c>PA01</c>
+</SelectColumns>
+<Calculator module='MathParser' idx='83' x='-244.296' y='-52.3502'>
+  <InputVars>
+    <InputVar column='PB01'/>
+    <InputVar column='PA01'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Mid Price'>(PB01 + PA01)/2</OutputVar>
+  </OutputVars>
+</Calculator>
+<Calculator module='MathParser' idx='85' x='-353.3' y='-302.899'>
+  <InputVars>
+    <InputVar column='sell' isNumber='0'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Return (tick by tick)'>_null</OutputVar>
+    <OutputVar name='Trade direction' meta='U'>(sell == "false")?"1":"-1"</OutputVar>
+  </OutputVars>
+</Calculator>
+<Python idx='87' x='-68' y='-304' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+for x in range (1, 9976566) :
+    
+    returnx = ((float(mytable.iloc[x, 1])) - (float(mytable.iloc[(x - 1), 1]))) / (float(mytable.iloc[(x-1), 1]))
+    mytable.set_value(x, "Return (tick by tick)", returnx)
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='131' x='-206.65' y='-305.65' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+for x in range (0,9976561) :
+    
+    price_t = float(mytable.iloc[x,1])
+    price_t5 = float(mytable.iloc[(x+5),1])
+    dire = float(mytable.iloc[x , 6])
+    ppi = 2*dire*((price_t5-price_t)/price_t)
+
+    mytable.set_value(x, "PPI", ppi)
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='139' x='-7.95742' y='-52.0506' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+test = mytable.groupby(['Rounded Time 5min'], as_index=False).median()
+
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<Python idx='141' x='109.747' y='-49.7004' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+for x in range (1,  491690 ) :
+    
+    returnx = ((float(mytable.iloc[x, 1])) - (float(mytable.iloc[(x - 1), 1]))) / (float(mytable.iloc[(x-1), 1]))
+    mytable.set_value(x, "Return 5min", returnx)
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='142' x='593.398' y='-312.398' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+print(2**2)
+def custom (data) :
+
+    liste = data.tolist()
+    liste_carre = []
+    for x in liste :
+        
+        liste_carre.append(x**2)
+
+    return sum(liste_carre)
+
+
+
+test = mytable.groupby(['Rounded Time'], as_index=False).agg({'price' : 'median',  'volume' : 'sum', 'Return (tick by tick)' : custom, 'PPI' : 'median'})
+
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<ChangeDataType idx='143' x='458.912' y='-309.77'>
+<toDouble><c>price</c><c>volume</c><c>Return (tick by tick)</c><c>PPI</c></toDouble>
+</ChangeDataType>
+<FilterRows module='MathParser' idx='146' x='194' y='-305'>
+ <Expression>(Key > 0) &amp;&amp; (Key &lt; 9976562)</Expression>
+ <InputVars>
+    <InputVar column='Key' meta='K'/>
+ </InputVars>
+</FilterRows>
+<InsertKey module='DefaultActions' idx='147' x='55' y='-302' startCount='0' columnName='Key'/>
+<SelectColumns module='DefaultActions' idx='148' x='326.628' y='-305.142' keep='1'>
+ <c>Rounded Time</c>
+ <c>price</c>
+ <c>volume</c>
+ <c>Return (tick by tick)</c>
+ <c>PPI</c>
+</SelectColumns>
+<InsertKey module='DefaultActions' idx='149' x='228' y='-50' startCount='0' columnName='Key'/>
+<FilterRows module='MathParser' idx='150' x='367' y='-50'>
+ <Expression>Key > 0</Expression>
+ <InputVars>
+    <InputVar column='Key' meta='K'/>
+ </InputVars>
+</FilterRows>
+<SelectColumns module='DefaultActions' idx='155' x='613' y='-170.314' keep='1'>
+ <c>Rounded Time 30min</c>
+ <c>Realized Spread</c>
+</SelectColumns>
+<Python idx='342' x='751.35' y='-169.65' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import numpy as np
+import pandas
+
+print('Test')
+
+test = mytable.groupby(['Rounded Time 30min'], as_index=False).agg({'Realized Spread' : 'median'})
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<Python idx='343' x='753.35' y='-73' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import numpy as np
+import pandas
+
+print('Test')
+
+test = mytable.groupby(['Rounded Time 30min'], as_index=False).agg(np.std, ddof=0)
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<SelectColumns module='DefaultActions' idx='346' x='610' y='-52' keep='1'>
+ <c>Rounded Time 30min</c>
+ <c>Return 5min</c>
+</SelectColumns>
+<ColumnRename module='DefaultActions' idx='348' x='909' y='-72'><before>
+<c>Return 5min</c></before><after>
+<c>SD(Return 5min)</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<sort idx='352' x='903' y='-170' action='S'>
+  <field type='A'>Rounded Time 30min</field>
+</sort>
+<sort idx='353' x='1066' y='-75' action='S'>
+  <field type='A'>Rounded Time 30min</field>
+</sort>
+<sort idx='355' x='1060.34' y='51.6072' action='S'>
+  <field type='A'>Rounded Time 30min</field>
+</sort>
+<sort idx='356' x='908.391' y='-300' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<Join module='DefaultActions' idx='359' x='1478.31' y='-296.77' joinMode='1' keyA='Rounded Time' new='1'>
+<SlaveKeys><c>Rounded Time 30min</c><c>Rounded Time 30min</c><c>Rounded Time 30min</c><c>Rounded Time 30min</c></SlaveKeys>
+<Prefixes><c></c><c></c><c></c><c></c><c>T4_</c></Prefixes>
+</Join>
+<Join module='DefaultActions' idx='360' x='1327.01' y='-169.088' joinMode='0' keyA='Rounded Time 30min' new='1'>
+<SlaveKeys><c>Rounded Time 30min</c><c>Rounded Time 30min</c></SlaveKeys>
+<Prefixes><c></c><c></c><c></c></Prefixes>
+</Join>
+<ColumnRename module='DefaultActions' idx='362' x='751.954' y='-304.947'><before>
+<c>volume</c><c>Return (tick by tick)</c></before><after>
+<c>SUM(volume)</c><c>SUM(Return - tick by tick^2)</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<Calculator module='MathParser' idx='363' x='1816.63' y='-295.554'>
+  <InputVars>
+    <InputVar column='Return 30min' label='ret' meta='F'/>
+    <InputVar column='SUM(volume)' label='vol' meta='F'/>
+    <InputVar column='SUM(Return - tick by tick^2)' label='ret2' meta='F'/>
+    <InputVar column='Autocorrelation' meta='F'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Illiq'>- ln(1 + (abs(ret)/vol))</OutputVar>
+    <OutputVar name='Abs (Autocorrelation)'>abs(Autocorrelation)</OutputVar>
+    <OutputVar name='Realized Volatility'>sqrt(ret2)</OutputVar>
+  </OutputVars>
+</Calculator>
+<ColumnRename module='DefaultActions' idx='364' x='907.792' y='41.6748'><before>
+<c>Return 5min</c></before><after>
+<c>Autocorrelation</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<SelectColumns module='DefaultActions' idx='365' x='2249.28' y='-290.605' keep='1'>
+ <c>Rounded Time</c>
+ <c>Realized Spread</c>
+ <c>PPI</c>
+ <c>Illiq</c>
+ <c>Abs (Autocorrelation)</c>
+ <c>Realized Volatility</c>
+ <c>SD(Return 5min)</c>
+</SelectColumns>
+<Python idx='369' x='1675.54' y='-298.251' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+for x in range (1, 32755) :
+    
+    returnx = ((float(mytable.iloc[x, 1])) - (float(mytable.iloc[(x - 1), 1]))) / (float(mytable.iloc[x-1, 1]))
+    mytable.set_value(x, "Return 30min", returnx)
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<InsertKey module='DefaultActions' idx='370' x='1969.98' y='-292.652' startCount='0' columnName='Key'/>
+<writeCSV idx='372' x='2395.08' y='-291.207' sep=',' segmentSize='0.1' filename=':/Merged/BCH_15.csv'/>
+<SelectColumns module='DefaultActions' idx='377' x='-421.415' y='989.325' keep='1'>
+ <c>Rounded Time</c>
+ <c>price</c>
+ <c>sell</c>
+ <c>volume</c>
+</SelectColumns>
+<Calculator module='MathParser' idx='378' x='-278.415' y='990.325'>
+  <InputVars>
+    <InputVar column='sell' isNumber='0'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Return (tick by tick)'>_null</OutputVar>
+    <OutputVar name='Trade direction' meta='U'>(sell == "false")?"1":"-1"</OutputVar>
+  </OutputVars>
+</Calculator>
+<Python idx='379' x='-135.911' y='989.037' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+for x in range (0,12749497) :
+    
+    price_t = float(mytable.iloc[x,1])
+    price_t5 = float(mytable.iloc[(x+5),1])
+    dire = float(mytable.iloc[x , 5])
+    ppi = 2*dire*((price_t5-price_t)/price_t)
+
+    mytable.set_value(x, "PPI", ppi)
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='380' x='8.91505' y='984.529' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+for x in range (1, 12749502) :
+    
+    returnx = ((float(mytable.iloc[x, 1])) - (float(mytable.iloc[(x - 1), 1]))) / (float(mytable.iloc[(x-1), 1]))
+    mytable.set_value(x, "Return (tick by tick)", returnx)
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<InsertKey module='DefaultActions' idx='381' x='152.585' y='985.325' startCount='0' columnName='Key'/>
+<FilterRows module='MathParser' idx='382' x='282.585' y='982.325'>
+ <Expression>(Key > 0) &amp;&amp; (Key &lt; 12749497)</Expression>
+ <InputVars>
+    <InputVar column='Key' meta='K'/>
+ </InputVars>
+</FilterRows>
+<SelectColumns module='DefaultActions' idx='383' x='406.585' y='981.325' keep='1'>
+ <c>Rounded Time</c>
+ <c>price</c>
+ <c>volume</c>
+ <c>Return (tick by tick)</c>
+ <c>PPI</c>
+</SelectColumns>
+<ChangeDataType idx='384' x='536.585' y='980.325'>
+<toDouble><c>price</c><c>volume</c><c>Return (tick by tick)</c><c>PPI</c></toDouble>
+</ChangeDataType>
+<Python idx='385' x='675.585' y='981.325' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+def custom (data) :
+
+    liste = data.tolist()
+    liste_carre = []
+    for x in liste :
+        
+        liste_carre.append(x**2)
+
+    return sum(liste_carre)
+
+
+
+test = mytable.groupby(['Rounded Time'], as_index=False).agg({'price' : 'median',  'volume' : 'sum', 'Return (tick by tick)' : custom, 'PPI' : 'median'})
+
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<ColumnRename module='DefaultActions' idx='386' x='811.585' y='981.325'><before>
+<c>volume</c><c>Return (tick by tick)</c></before><after>
+<c>SUM(volume)</c><c>SUM(Return - tick by tick^2)</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<SelectColumns module='DefaultActions' idx='387' x='-447.415' y='1255.33' keep='1'>
+ <c>Rounded Time 5min</c>
+ <c>PB01</c>
+ <c>PA01</c>
+</SelectColumns>
+<Calculator module='MathParser' idx='388' x='-334.162' y='1254.33'>
+  <InputVars>
+    <InputVar column='PB01'/>
+    <InputVar column='PA01'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Mid Price'>(PB01 + PA01)/2</OutputVar>
+  </OutputVars>
+</Calculator>
+<Python idx='389' x='-78.3261' y='1255.92' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+test = mytable.groupby(['Rounded Time 5min'], as_index=False).median()
+
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<InsertKey module='DefaultActions' idx='391' x='153.779' y='1251.33' startCount='0' columnName='Key'/>
+<FilterRows module='MathParser' idx='392' x='264.981' y='1250.33'>
+ <Expression>Key > 0</Expression>
+ <InputVars>
+    <InputVar column='Key' meta='K'/>
+ </InputVars>
+</FilterRows>
+<SelectColumns module='DefaultActions' idx='395' x='506.585' y='1251.33' keep='1'>
+ <c>Rounded Time 30min</c>
+ <c>Return 5min</c>
+</SelectColumns>
+<Python idx='398' x='675.585' y='1198.33' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import numpy as np
+import pandas
+
+print('Test')
+
+test = mytable.groupby(['Rounded Time 30min'], as_index=False).agg(np.std, ddof=0)
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<ColumnRename module='DefaultActions' idx='399' x='813.35' y='1327.33'><before>
+<c>Return 5min</c></before><after>
+<c>Autocorrelation</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<ColumnRename module='DefaultActions' idx='401' x='822.585' y='1198.33'><before>
+<c>Return 5min</c></before><after>
+<c>SD(Return 5min)</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<sort idx='402' x='959.35' y='1331.33' action='S'>
+  <field type='A'>Rounded Time 30min</field>
+</sort>
+<sort idx='404' x='959.585' y='1199.33' action='S'>
+  <field type='A'>Rounded Time 30min</field>
+</sort>
+<SelectColumns module='DefaultActions' idx='405' x='509.585' y='1103.33' keep='1'>
+ <c>Rounded Time 30min</c>
+ <c>Realized Spread</c>
+</SelectColumns>
+<Python idx='406' x='677.585' y='1100.33' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import numpy as np
+import pandas
+
+print('Test')
+
+test = mytable.groupby(['Rounded Time 30min'], as_index=False).agg({'Realized Spread' : 'median'})
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<sort idx='407' x='815.585' y='1100.33' action='S'>
+  <field type='A'>Rounded Time 30min</field>
+</sort>
+<Join module='DefaultActions' idx='408' x='1249.58' y='1097.33' joinMode='0' keyA='Rounded Time 30min' new='1'>
+<SlaveKeys><c>Rounded Time 30min</c><c>Rounded Time 30min</c></SlaveKeys>
+<Prefixes><c></c><c></c><c></c></Prefixes>
+</Join>
+<Join module='DefaultActions' idx='409' x='1388.58' y='983.325' joinMode='1' keyA='Rounded Time' new='1'>
+<SlaveKeys><c>Rounded Time 30min</c><c>Rounded Time 30min</c><c>Rounded Time 30min</c><c>Rounded Time 30min</c></SlaveKeys>
+<Prefixes><c></c><c></c><c></c><c></c><c>T4_</c></Prefixes>
+</Join>
+<InsertKey module='DefaultActions' idx='413' x='1909.58' y='977.325' startCount='0' columnName='Key'/>
+<FilterRows module='MathParser' idx='414' x='2042.58' y='979.325'>
+ <Expression>(Key > 0)</Expression>
+ <InputVars>
+    <InputVar column='Key' meta='K'/>
+ </InputVars>
+</FilterRows>
+<SelectColumns module='DefaultActions' idx='415' x='2172.58' y='972.325' keep='1'>
+ <c>Rounded Time</c>
+ <c>Realized Spread</c>
+ <c>PPI</c>
+ <c>Illiq</c>
+ <c>Abs (Autocorrelation)</c>
+ <c>Realized Volatility</c>
+ <c>SD(Return 5min)</c>
+</SelectColumns>
+<writeCSV idx='416' x='2332.44' y='974.325' sep=',' segmentSize='0.1' filename=':/Merged/EOS_15.csv'/>
+<sort idx='417' x='941.585' y='976.325' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<SelectColumns module='DefaultActions' idx='418' x='-435.491' y='1652.73' keep='1'>
+ <c>Rounded Time</c>
+ <c>price</c>
+ <c>sell</c>
+ <c>volume</c>
+</SelectColumns>
+<Calculator module='MathParser' idx='419' x='-299.491' y='1653.73'>
+  <InputVars>
+    <InputVar column='sell' isNumber='0'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Return (tick by tick)'>_null</OutputVar>
+    <OutputVar name='Trade direction' meta='U'>(sell == "false")?"1":"-1"</OutputVar>
+  </OutputVars>
+</Calculator>
+<Python idx='420' x='-174.021' y='1646.14' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+for x in range (0,13482414) :
+    
+    price_t = float(mytable.iloc[x,1])
+    price_t5 = float(mytable.iloc[(x+5),1])
+    dire = float(mytable.iloc[x , 5])
+    ppi = 2*dire*((price_t5-price_t)/price_t)
+
+    mytable.set_value(x, "PPI", ppi)
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='421' x='-35.4909' y='1649.73' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+for x in range (1, 13482419) :
+    
+    returnx = ((float(mytable.iloc[x, 1])) - (float(mytable.iloc[(x - 1), 1]))) / (float(mytable.iloc[(x-1), 1]))
+    mytable.set_value(x, "Return (tick by tick)", returnx)
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<InsertKey module='DefaultActions' idx='422' x='102.509' y='1649.73' startCount='0' columnName='Key'/>
+<FilterRows module='MathParser' idx='423' x='227.509' y='1647.73'>
+ <Expression>(Key > 0) &amp;&amp; (Key &lt; 13482414)</Expression>
+ <InputVars>
+    <InputVar column='Key' meta='K'/>
+ </InputVars>
+</FilterRows>
+<SelectColumns module='DefaultActions' idx='424' x='353.509' y='1646.73' keep='1'>
+ <c>Rounded Time</c>
+ <c>price</c>
+ <c>volume</c>
+ <c>Return (tick by tick)</c>
+ <c>PPI</c>
+</SelectColumns>
+<ChangeDataType idx='425' x='482.509' y='1648.73'>
+<toDouble><c>price</c><c>volume</c><c>Return (tick by tick)</c><c>PPI</c></toDouble>
+</ChangeDataType>
+<Python idx='426' x='612.509' y='1647.73' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+def custom (data) :
+
+    liste = data.tolist()
+    liste_carre = []
+    for x in liste :
+        
+        liste_carre.append(x**2)
+
+    return sum(liste_carre)
+
+
+
+test = mytable.groupby(['Rounded Time'], as_index=False).agg({'price' : 'median',  'volume' : 'sum', 'Return (tick by tick)' : custom, 'PPI' : 'median'})
+
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<ColumnRename module='DefaultActions' idx='427' x='745.509' y='1649.73'><before>
+<c>volume</c><c>Return (tick by tick)</c></before><after>
+<c>SUM(volume)</c><c>SUM(Return - tick by tick^2)</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<sort idx='428' x='874.509' y='1646.73' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<SelectColumns module='DefaultActions' idx='430' x='-436.339' y='1926.78' keep='1'>
+ <c>Rounded Time 5min</c>
+ <c>PB01</c>
+ <c>PA01</c>
+</SelectColumns>
+<Calculator module='MathParser' idx='431' x='-325.537' y='1924.78'>
+  <InputVars>
+    <InputVar column='PB01'/>
+    <InputVar column='PA01'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Mid Price'>(PB01 + PA01)/2</OutputVar>
+  </OutputVars>
+</Calculator>
+<Python idx='432' x='-74.3511' y='1919.78' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+test = mytable.groupby(['Rounded Time 5min'], as_index=False).median()
+
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<InsertKey module='DefaultActions' idx='434' x='161.404' y='1925.03' startCount='0' columnName='Key'/>
+<FilterRows module='MathParser' idx='437' x='278.606' y='1924.38'>
+ <Expression>Key > 0</Expression>
+ <InputVars>
+    <InputVar column='Key' meta='K'/>
+ </InputVars>
+</FilterRows>
+<SelectColumns module='DefaultActions' idx='439' x='508.509' y='1924.73' keep='1'>
+ <c>Rounded Time 30min</c>
+ <c>Return 5min</c>
+</SelectColumns>
+<Python idx='442' x='639.509' y='1865.73' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import numpy as np
+import pandas
+
+print('Test')
+
+test = mytable.groupby(['Rounded Time 30min'], as_index=False).agg(np.std, ddof=0)
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<ColumnRename module='DefaultActions' idx='443' x='762.509' y='1992.73'><before>
+<c>Return 5min</c></before><after>
+<c>Autocorrelation</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<ColumnRename module='DefaultActions' idx='445' x='768.509' y='1867.73'><before>
+<c>Return 5min</c></before><after>
+<c>SD(Return 5min)</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<sort idx='446' x='900.509' y='1989.73' action='S'>
+  <field type='A'>Rounded Time 30min</field>
+</sort>
+<sort idx='448' x='904.509' y='1864.73' action='S'>
+  <field type='A'>Rounded Time 30min</field>
+</sort>
+<Python idx='449' x='674.35' y='1320.33' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import numpy as np
+import pandas
+
+def autocorr(data):
+    
+ 
+    autocor = data.autocorr(lag=1)
+    return autocor
+
+test = mytable.groupby(['Rounded Time 30min'], as_index=False).agg(autocorr)
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<Python idx='450' x='637.18' y='1991.44' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import numpy as np
+import pandas
+
+def autocorr(data):
+    
+ 
+    autocor = data.autocorr(lag=1)
+    return autocor
+
+test = mytable.groupby(['Rounded Time 30min'], as_index=False).agg(autocorr)
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<SelectColumns module='DefaultActions' idx='451' x='505.557' y='1756.98' keep='1'>
+ <c>Rounded Time 30min</c>
+ <c>Realized Spread</c>
+</SelectColumns>
+<Python idx='452' x='638.276' y='1756.73' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import numpy as np
+import pandas
+
+print('Test')
+
+test = mytable.groupby(['Rounded Time 30min'], as_index=False).agg({'Realized Spread' : 'median'})
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<sort idx='453' x='768.366' y='1756.98' action='S'>
+  <field type='A'>Rounded Time 30min</field>
+</sort>
+<Join module='DefaultActions' idx='454' x='1218.9' y='1760.93' joinMode='0' keyA='Rounded Time 30min' new='1'>
+<SlaveKeys><c>Rounded Time 30min</c><c>Rounded Time 30min</c></SlaveKeys>
+<Prefixes><c></c><c></c><c></c></Prefixes>
+</Join>
+<Join module='DefaultActions' idx='455' x='1404.02' y='1643.09' joinMode='1' keyA='Rounded Time' new='1'>
+<SlaveKeys><c>Rounded Time 30min</c><c>Rounded Time 30min</c><c>Rounded Time 30min</c><c>Rounded Time 30min</c></SlaveKeys>
+<Prefixes><c></c><c></c><c></c><c></c><c>T4_</c></Prefixes>
+</Join>
+<InsertKey module='DefaultActions' idx='459' x='1904.51' y='1631.79' startCount='0' columnName='Key'/>
+<SelectColumns module='DefaultActions' idx='461' x='2145.16' y='1635.18' keep='1'>
+ <c>Rounded Time</c>
+ <c>Realized Spread</c>
+ <c>PPI</c>
+ <c>Illiq</c>
+ <c>Abs (Autocorrelation)</c>
+ <c>Realized Volatility</c>
+ <c>SD(Return 5min)</c>
+</SelectColumns>
+<writeCSV idx='462' x='2309.8' y='1629.53' sep=',' segmentSize='0.1' filename=':/Merged/XRP_15.csv'/>
+<SelectColumns module='DefaultActions' idx='463' x='-400.994' y='2332.4' keep='1'>
+ <c>Rounded Time</c>
+ <c>price</c>
+ <c>sell</c>
+ <c>volume</c>
+</SelectColumns>
+<Calculator module='MathParser' idx='464' x='-279.994' y='2331.4'>
+  <InputVars>
+    <InputVar column='sell' isNumber='0'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Return (tick by tick)'>_null</OutputVar>
+    <OutputVar name='Trade direction' meta='U'>(sell == "false")?"1":"-1"</OutputVar>
+  </OutputVars>
+</Calculator>
+<Python idx='465' x='-151.994' y='2330.4' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+for x in range (0,19866746) :
+    
+    price_t = float(mytable.iloc[x,1])
+    price_t5 = float(mytable.iloc[(x+5),1])
+    dire = float(mytable.iloc[x , 5])
+    ppi = 2*dire*((price_t5-price_t)/price_t)
+
+    mytable.set_value(x, "PPI", ppi)
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='466' x='-27.9941' y='2330.4' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+for x in range (1, 19866751) :
+    
+    returnx = ((float(mytable.iloc[x, 1])) - (float(mytable.iloc[(x - 1), 1]))) / (float(mytable.iloc[(x-1), 1]))
+    mytable.set_value(x, "Return (tick by tick)", returnx)
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<InsertKey module='DefaultActions' idx='467' x='103.006' y='2330.4' startCount='0' columnName='Key'/>
+<FilterRows module='MathParser' idx='468' x='234.006' y='2327.4'>
+ <Expression>(Key > 0) &amp;&amp; (Key &lt; 19866746)</Expression>
+ <InputVars>
+    <InputVar column='Key' meta='K'/>
+ </InputVars>
+</FilterRows>
+<SelectColumns module='DefaultActions' idx='470' x='354.006' y='2328.4' keep='1'>
+ <c>Rounded Time</c>
+ <c>price</c>
+ <c>volume</c>
+ <c>Return (tick by tick)</c>
+ <c>PPI</c>
+</SelectColumns>
+<ChangeDataType idx='471' x='478.006' y='2324.4'>
+<toDouble><c>price</c><c>volume</c><c>Return (tick by tick)</c><c>PPI</c></toDouble>
+</ChangeDataType>
+<Python idx='472' x='601.006' y='2330.4' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+def custom (data) :
+
+    liste = data.tolist()
+    liste_carre = []
+    for x in liste :
+        
+        liste_carre.append(x**2)
+
+    return sum(liste_carre)
+
+
+
+test = mytable.groupby(['Rounded Time'], as_index=False).agg({'price' : 'median',  'volume' : 'sum', 'Return (tick by tick)' : custom, 'PPI' : 'median'})
+
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<ColumnRename module='DefaultActions' idx='473' x='724.006' y='2331.4'><before>
+<c>volume</c><c>Return (tick by tick)</c></before><after>
+<c>SUM(volume)</c><c>SUM(Return - tick by tick^2)</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<sort idx='474' x='842.006' y='2330.4' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<SelectColumns module='DefaultActions' idx='476' x='-411.442' y='2592.75' keep='1'>
+ <c>Rounded Time 5min</c>
+ <c>PB01</c>
+ <c>PA01</c>
+</SelectColumns>
+<Calculator module='MathParser' idx='477' x='-294.041' y='2595.7'>
+  <InputVars>
+    <InputVar column='PB01'/>
+    <InputVar column='PA01'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Mid Price'>(PB01 + PA01)/2</OutputVar>
+  </OutputVars>
+</Calculator>
+<Python idx='478' x='-91.1499' y='2600.65' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+test = mytable.groupby(['Rounded Time 5min'], as_index=False).median()
+
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<InsertKey module='DefaultActions' idx='480' x='140.753' y='2597.95' startCount='0' columnName='Key'/>
+<FilterRows module='MathParser' idx='481' x='257.154' y='2596'>
+ <Expression>Key > 0</Expression>
+ <InputVars>
+    <InputVar column='Key' meta='K'/>
+ </InputVars>
+</FilterRows>
+<SelectColumns module='DefaultActions' idx='483' x='495.006' y='2592.4' keep='1'>
+ <c>Rounded Time 30min</c>
+ <c>Return 5min</c>
+</SelectColumns>
+<Python idx='484' x='653.356' y='2674.06' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import numpy as np
+import pandas
+
+def autocorr(data):
+    
+ 
+    autocor = data.autocorr(lag=1)
+    return autocor
+
+test = mytable.groupby(['Rounded Time 30min'], as_index=False).agg(autocorr)
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<Python idx='486' x='653.006' y='2552.4' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import numpy as np
+import pandas
+
+print('Test')
+
+test = mytable.groupby(['Rounded Time 30min'], as_index=False).agg(np.std, ddof=0)
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<ColumnRename module='DefaultActions' idx='487' x='783.656' y='2677.35'><before>
+<c>Return 5min</c></before><after>
+<c>Autocorrelation</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<ColumnRename module='DefaultActions' idx='489' x='780.006' y='2552.4'><before>
+<c>Return 5min</c></before><after>
+<c>SD(Return 5min)</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<sort idx='491' x='906.305' y='2677.65' action='S'>
+  <field type='A'>Rounded Time 30min</field>
+</sort>
+<sort idx='493' x='900.006' y='2551.4' action='S'>
+  <field type='A'>Rounded Time 30min</field>
+</sort>
+<SelectColumns module='DefaultActions' idx='494' x='493.006' y='2441.4' keep='1'>
+ <c>Rounded Time 30min</c>
+ <c>Realized Spread</c>
+</SelectColumns>
+<Python idx='495' x='639.158' y='2437.1' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import numpy as np
+import pandas
+
+print('Test')
+
+test = mytable.groupby(['Rounded Time 30min'], as_index=False).agg({'Realized Spread' : 'median'})
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<sort idx='496' x='782.006' y='2439.4' action='S'>
+  <field type='A'>Rounded Time 30min</field>
+</sort>
+<Join module='DefaultActions' idx='497' x='1234.41' y='2440.7' joinMode='0' keyA='Rounded Time 30min' new='1'>
+<SlaveKeys><c>Rounded Time 30min</c><c>Rounded Time 30min</c></SlaveKeys>
+<Prefixes><c></c><c></c><c></c></Prefixes>
+</Join>
+<Join module='DefaultActions' idx='498' x='1400.01' y='2330.4' joinMode='1' keyA='Rounded Time' new='1'>
+<SlaveKeys><c>Rounded Time 30min</c><c>Rounded Time 30min</c><c>Rounded Time 30min</c><c>Rounded Time 30min</c></SlaveKeys>
+<Prefixes><c></c><c></c><c></c><c></c><c>T4_</c></Prefixes>
+</Join>
+<InsertKey module='DefaultActions' idx='502' x='1912.01' y='2331.4' startCount='0' columnName='Key'/>
+<SelectColumns module='DefaultActions' idx='504' x='2157.01' y='2333.4' keep='1'>
+ <c>Rounded Time</c>
+ <c>Realized Spread</c>
+ <c>PPI</c>
+ <c>Illiq</c>
+ <c>Abs (Autocorrelation)</c>
+ <c>Realized Volatility</c>
+ <c>SD(Return 5min)</c>
+</SelectColumns>
+<writeCSV idx='505' x='2316.86' y='2332.4' sep=',' segmentSize='0.1' filename=':/Merged/ETH_15.csv'/>
+<SelectColumns module='DefaultActions' idx='506' x='767.522' y='348.662' keep='1'>
+ <c>Rounded Time</c>
+ <c>price</c>
+ <c>amount</c>
+ <c>sell</c>
+ <c>volume</c>
+ <c>Price t+5</c>
+ <c>T2_Price t-1</c>
+</SelectColumns>
+<InsertKey module='DefaultActions' idx='510' x='1183.48' y='346.519' startCount='0' columnName='Key'/>
+<FilterRows module='MathParser' idx='511' x='1305.48' y='342.519'>
+ <Expression>(Key > 0) &amp;&amp; (Key &lt; 35913008)</Expression>
+ <InputVars>
+    <InputVar column='Key' meta='K'/>
+ </InputVars>
+</FilterRows>
+<SelectColumns module='DefaultActions' idx='512' x='1438.48' y='341.519' keep='1'>
+ <c>Rounded Time</c>
+ <c>price</c>
+ <c>volume</c>
+ <c>Return (tick by tick)</c>
+ <c>PPI</c>
+</SelectColumns>
+<ChangeDataType idx='513' x='1583.48' y='341.519'>
+<toDouble><c>price</c><c>volume</c><c>Return (tick by tick)</c><c>PPI</c></toDouble>
+</ChangeDataType>
+<sort idx='516' x='-1261.48' y='317.662' action='S'>
+  <field type='I' dateFormat='dd/MM/yyyy hh:mm:ss'>datetime</field>
+</sort>
+<InsertKey module='DefaultActions' idx='517' x='-1111.48' y='316.662' startCount='0' columnName='Key'/>
+<FilterRows module='MathParser' idx='518' x='-833.478' y='414.662'>
+ <Expression>Key >= 5</Expression>
+ <InputVars>
+    <InputVar column='Key' meta='K'/>
+ </InputVars>
+</FilterRows>
+<Calculator module='MathParser' idx='519' x='-709.478' y='412.662'>
+  <InputVars>
+    <InputVar column='Key' meta='K'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Key' meta='K' update='1'>Key - 5</OutputVar>
+  </OutputVars>
+</Calculator>
+<sort idx='520' x='-287.478' y='412.662' action='S'>
+  <field type='0'>Key</field>
+</sort>
+<sort idx='521' x='-288.478' y='310.662' action='S'>
+  <field type='0'>Key</field>
+</sort>
+<Join module='DefaultActions' idx='522' x='-121.478' y='309.662' joinMode='0' keyA='Key' new='1'>
+<SlaveKeys><c>Key</c><c>Key</c></SlaveKeys>
+<Prefixes><c></c><c></c><c>T2_</c></Prefixes>
+</Join>
+<SelectColumns module='DefaultActions' idx='523' x='-570.478' y='412.662' keep='1'>
+ <c>Key</c>
+ <c>price</c>
+</SelectColumns>
+<ColumnRename module='DefaultActions' idx='524' x='-435.478' y='415.662'><before>
+<c>price</c></before><after>
+<c>Price t+5</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<FilterRows module='MathParser' idx='530' x='-832.478' y='507.662'>
+ <Expression>Key &lt; 35913012</Expression>
+ <InputVars>
+    <InputVar column='Key' meta='K'/>
+ </InputVars>
+</FilterRows>
+<Calculator module='MathParser' idx='531' x='-705.478' y='508.662'>
+  <InputVars>
+    <InputVar column='Key' meta='K'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Key' meta='K' update='1'>Key + 1</OutputVar>
+  </OutputVars>
+</Calculator>
+<SelectColumns module='DefaultActions' idx='532' x='-571.478' y='504.662' keep='1'>
+ <c>Key</c>
+ <c>price</c>
+</SelectColumns>
+<ColumnRename module='DefaultActions' idx='533' x='-441.478' y='504.662'><before>
+<c>price</c></before><after>
+<c>Price t-1</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<sort idx='534' x='-286.478' y='504.662' action='S'>
+  <field type='0'>Key</field>
+</sort>
+<Calculator module='MathParser' idx='535' x='1039.52' y='347.662'>
+  <InputVars>
+    <InputVar column='price' label='p'/>
+    <InputVar column='T2_Price t-1' label='p_lag1'/>
+    <InputVar column='Price t+5' label='p_lag_5'/>
+    <InputVar column='Trade direction' label='dir'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Return (tick by tick)'>(p - p_lag1) / p_lag1</OutputVar>
+    <OutputVar name='PPI'>2*dir*((p_lag_5 - p) /p)</OutputVar>
+  </OutputVars>
+</Calculator>
+<ColumnRename module='DefaultActions' idx='537' x='1852.48' y='344.519'><before>
+<c>volume</c><c>Return (tick by tick)</c></before><after>
+<c>SUM(volume)</c><c>SUM(Return - tick by tick^2)</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<sort idx='538' x='1977.48' y='339.519' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<Calculator module='MathParser' idx='540' x='898.522' y='349.662'>
+  <InputVars>
+    <InputVar column='sell' isNumber='0'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Trade direction' meta='U'>(sell == "false")?"1":"-1"</OutputVar>
+  </OutputVars>
+</Calculator>
+<SelectColumns module='DefaultActions' idx='541' x='767.132' y='635.555' keep='1'>
+ <c>Rounded Time 5min</c>
+ <c>PB01</c>
+ <c>PA01</c>
+</SelectColumns>
+<Calculator module='MathParser' idx='543' x='880.684' y='636.454'>
+  <InputVars>
+    <InputVar column='PB01'/>
+    <InputVar column='PA01'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Mid Price'>(PB01 + PA01)/2</OutputVar>
+  </OutputVars>
+</Calculator>
+<Python idx='545' x='1090.42' y='636.504' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+test = mytable.groupby(['Rounded Time 5min'], as_index=False).median()
+
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<InsertKey module='DefaultActions' idx='547' x='1319.48' y='637.855' startCount='0' columnName='Key'/>
+<FilterRows module='MathParser' idx='548' x='1433.28' y='639.804'>
+ <Expression>Key > 0</Expression>
+ <InputVars>
+    <InputVar column='Key' meta='K'/>
+ </InputVars>
+</FilterRows>
+<Python idx='549' x='1546.05' y='639.047' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+  <Parameter id='datecol' text='a short description' type='onecolumn'><meta>0</meta><data>Rounded Time 5min</data></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+difference2 = datetime.timedelta(minutes = 30)
+
+for x in datecol.iterrows ():
+    
+    obj = datetime.datetime.strptime (x[1][0], '%Y-%m-%d %H:%M:%S')
+
+    if obj.minute > 30 : 
+
+        difference = datetime.timedelta(minutes=(obj.minute - 30),seconds = obj.second)
+        new = obj - difference + difference2
+    
+    else :
+        
+        if(obj.minute == 0) :
+
+            difference = datetime.timedelta(minutes=obj.minute,seconds = obj.second)
+            new = obj - difference
+
+        else :
+
+            difference = datetime.timedelta(minutes=obj.minute,seconds = obj.second)
+            new = obj - difference + difference2
+    
+    mytable.set_value(x[0], "Rounded Time 30min", str(new))
+    
+
+
+
+
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<SelectColumns module='DefaultActions' idx='550' x='1664.28' y='638.804' keep='1'>
+ <c>Rounded Time 30min</c>
+ <c>Return 5min</c>
+</SelectColumns>
+<Python idx='551' x='1836.07' y='768.353' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import numpy as np
+import pandas
+
+def autocorr(data):
+    
+ 
+    autocor = data.autocorr(lag=1)
+    return autocor
+
+test = mytable.groupby(['Rounded Time 30min'], as_index=False).agg(autocorr)
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<Python idx='553' x='1833.28' y='650.804' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import numpy as np
+import pandas
+
+print('Test')
+
+test = mytable.groupby(['Rounded Time 30min'], as_index=False).agg(np.std, ddof=0)
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<ColumnRename module='DefaultActions' idx='554' x='1961.07' y='770.353'><before>
+<c>Return 5min</c></before><after>
+<c>Autocorrelation</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<ColumnRename module='DefaultActions' idx='556' x='1956.28' y='651.804'><before>
+<c>Return 5min</c></before><after>
+<c>SD(Return 5min)</c></after>
+<QuickRename ></QuickRename>
+</ColumnRename>
+<sort idx='557' x='2085.07' y='771.353' action='S'>
+  <field type='A'>Rounded Time 30min</field>
+</sort>
+<sort idx='559' x='2087.28' y='655.804' action='S'>
+  <field type='A'>Rounded Time 30min</field>
+</sort>
+<SelectColumns module='DefaultActions' idx='560' x='1667.28' y='546.804' keep='1'>
+ <c>Rounded Time 30min</c>
+ <c>Realized Spread</c>
+</SelectColumns>
+<Python idx='561' x='1835.28' y='544.804' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import numpy as np
+import pandas
+
+print('Test')
+
+test = mytable.groupby(['Rounded Time 30min'], as_index=False).agg({'Realized Spread' : 'median'})
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<sort idx='562' x='1959.28' y='547.804' action='S'>
+  <field type='A'>Rounded Time 30min</field>
+</sort>
+<Join module='DefaultActions' idx='563' x='2449.28' y='552.804' joinMode='0' keyA='Rounded Time 30min' new='1'>
+<SlaveKeys><c>Rounded Time 30min</c><c>Rounded Time 30min</c></SlaveKeys>
+<Prefixes><c></c><c></c><c></c></Prefixes>
+</Join>
+<Join module='DefaultActions' idx='564' x='2641.55' y='350.819' joinMode='1' keyA='Rounded Time' new='1'>
+<SlaveKeys><c>Rounded Time 30min</c><c>Rounded Time 30min</c><c>Rounded Time 30min</c><c>Rounded Time 30min</c></SlaveKeys>
+<Prefixes><c></c><c></c><c></c><c></c><c>T4_</c></Prefixes>
+</Join>
+<InsertKey module='DefaultActions' idx='568' x='3194.55' y='343.819' startCount='0' columnName='Key'/>
+<FilterRows module='MathParser' idx='569' x='3320.55' y='346.819'>
+ <Expression>(Key > 0)</Expression>
+ <InputVars>
+    <InputVar column='Key' meta='K'/>
+ </InputVars>
+</FilterRows>
+<SelectColumns module='DefaultActions' idx='570' x='3478.41' y='344.819' keep='1'>
+ <c>Rounded Time</c>
+ <c>Realized Spread</c>
+ <c>PPI</c>
+ <c>Illiq</c>
+ <c>Abs (Autocorrelation)</c>
+ <c>Realized Volatility</c>
+ <c>SD(Return 5min)</c>
+</SelectColumns>
+<writeCSV idx='571' x='3610.41' y='343.819' sep=',' segmentSize='0.1' filename=':/Merged/BTC_15.csv'/>
+<Python idx='572' x='351.781' y='753.469' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+  <Parameter id='datecol' text='a short description' type='onecolumn'><meta>0</meta><data>datetime</data></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+
+
+for x in datecol.iterrows ():
+    
+    obj = datetime.datetime.strptime (x[1][0], '%d/%m/%Y %H:%M:%S')
+
+    qot1 = obj.minute//5
+    
+    diff2 = (qot1+1) *5
+    
+    difference2 = datetime.timedelta(minutes = diff2)
+
+    difference = datetime.timedelta(minutes=obj.minute,seconds = obj.second)
+    new = obj - difference + difference2
+    
+    mytable.set_value(x[0], "Rounded Time 5min", str(new))
+    
+
+
+
+
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Calculator module='MathParser' idx='730' x='-127.136' y='-52.9454'>
+  <InputVars>
+    <InputVar column='PB01' label='b'/>
+    <InputVar column='PA01' label='a'/>
+    <InputVar column='Mid Price' label='m' meta='F'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Realized Spread'>(a - b) / m</OutputVar>
+  </OutputVars>
+</Calculator>
+<Calculator module='MathParser' idx='731' x='978.331' y='546.932'>
+  <InputVars>
+    <InputVar column='PB01' label='b'/>
+    <InputVar column='PA01' label='a'/>
+    <InputVar column='Mid Price' label='m' meta='F'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Realized Spread'>(a - b) / m</OutputVar>
+  </OutputVars>
+</Calculator>
+<Calculator module='MathParser' idx='732' x='-211.174' y='1253.05'>
+  <InputVars>
+    <InputVar column='PB01' label='b'/>
+    <InputVar column='PA01' label='a'/>
+    <InputVar column='Mid Price' label='m' meta='F'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Realized Spread'>(a - b) / m</OutputVar>
+  </OutputVars>
+</Calculator>
+<Calculator module='MathParser' idx='733' x='-202.925' y='1922.86'>
+  <InputVars>
+    <InputVar column='PB01' label='b'/>
+    <InputVar column='PA01' label='a'/>
+    <InputVar column='Mid Price' label='m' meta='F'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Realized Spread'>(a - b) / m</OutputVar>
+  </OutputVars>
+</Calculator>
+<Calculator module='MathParser' idx='734' x='-179.828' y='2498.64'>
+  <InputVars>
+    <InputVar column='PB01' label='b'/>
+    <InputVar column='PA01' label='a'/>
+    <InputVar column='Mid Price' label='m' meta='F'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Realized Spread'>(a - b) / m</OutputVar>
+  </OutputVars>
+</Calculator>
+<Calculator module='MathParser' idx='735' x='3026.51' y='346.88'>
+  <InputVars>
+    <InputVar column='Return 30min' label='ret' meta='F'/>
+    <InputVar column='SUM(volume)' label='vol' meta='F'/>
+    <InputVar column='SUM(Return - tick by tick^2)' label='ret2' meta='F'/>
+    <InputVar column='Autocorrelation' meta='F'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Illiq'>- ln(1 + (abs(ret)/vol))</OutputVar>
+    <OutputVar name='Abs (Autocorrelation)'>abs(Autocorrelation)</OutputVar>
+    <OutputVar name='Realized Volatility'>sqrt(ret2)</OutputVar>
+  </OutputVars>
+</Calculator>
+<Calculator module='MathParser' idx='736' x='1723.36' y='979.293'>
+  <InputVars>
+    <InputVar column='Return 30min' label='ret' meta='F'/>
+    <InputVar column='SUM(volume)' label='vol' meta='F'/>
+    <InputVar column='SUM(Return - tick by tick^2)' label='ret2' meta='F'/>
+    <InputVar column='Autocorrelation' meta='F'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Illiq'>- ln(1 + (abs(ret)/vol))</OutputVar>
+    <OutputVar name='Abs (Autocorrelation)'>abs(Autocorrelation)</OutputVar>
+    <OutputVar name='Realized Volatility'>sqrt(ret2)</OutputVar>
+  </OutputVars>
+</Calculator>
+<Calculator module='MathParser' idx='737' x='1746.73' y='1641.17'>
+  <InputVars>
+    <InputVar column='Return 30min' label='ret' meta='F'/>
+    <InputVar column='SUM(volume)' label='vol' meta='F'/>
+    <InputVar column='SUM(Return - tick by tick^2)' label='ret2' meta='F'/>
+    <InputVar column='Autocorrelation' meta='F'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Illiq'>- ln(1 + (abs(ret)/vol))</OutputVar>
+    <OutputVar name='Abs (Autocorrelation)'>abs(Autocorrelation)</OutputVar>
+    <OutputVar name='Realized Volatility'>sqrt(ret2)</OutputVar>
+  </OutputVars>
+</Calculator>
+<Calculator module='MathParser' idx='738' x='1723.73' y='2335.25'>
+  <InputVars>
+    <InputVar column='Return 30min' label='ret' meta='F'/>
+    <InputVar column='SUM(volume)' label='vol' meta='F'/>
+    <InputVar column='SUM(Return - tick by tick^2)' label='ret2' meta='F'/>
+    <InputVar column='Autocorrelation' meta='F'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Illiq'>- ln(1 + (abs(ret)/vol))</OutputVar>
+    <OutputVar name='Abs (Autocorrelation)'>abs(Autocorrelation)</OutputVar>
+    <OutputVar name='Realized Volatility'>sqrt(ret2)</OutputVar>
+  </OutputVars>
+</Calculator>
+<Python idx='1163' x='759' y='41' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import numpy as np
+import pandas
+
+def autocorr(data):
+    
+ 
+    autocor = data.autocorr()
+    return autocor
+
+test = mytable.groupby(['Rounded Time 30min'], as_index=False).agg(autocorr)
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<FilterRows module='MathParser' idx='1165' x='2108.12' y='-288.281'>
+ <Expression>(Key > 0) &amp;&amp; (Key &lt; 16387)</Expression>
+ <InputVars>
+    <InputVar column='Key' meta='K'/>
+ </InputVars>
+</FilterRows>
+<Python idx='1176' x='35.5217' y='1256.75' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+for x in range (1, 97587) :
+    
+    returnx = ((float(mytable.iloc[x, 1])) - (float(mytable.iloc[(x - 1), 1]))) / (float(mytable.iloc[x-1, 1]))
+    mytable.set_value(x, "Return 5min", returnx)
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='1177' x='1550.69' y='980.435' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+for x in range (1, 16233) :
+    
+    returnx = ((float(mytable.iloc[x, 1])) - (float(mytable.iloc[(x - 1), 1]))) / (float(mytable.iloc[x-1, 1]))
+    mytable.set_value(x, "Return 30min", returnx)
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='1179' x='43.314' y='1919.98' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+for x in range (1, 97656) :
+    
+    returnx = ((float(mytable.iloc[x, 1])) - (float(mytable.iloc[(x - 1), 1]))) / (float(mytable.iloc[x-1, 1]))
+    mytable.set_value(x, "Return 5min", returnx)
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='1180' x='1569' y='1644.75' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+for x in range (1, 16248) :
+    
+    returnx = ((float(mytable.iloc[x, 1])) - (float(mytable.iloc[(x - 1), 1]))) / (float(mytable.iloc[x-1, 1]))
+    mytable.set_value(x, "Return 30min", returnx)
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<FilterRows module='MathParser' idx='1181' x='2028.92' y='1635.97'>
+ <Expression>(Key > 0) &amp;&amp; (Key &lt; 16248)</Expression>
+ <InputVars>
+    <InputVar column='Key' meta='K'/>
+ </InputVars>
+</FilterRows>
+<Python idx='1182' x='25.1159' y='2599.92' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+for x in range (1, 97257) :
+    
+    returnx = ((float(mytable.iloc[x, 1])) - (float(mytable.iloc[(x - 1), 1]))) / (float(mytable.iloc[x-1, 1]))
+    mytable.set_value(x, "Return 5min", returnx)
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='1183' x='1562.17' y='2328.49' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+for x in range (1, 16190) :
+    
+    returnx = ((float(mytable.iloc[x, 1])) - (float(mytable.iloc[(x - 1), 1]))) / (float(mytable.iloc[x-1, 1]))
+    mytable.set_value(x, "Return 30min", returnx)
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<FilterRows module='MathParser' idx='1184' x='2040.31' y='2333.61'>
+ <Expression>(Key > 0) &amp;&amp; (Key &lt; 16189)</Expression>
+ <InputVars>
+    <InputVar column='Key' meta='K'/>
+ </InputVars>
+</FilterRows>
+<Python idx='1185' x='-957.668' y='-196.604' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+  <Parameter id='datecol' text='a short description' type='onecolumn'><meta>0</meta><data>datetime</data></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+difference2 = datetime.timedelta(minutes = 30)
+
+for x in datecol.iterrows ():
+    
+    obj = datetime.datetime.strptime (x[1][0], '%d/%m/%Y %H:%M:%S')
+
+    if obj.minute >= 30 : 
+
+        difference = datetime.timedelta(minutes=(obj.minute - 30),seconds = obj.second)
+    
+    else :
+
+        difference = datetime.timedelta(minutes=obj.minute,seconds = obj.second)
+
+    
+    new = obj - difference + difference2
+    
+    mytable.set_value(x[0], "Rounded Time", str(new))
+    
+
+
+
+
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='1187' x='-918.256' y='1121.18' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+  <Parameter id='datecol' text='a short description' type='onecolumn'><meta>0</meta><data>datetime</data></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+difference2 = datetime.timedelta(minutes = 30)
+
+for x in datecol.iterrows ():
+    
+    obj = datetime.datetime.strptime (x[1][0], '%d/%m/%Y %H:%M:%S')
+
+    if obj.minute >= 30 : 
+
+        difference = datetime.timedelta(minutes=(obj.minute - 30),seconds = obj.second)
+    
+    else :
+
+        difference = datetime.timedelta(minutes=obj.minute,seconds = obj.second)
+
+    
+    new = obj - difference + difference2
+    
+    mytable.set_value(x[0], "Rounded Time", str(new))
+    
+
+
+
+
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='1188' x='-908.86' y='1762.92' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+  <Parameter id='datecol' text='a short description' type='onecolumn'><meta>0</meta><data>datetime</data></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+difference2 = datetime.timedelta(minutes = 30)
+
+for x in datecol.iterrows ():
+    
+    obj = datetime.datetime.strptime (x[1][0], '%d/%m/%Y %H:%M:%S')
+
+    if obj.minute >= 30 : 
+
+        difference = datetime.timedelta(minutes=(obj.minute - 30),seconds = obj.second)
+    
+    else :
+
+        difference = datetime.timedelta(minutes=obj.minute,seconds = obj.second)
+
+    
+    new = obj - difference + difference2
+    
+    mytable.set_value(x[0], "Rounded Time", str(new))
+    
+
+
+
+
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='1189' x='-902.372' y='2433.35' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+  <Parameter id='datecol' text='a short description' type='onecolumn'><meta>0</meta><data>datetime</data></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+difference2 = datetime.timedelta(minutes = 30)
+
+for x in datecol.iterrows ():
+    
+    obj = datetime.datetime.strptime (x[1][0], '%d/%m/%Y %H:%M:%S')
+
+    if obj.minute >= 30 : 
+
+        difference = datetime.timedelta(minutes=(obj.minute - 30),seconds = obj.second)
+    
+    else :
+
+        difference = datetime.timedelta(minutes=obj.minute,seconds = obj.second)
+
+    
+    new = obj - difference + difference2
+    
+    mytable.set_value(x[0], "Rounded Time", str(new))
+    
+
+
+
+
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='1190' x='282.942' y='454.237' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+  <Parameter id='datecol' text='a short description' type='onecolumn'><meta>0</meta><data>datetime</data></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+difference2 = datetime.timedelta(minutes = 30)
+
+for x in datecol.iterrows ():
+    
+    obj = datetime.datetime.strptime (x[1][0], '%d/%m/%Y %H:%M:%S')
+
+    if obj.minute >= 30 : 
+
+        difference = datetime.timedelta(minutes=(obj.minute - 30),seconds = obj.second)
+    
+    else :
+
+        difference = datetime.timedelta(minutes=obj.minute,seconds = obj.second)
+
+    
+    new = obj - difference + difference2
+    
+    mytable.set_value(x[0], "Rounded Time", str(new))
+    
+
+
+
+
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='1192' x='-878.291' y='63.1904' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+  <Parameter id='datecol' text='a short description' type='onecolumn'><meta>0</meta><data>datetime</data></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+
+
+for x in datecol.iterrows ():
+    
+    obj = datetime.datetime.strptime (x[1][0], '%d/%m/%Y %H:%M:%S')
+
+    qot1 = obj.minute//5
+    
+    diff2 = (qot1+1) *5
+    
+    difference2 = datetime.timedelta(minutes = diff2)
+
+    difference = datetime.timedelta(minutes=obj.minute,seconds = obj.second)
+    new = obj - difference + difference2
+    
+    mytable.set_value(x[0], "Rounded Time 5min", str(new))
+    
+
+
+
+
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='1193' x='-925.43' y='1366.67' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+  <Parameter id='datecol' text='a short description' type='onecolumn'><meta>0</meta><data>datetime</data></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+
+
+for x in datecol.iterrows ():
+    
+    obj = datetime.datetime.strptime (x[1][0], '%d/%m/%Y %H:%M:%S')
+
+    qot1 = obj.minute//5
+    
+    diff2 = (qot1+1) *5
+    
+    difference2 = datetime.timedelta(minutes = diff2)
+
+    difference = datetime.timedelta(minutes=obj.minute,seconds = obj.second)
+    new = obj - difference + difference2
+    
+    mytable.set_value(x[0], "Rounded Time 5min", str(new))
+    
+
+
+
+
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='1194' x='-918.686' y='2044.72' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+  <Parameter id='datecol' text='a short description' type='onecolumn'><meta>0</meta><data>datetime</data></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+
+
+for x in datecol.iterrows ():
+    
+    obj = datetime.datetime.strptime (x[1][0], '%d/%m/%Y %H:%M:%S')
+
+    qot1 = obj.minute//5
+    
+    diff2 = (qot1+1) *5
+    
+    difference2 = datetime.timedelta(minutes = diff2)
+
+    difference = datetime.timedelta(minutes=obj.minute,seconds = obj.second)
+    new = obj - difference + difference2
+    
+    mytable.set_value(x[0], "Rounded Time 5min", str(new))
+    
+
+
+
+
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='1195' x='-892.372' y='2710.78' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+  <Parameter id='datecol' text='a short description' type='onecolumn'><meta>0</meta><data>datetime</data></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+
+
+for x in datecol.iterrows ():
+    
+    obj = datetime.datetime.strptime (x[1][0], '%d/%m/%Y %H:%M:%S')
+
+    qot1 = obj.minute//5
+    
+    diff2 = (qot1+1) *5
+    
+    difference2 = datetime.timedelta(minutes = diff2)
+
+    difference = datetime.timedelta(minutes=obj.minute,seconds = obj.second)
+    new = obj - difference + difference2
+    
+    mytable.set_value(x[0], "Rounded Time 5min", str(new))
+    
+
+
+
+
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='1196' x='1204.55' y='638.063' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+for x in range (1, 98301) :
+    
+    returnx = ((float(mytable.iloc[x, 1])) - (float(mytable.iloc[(x - 1), 1]))) / (float(mytable.iloc[x-1, 1]))
+    mytable.set_value(x, "Return 5min", returnx)
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='1197' x='1710' y='303' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+print(2**2)
+def custom (data) :
+
+    liste = data.tolist()
+    liste_carre = []
+    for x in liste :
+        
+        liste_carre.append(x**2)
+
+    return sum(liste_carre)
+
+
+
+test = mytable.groupby(['Rounded Time'], as_index=False).agg({'price' : 'median',  'volume' : 'sum', 'Return (tick by tick)' : custom, 'PPI' : 'median'})
+
+
+
+
+Py_Output = test
+</Script>
+</Python>
+<Python idx='1199' x='480.744' y='-51.3527' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+  <Parameter id='datecol' text='a short description' type='onecolumn'><meta>0</meta><data>Rounded Time 5min</data></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+difference2 = datetime.timedelta(minutes = 30)
+
+for x in datecol.iterrows ():
+    
+    obj = datetime.datetime.strptime (x[1][0], '%Y-%m-%d %H:%M:%S')
+
+    if obj.minute > 30 : 
+
+        difference = datetime.timedelta(minutes=(obj.minute - 30),seconds = obj.second)
+        new = obj - difference + difference2
+    
+    else :
+        
+        if(obj.minute == 0) :
+
+            difference = datetime.timedelta(minutes=obj.minute,seconds = obj.second)
+            new = obj - difference
+
+        else :
+
+            difference = datetime.timedelta(minutes=obj.minute,seconds = obj.second)
+            new = obj - difference + difference2
+    
+    mytable.set_value(x[0], "Rounded Time 30min", str(new))
+    
+
+
+
+
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='1200' x='384.436' y='1247.82' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+  <Parameter id='datecol' text='a short description' type='onecolumn'><meta>0</meta><data>Rounded Time 5min</data></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+difference2 = datetime.timedelta(minutes = 30)
+
+for x in datecol.iterrows ():
+    
+    obj = datetime.datetime.strptime (x[1][0], '%Y-%m-%d %H:%M:%S')
+
+    if obj.minute > 30 : 
+
+        difference = datetime.timedelta(minutes=(obj.minute - 30),seconds = obj.second)
+        new = obj - difference + difference2
+    
+    else :
+        
+        if(obj.minute == 0) :
+
+            difference = datetime.timedelta(minutes=obj.minute,seconds = obj.second)
+            new = obj - difference
+
+        else :
+
+            difference = datetime.timedelta(minutes=obj.minute,seconds = obj.second)
+            new = obj - difference + difference2
+    
+    mytable.set_value(x[0], "Rounded Time 30min", str(new))
+    
+
+
+
+
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='1201' x='390.472' y='1919.11' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+  <Parameter id='datecol' text='a short description' type='onecolumn'><meta>0</meta><data>Rounded Time 5min</data></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+difference2 = datetime.timedelta(minutes = 30)
+
+for x in datecol.iterrows ():
+    
+    obj = datetime.datetime.strptime (x[1][0], '%Y-%m-%d %H:%M:%S')
+
+    if obj.minute > 30 : 
+
+        difference = datetime.timedelta(minutes=(obj.minute - 30),seconds = obj.second)
+        new = obj - difference + difference2
+    
+    else :
+        
+        if(obj.minute == 0) :
+
+            difference = datetime.timedelta(minutes=obj.minute,seconds = obj.second)
+            new = obj - difference
+
+        else :
+
+            difference = datetime.timedelta(minutes=obj.minute,seconds = obj.second)
+            new = obj - difference + difference2
+    
+    mytable.set_value(x[0], "Rounded Time 30min", str(new))
+    
+
+
+
+
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='1202' x='367.751' y='2594.67' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+  <Parameter id='datecol' text='a short description' type='onecolumn'><meta>0</meta><data>Rounded Time 5min</data></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+difference2 = datetime.timedelta(minutes = 30)
+
+for x in datecol.iterrows ():
+    
+    obj = datetime.datetime.strptime (x[1][0], '%Y-%m-%d %H:%M:%S')
+
+    if obj.minute > 30 : 
+
+        difference = datetime.timedelta(minutes=(obj.minute - 30),seconds = obj.second)
+        new = obj - difference + difference2
+    
+    else :
+        
+        if(obj.minute == 0) :
+
+            difference = datetime.timedelta(minutes=obj.minute,seconds = obj.second)
+            new = obj - difference
+
+        else :
+
+            difference = datetime.timedelta(minutes=obj.minute,seconds = obj.second)
+            new = obj - difference + difference2
+    
+    mytable.set_value(x[0], "Rounded Time 30min", str(new))
+    
+
+
+
+
+
+
+Py_Output = mytable
+</Script>
+</Python>
+<Python idx='1203' x='2830.47' y='345.545' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import pandas
+
+for x in range (1, 16353) :
+    
+    returnx = ((float(mytable.iloc[x, 1])) - (float(mytable.iloc[(x - 1), 1]))) / (float(mytable.iloc[x-1, 1]))
+    mytable.set_value(x, "Return 30min", returnx)
+
+
+Py_Output = mytable
+</Script>
+</Python>
+</ACTIONS>
+<CONNECTORS>
+<Connection idxSrc='0' idxDest='7'/>
+<Connection idxSrc='7' idxDest='8'/>
+<Connection idxSrc='1' idxDest='18'/>
+<Connection idxSrc='18' idxDest='19'/>
+<Connection idxSrc='10' idxDest='21'/>
+<Connection idxSrc='21' idxDest='22'/>
+<Connection idxSrc='7' idxDest='26'/>
+<Connection idxSrc='26' idxDest='25'/>
+<Connection idxSrc='27' idxDest='25' idxPinIn='1'/>
+<Connection idxSrc='12' idxDest='47'/>
+<Connection idxSrc='17' idxDest='52'/>
+<Connection idxSrc='18' idxDest='34'/>
+<Connection idxSrc='34' idxDest='37'/>
+<Connection idxSrc='36' idxDest='37' idxPinIn='1'/>
+<Connection idxSrc='32' idxDest='33' idxPinIn='1'/>
+<Connection idxSrc='21' idxDest='39'/>
+<Connection idxSrc='39' idxDest='41'/>
+<Connection idxSrc='40' idxDest='41' idxPinIn='1'/>
+<Connection idxSrc='13' idxDest='42'/>
+<Connection idxSrc='42' idxDest='72'/>
+<Connection idxSrc='42' idxDest='43'/>
+<Connection idxSrc='72' idxDest='46'/>
+<Connection idxSrc='45' idxDest='46' idxPinIn='1'/>
+<Connection idxSrc='47' idxDest='73'/>
+<Connection idxSrc='47' idxDest='48'/>
+<Connection idxSrc='73' idxDest='51'/>
+<Connection idxSrc='50' idxDest='51' idxPinIn='1'/>
+<Connection idxSrc='52' idxDest='53'/>
+<Connection idxSrc='55' idxDest='56' idxPinIn='1'/>
+<Connection idxSrc='52' idxDest='74'/>
+<Connection idxSrc='74' idxDest='56'/>
+<Connection idxSrc='16' idxDest='57'/>
+<Connection idxSrc='57' idxDest='58'/>
+<Connection idxSrc='60' idxDest='61' idxPinIn='1'/>
+<Connection idxSrc='57' idxDest='75'/>
+<Connection idxSrc='75' idxDest='61'/>
+<Connection idxSrc='15' idxDest='62'/>
+<Connection idxSrc='62' idxDest='76'/>
+<Connection idxSrc='62' idxDest='63'/>
+<Connection idxSrc='76' idxDest='66'/>
+<Connection idxSrc='65' idxDest='66' idxPinIn='1'/>
+<Connection idxSrc='14' idxDest='67'/>
+<Connection idxSrc='67' idxDest='77'/>
+<Connection idxSrc='67' idxDest='68'/>
+<Connection idxSrc='70' idxDest='71' idxPinIn='1'/>
+<Connection idxSrc='77' idxDest='71'/>
+<Connection idxSrc='37' idxDest='81'/>
+<Connection idxSrc='25' idxDest='82'/>
+<Connection idxSrc='82' idxDest='83'/>
+<Connection idxSrc='81' idxDest='85'/>
+<Connection idxSrc='131' idxDest='87'/>
+<Connection idxSrc='139' idxDest='141'/>
+<Connection idxSrc='143' idxDest='142'/>
+<Connection idxSrc='85' idxDest='131'/>
+<Connection idxSrc='87' idxDest='147'/>
+<Connection idxSrc='147' idxDest='146'/>
+<Connection idxSrc='146' idxDest='148'/>
+<Connection idxSrc='148' idxDest='143'/>
+<Connection idxSrc='141' idxDest='149'/>
+<Connection idxSrc='149' idxDest='150'/>
+<Connection idxSrc='155' idxDest='342'/>
+<Connection idxSrc='346' idxDest='343'/>
+<Connection idxSrc='343' idxDest='348'/>
+<Connection idxSrc='342' idxDest='352'/>
+<Connection idxSrc='348' idxDest='353'/>
+<Connection idxSrc='356' idxDest='359'/>
+<Connection idxSrc='352' idxDest='360'/>
+<Connection idxSrc='353' idxDest='360' idxPinIn='1'/>
+<Connection idxSrc='360' idxDest='359' idxPinIn='1'/>
+<Connection idxSrc='142' idxDest='362'/>
+<Connection idxSrc='362' idxDest='356'/>
+<Connection idxSrc='364' idxDest='355'/>
+<Connection idxSrc='369' idxDest='363'/>
+<Connection idxSrc='363' idxDest='370'/>
+<Connection idxSrc='365' idxDest='372'/>
+<Connection idxSrc='46' idxDest='377'/>
+<Connection idxSrc='377' idxDest='378'/>
+<Connection idxSrc='378' idxDest='379'/>
+<Connection idxSrc='379' idxDest='380'/>
+<Connection idxSrc='380' idxDest='381'/>
+<Connection idxSrc='381' idxDest='382'/>
+<Connection idxSrc='382' idxDest='383'/>
+<Connection idxSrc='383' idxDest='384'/>
+<Connection idxSrc='384' idxDest='385'/>
+<Connection idxSrc='385' idxDest='386'/>
+<Connection idxSrc='51' idxDest='387'/>
+<Connection idxSrc='387' idxDest='388'/>
+<Connection idxSrc='391' idxDest='392'/>
+<Connection idxSrc='395' idxDest='398'/>
+<Connection idxSrc='398' idxDest='401'/>
+<Connection idxSrc='401' idxDest='404'/>
+<Connection idxSrc='399' idxDest='402'/>
+<Connection idxSrc='405' idxDest='406'/>
+<Connection idxSrc='406' idxDest='407'/>
+<Connection idxSrc='407' idxDest='408'/>
+<Connection idxSrc='404' idxDest='408' idxPinIn='1'/>
+<Connection idxSrc='408' idxDest='409' idxPinIn='1'/>
+<Connection idxSrc='386' idxDest='417'/>
+<Connection idxSrc='417' idxDest='409'/>
+<Connection idxSrc='413' idxDest='414'/>
+<Connection idxSrc='414' idxDest='415'/>
+<Connection idxSrc='415' idxDest='416'/>
+<Connection idxSrc='56' idxDest='418'/>
+<Connection idxSrc='418' idxDest='419'/>
+<Connection idxSrc='419' idxDest='420'/>
+<Connection idxSrc='420' idxDest='421'/>
+<Connection idxSrc='421' idxDest='422'/>
+<Connection idxSrc='422' idxDest='423'/>
+<Connection idxSrc='423' idxDest='424'/>
+<Connection idxSrc='424' idxDest='425'/>
+<Connection idxSrc='425' idxDest='426'/>
+<Connection idxSrc='426' idxDest='427'/>
+<Connection idxSrc='427' idxDest='428'/>
+<Connection idxSrc='61' idxDest='430'/>
+<Connection idxSrc='430' idxDest='431'/>
+<Connection idxSrc='434' idxDest='437'/>
+<Connection idxSrc='439' idxDest='442'/>
+<Connection idxSrc='442' idxDest='445'/>
+<Connection idxSrc='445' idxDest='448'/>
+<Connection idxSrc='395' idxDest='449'/>
+<Connection idxSrc='449' idxDest='399'/>
+<Connection idxSrc='439' idxDest='450'/>
+<Connection idxSrc='450' idxDest='443'/>
+<Connection idxSrc='443' idxDest='446'/>
+<Connection idxSrc='451' idxDest='452'/>
+<Connection idxSrc='452' idxDest='453'/>
+<Connection idxSrc='453' idxDest='454'/>
+<Connection idxSrc='448' idxDest='454' idxPinIn='1'/>
+<Connection idxSrc='428' idxDest='455'/>
+<Connection idxSrc='454' idxDest='455' idxPinIn='1'/>
+<Connection idxSrc='461' idxDest='462'/>
+<Connection idxSrc='466' idxDest='467'/>
+<Connection idxSrc='467' idxDest='468'/>
+<Connection idxSrc='66' idxDest='463'/>
+<Connection idxSrc='463' idxDest='464'/>
+<Connection idxSrc='464' idxDest='465'/>
+<Connection idxSrc='465' idxDest='466'/>
+<Connection idxSrc='468' idxDest='470'/>
+<Connection idxSrc='470' idxDest='471'/>
+<Connection idxSrc='471' idxDest='472'/>
+<Connection idxSrc='472' idxDest='473'/>
+<Connection idxSrc='473' idxDest='474'/>
+<Connection idxSrc='71' idxDest='476'/>
+<Connection idxSrc='476' idxDest='477'/>
+<Connection idxSrc='483' idxDest='486'/>
+<Connection idxSrc='483' idxDest='484'/>
+<Connection idxSrc='486' idxDest='489'/>
+<Connection idxSrc='484' idxDest='487'/>
+<Connection idxSrc='489' idxDest='493'/>
+<Connection idxSrc='487' idxDest='491'/>
+<Connection idxSrc='480' idxDest='481'/>
+<Connection idxSrc='494' idxDest='495'/>
+<Connection idxSrc='495' idxDest='496'/>
+<Connection idxSrc='496' idxDest='497'/>
+<Connection idxSrc='493' idxDest='497' idxPinIn='1'/>
+<Connection idxSrc='474' idxDest='498'/>
+<Connection idxSrc='497' idxDest='498' idxPinIn='1'/>
+<Connection idxSrc='504' idxDest='505'/>
+<Connection idxSrc='511' idxDest='512'/>
+<Connection idxSrc='33' idxDest='506'/>
+<Connection idxSrc='11' idxDest='516'/>
+<Connection idxSrc='516' idxDest='517'/>
+<Connection idxSrc='517' idxDest='518'/>
+<Connection idxSrc='518' idxDest='519'/>
+<Connection idxSrc='517' idxDest='521'/>
+<Connection idxSrc='521' idxDest='522'/>
+<Connection idxSrc='520' idxDest='522' idxPinIn='1'/>
+<Connection idxSrc='522' idxDest='30'/>
+<Connection idxSrc='519' idxDest='523'/>
+<Connection idxSrc='523' idxDest='524'/>
+<Connection idxSrc='524' idxDest='520'/>
+<Connection idxSrc='522' idxDest='33'/>
+<Connection idxSrc='517' idxDest='530'/>
+<Connection idxSrc='530' idxDest='531'/>
+<Connection idxSrc='531' idxDest='532'/>
+<Connection idxSrc='532' idxDest='533'/>
+<Connection idxSrc='533' idxDest='534'/>
+<Connection idxSrc='534' idxDest='522' idxPinIn='2'/>
+<Connection idxSrc='506' idxDest='540'/>
+<Connection idxSrc='540' idxDest='535'/>
+<Connection idxSrc='535' idxDest='510'/>
+<Connection idxSrc='510' idxDest='511'/>
+<Connection idxSrc='512' idxDest='513'/>
+<Connection idxSrc='537' idxDest='538'/>
+<Connection idxSrc='41' idxDest='541'/>
+<Connection idxSrc='541' idxDest='543'/>
+<Connection idxSrc='547' idxDest='548'/>
+<Connection idxSrc='560' idxDest='561'/>
+<Connection idxSrc='550' idxDest='553'/>
+<Connection idxSrc='550' idxDest='551'/>
+<Connection idxSrc='561' idxDest='562'/>
+<Connection idxSrc='553' idxDest='556'/>
+<Connection idxSrc='551' idxDest='554'/>
+<Connection idxSrc='556' idxDest='559'/>
+<Connection idxSrc='554' idxDest='557'/>
+<Connection idxSrc='562' idxDest='563'/>
+<Connection idxSrc='559' idxDest='563' idxPinIn='1'/>
+<Connection idxSrc='538' idxDest='564'/>
+<Connection idxSrc='563' idxDest='564' idxPinIn='1'/>
+<Connection idxSrc='568' idxDest='569'/>
+<Connection idxSrc='569' idxDest='570'/>
+<Connection idxSrc='570' idxDest='571'/>
+<Connection idxSrc='83' idxDest='730'/>
+<Connection idxSrc='730' idxDest='139'/>
+<Connection idxSrc='355' idxDest='360' idxPinIn='2'/>
+<Connection idxSrc='359' idxDest='369'/>
+<Connection idxSrc='543' idxDest='731'/>
+<Connection idxSrc='731' idxDest='545'/>
+<Connection idxSrc='388' idxDest='732'/>
+<Connection idxSrc='732' idxDest='389'/>
+<Connection idxSrc='431' idxDest='733'/>
+<Connection idxSrc='733' idxDest='432'/>
+<Connection idxSrc='477' idxDest='734'/>
+<Connection idxSrc='734' idxDest='478'/>
+<Connection idxSrc='491' idxDest='497' idxPinIn='2'/>
+<Connection idxSrc='446' idxDest='454' idxPinIn='2'/>
+<Connection idxSrc='402' idxDest='408' idxPinIn='2'/>
+<Connection idxSrc='557' idxDest='563' idxPinIn='2'/>
+<Connection idxSrc='735' idxDest='568'/>
+<Connection idxSrc='736' idxDest='413'/>
+<Connection idxSrc='737' idxDest='459'/>
+<Connection idxSrc='738' idxDest='502'/>
+<Connection idxSrc='346' idxDest='1163'/>
+<Connection idxSrc='1163' idxDest='364'/>
+<Connection idxSrc='513' idxDest='1197'/>
+<Connection idxSrc='1197' idxDest='537'/>
+<Connection idxSrc='370' idxDest='1165'/>
+<Connection idxSrc='1165' idxDest='365'/>
+<Connection idxSrc='19' idxDest='1185'/>
+<Connection idxSrc='1185' idxDest='36'/>
+<Connection idxSrc='8' idxDest='1192'/>
+<Connection idxSrc='1192' idxDest='27'/>
+<Connection idxSrc='30' idxDest='1190'/>
+<Connection idxSrc='1190' idxDest='32'/>
+<Connection idxSrc='150' idxDest='1199'/>
+<Connection idxSrc='1199' idxDest='155'/>
+<Connection idxSrc='1199' idxDest='346'/>
+<Connection idxSrc='22' idxDest='572'/>
+<Connection idxSrc='572' idxDest='40'/>
+<Connection idxSrc='545' idxDest='1196'/>
+<Connection idxSrc='1196' idxDest='547'/>
+<Connection idxSrc='548' idxDest='549'/>
+<Connection idxSrc='549' idxDest='560'/>
+<Connection idxSrc='549' idxDest='550'/>
+<Connection idxSrc='564' idxDest='1203'/>
+<Connection idxSrc='1203' idxDest='735'/>
+<Connection idxSrc='43' idxDest='1187'/>
+<Connection idxSrc='1187' idxDest='45'/>
+<Connection idxSrc='48' idxDest='1193'/>
+<Connection idxSrc='1193' idxDest='50'/>
+<Connection idxSrc='389' idxDest='1176'/>
+<Connection idxSrc='1176' idxDest='391'/>
+<Connection idxSrc='392' idxDest='1200'/>
+<Connection idxSrc='1200' idxDest='395'/>
+<Connection idxSrc='1200' idxDest='405'/>
+<Connection idxSrc='409' idxDest='1177'/>
+<Connection idxSrc='1177' idxDest='736'/>
+<Connection idxSrc='58' idxDest='1194'/>
+<Connection idxSrc='1194' idxDest='60'/>
+<Connection idxSrc='53' idxDest='1188'/>
+<Connection idxSrc='1188' idxDest='55'/>
+<Connection idxSrc='432' idxDest='1179'/>
+<Connection idxSrc='1179' idxDest='434'/>
+<Connection idxSrc='437' idxDest='1201'/>
+<Connection idxSrc='1201' idxDest='439'/>
+<Connection idxSrc='1201' idxDest='451'/>
+<Connection idxSrc='455' idxDest='1180'/>
+<Connection idxSrc='1180' idxDest='737'/>
+<Connection idxSrc='459' idxDest='1181'/>
+<Connection idxSrc='1181' idxDest='461'/>
+<Connection idxSrc='63' idxDest='1189'/>
+<Connection idxSrc='1189' idxDest='65'/>
+<Connection idxSrc='68' idxDest='1195'/>
+<Connection idxSrc='1195' idxDest='70'/>
+<Connection idxSrc='481' idxDest='1202'/>
+<Connection idxSrc='1202' idxDest='494'/>
+<Connection idxSrc='1202' idxDest='483'/>
+<Connection idxSrc='478' idxDest='1182'/>
+<Connection idxSrc='1182' idxDest='480'/>
+<Connection idxSrc='498' idxDest='1183'/>
+<Connection idxSrc='1183' idxDest='738'/>
+<Connection idxSrc='502' idxDest='1184'/>
+<Connection idxSrc='1184' idxDest='504'/>
+</CONNECTORS>
+<TEXTANNOTATIONS>
+  <Annotation x='-238.478' y='496.662' size='12' bold='1'>BTC</Annotation>
+  <Annotation x='-1096.18' y='-90.0303' size='12' bold='1'>Round datetime to 30min intervals</Annotation>
+  <Annotation x='-1083.92' y='156.005' size='12' bold='1'>Round datetime to 5min intervals</Annotation>
+  <Annotation x='-457.468' y='-206.641' size='12' bold='1'>Compute PPI and tick by tick returns</Annotation>
+  <Annotation x='205.17' y='-350.092' bold='1'>Exclude first and last obs</Annotation>
+  <Annotation x='1218.94' y='100.879' size='12' bold='1'>Group by 30min intervals and 
+join the datasets</Annotation>
+  <Annotation x='-449.396' y='73.4752' size='12' bold='1'>Group by 5min intervals and compute 5min midpoint returns</Annotation>
+  <Annotation x='315.897' y='-97.7' bold='1'>Exclude first obs</Annotation>
+  <Annotation x='1631.74' y='-183.372' size='12' bold='1'>Compute the rest of the proxys and save the new dataset</Annotation>
+  <Annotation x='2092.41' y='-353.348' bold='1'>Exclude first and last 5 obs</Annotation>
+  <Annotation x='-1627.13' y='-158.577' size='20' bold='1'>BCH</Annotation>
+  <Annotation x='-1596.94' y='1132.52' size='20' bold='1'>EOS</Annotation>
+  <Annotation x='-1586.87' y='1788.33' size='20' bold='1'>XRP</Annotation>
+  <Annotation x='-1586.87' y='2454.69' size='20' bold='1'>ETH</Annotation>
+  <Annotation x='-1072.38' y='1196.35' size='12' bold='1'>Round datetime to 30min intervals</Annotation>
+  <Annotation x='-1056.88' y='1856.51' size='12' bold='1'>Round datetime to 30min intervals</Annotation>
+  <Annotation x='-1035.18' y='2529.07' size='12' bold='1'>Round datetime to 30min intervals</Annotation>
+  <Annotation x='-1063.08' y='1441.2' size='12' bold='1'>Round datetime to 5min intervals</Annotation>
+  <Annotation x='-1047.58' y='2132.35' size='12' bold='1'>Round datetime to 5min intervals</Annotation>
+  <Annotation x='-1028.98' y='2811.11' size='12' bold='1'>Round datetime to 5min intervals</Annotation>
+  <Annotation x='-421.512' y='1081.67' size='12' bold='1'>Compute PPI and tick by tick returns</Annotation>
+  <Annotation x='-415.313' y='1376.11' size='12' bold='1'>Group by 5min intervals and compute 5min midpoint returns</Annotation>
+  <Annotation x='216.955' y='945.302' bold='1'>Exclude first and last obs</Annotation>
+  <Annotation x='213.855' y='1211.85' bold='1'>Exclude first obs</Annotation>
+  <Annotation x='-412.214' y='1586.87' size='12' bold='1'>Compute PPI and tick by tick returns</Annotation>
+  <Annotation x='-406.015' y='2057.97' size='12' bold='1'>Group by 5min intervals and compute 5min midpoint returns</Annotation>
+  <Annotation x='185.961' y='1583.77' bold='1'>Exclude first and last obs</Annotation>
+  <Annotation x='235.551' y='1872.01' bold='1'>Exclude first obs</Annotation>
+  <Annotation x='-396.717' y='2259.43' size='12' bold='1'>Compute PPI and tick by tick returns</Annotation>
+  <Annotation x='-390.518' y='2721.23' size='12' bold='1'>Group by 5min intervals and compute 5min midpoint returns</Annotation>
+  <Annotation x='198.358' y='2278.02' bold='1'>Exclude first and last obs</Annotation>
+  <Annotation x='213.855' y='2535.27' bold='1'>Exclude first obs</Annotation>
+  <Annotation x='1118.87' y='1363.71' size='12' bold='1'>Group by 30min intervals and 
+join the datasets</Annotation>
+  <Annotation x='1118.87' y='2033.17' size='12' bold='1'>Group by 30min intervals and 
+join the datasets</Annotation>
+  <Annotation x='1125.06' y='2705.73' size='12' bold='1'>Group by 30min intervals and 
+join the datasets</Annotation>
+  <Annotation x='1527.98' y='1078.57' size='12' bold='1'>Compute the rest of the proxys and save the new dataset</Annotation>
+  <Annotation x='1980.48' y='939.103' bold='1'>Exclude first and last 5 obs</Annotation>
+  <Annotation x='1537.28' y='1744.93' size='12' bold='1'>Compute the rest of the proxys and save the new dataset</Annotation>
+  <Annotation x='1974.29' y='1580.67' bold='1'>Exclude first and last 5 obs</Annotation>
+  <Annotation x='1546.58' y='2448.49' size='12' bold='1'>Compute the rest of the proxys and save the new dataset</Annotation>
+  <Annotation x='1980.48' y='2256.33' bold='1'>Exclude first and last 5 obs</Annotation>
+  <Annotation x='-1386.83' y='722.366' size='20' bold='1'>Note : the flow for BTC is slightly different as we had ram 
+problems with the amount of data in BTC</Annotation>
+  <Annotation x='-1612.92' y='493.525' size='20' bold='1'>BTC</Annotation>
+  <Annotation x='170.245' y='548.247' size='12' bold='1'>Round datetime to 30min intervals</Annotation>
+  <Annotation x='199.1' y='836.798' size='12' bold='1'>Round datetime to 5min intervals</Annotation>
+  <Annotation x='770.431' y='455.911' size='12' bold='1'>Compute PPI and tick by tick returns</Annotation>
+  <Annotation x='787.744' y='770.431' size='12' bold='1'>Group by 5min intervals and compute 5min midpoint returns</Annotation>
+  <Annotation x='1408.13' y='579.987' bold='1'>Exclude first obs</Annotation>
+  <Annotation x='1286.94' y='300.093' bold='1'>Exclude first and last obs</Annotation>
+  <Annotation x='2369' y='776.202' size='12' bold='1'>Group by 30min intervals and 
+join the datasets</Annotation>
+  <Annotation x='2784.52' y='461.682' size='12' bold='1'>Compute the rest of the proxys and save the new dataset</Annotation>
+  <Annotation x='3234.66' y='300.093' bold='1'>Exclude first and last 5 obs</Annotation>
+</TEXTANNOTATIONS>
+<GROUPBOXANNOTATIONS>
+  <Groupbox x='-1434.08' y='-342.434' w='942.267' h='551.571' color='#afeeee'/>
+  <Groupbox x='-480.326' y='-347.03' w='1061.77' h='190.752' color='#ffdab9'/>
+  <Groupbox x='-484.923' y='-119.507' w='1068.67' h='261.996' color='#c1cdc1'/>
+  <Groupbox x='595.237' y='-347.03' w='1004.32' h='551.571' color='#87cefa'/>
+  <Groupbox x='1608.75' y='-347.03' w='942.267' h='257.4' color='#7fffd4'/>
+  <Groupbox x='-1397.09' y='942.177' w='944.081' h='532.949' color='#afeeee'/>
+  <Groupbox x='-437.779' y='940.274' w='936.467' h='199.856' color='#ffdab9'/>
+  <Groupbox x='-445.393' y='1195.33' w='936.467' h='266.474' color='#c1cdc1'/>
+  <Groupbox x='513.915' y='940.274' w='984.052' h='531.045' color='#87cefa'/>
+  <Groupbox x='1507.48' y='940.274' w='955.501' h='186.532' color='#7fffd4'/>
+  <Groupbox x='-1410.2' y='1549.68' w='966.997' h='622.969' color='#afeeee'/>
+  <Groupbox x='-430.81' y='1552.77' w='901.911' h='263.445' color='#ffdab9'/>
+  <Groupbox x='-430.81' y='1856.51' w='932.904' h='316.134' color='#c1cdc1'/>
+  <Groupbox x='505.194' y='1549.68' w='1013.49' h='619.87' color='#87cefa'/>
+  <Groupbox x='1527.98' y='1555.87' w='942.202' h='303.736' color='#7fffd4'/>
+  <Groupbox x='-1413.3' y='2237.73' w='1007.29' h='613.671' color='#afeeee'/>
+  <Groupbox x='-399.816' y='2243.93' w='870.917' h='251.047' color='#ffdab9'/>
+  <Groupbox x='-404.565' y='2513.37' w='883.315' h='331.63' color='#c1cdc1'/>
+  <Groupbox x='489.697' y='2240.83' w='1022.79' h='607.473' color='#87cefa'/>
+  <Groupbox x='1521.78' y='2240.83' w='1001.09' h='291.339' color='#7fffd4'/>
+  <Groupbox x='-124.071' y='278.469' w='876.765' h='584.51' color='#afeeee'/>
+  <Groupbox x='766.48' y='281.226' w='896.065' h='237.113' color='#ffdab9'/>
+  <Groupbox x='763.723' y='554.182' w='901.579' h='303.283' color='#c1cdc1'/>
+  <Groupbox x='1674.33' y='284.741' w='1080.79' h='639.652' color='#87cefa'/>
+  <Groupbox x='2765.39' y='283.984' w='984.293' h='248.141' color='#7fffd4'/>
+  <Groupbox x='-1450.25' y='256.412' w='1295.85' h='614.838' color='#d8bfd8'/>
+</GROUPBOXANNOTATIONS>
+</ANATELLA>

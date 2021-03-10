@@ -1,0 +1,897 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ANATELLA version='2.27'>
+<GlobalParameters wDirLoc='1' dataDirRead='D:/Mémoire/Input2/trades' dataDirWrite=':/Plots'>
+</GlobalParameters>
+<WorkingSpace>AAAA/wAAAAD9AAAAAgAAAAEAAAEPAAABlvwCAAAAAfsAAAAcAEEAbABsAEEAYwB0AGkAbwBuAHMARABvAGMAawEAAABeAAABlgAAAHgA////AAAAAwAAB4AAAAHg/AEAAAAC+wAAACgAQQBjAHQAaQBvAG4AUAByAG8AcABlAHIAdABpAGUAcwBEAG8AYwBrAQAAAAAAAASyAAADmgD////8AAAEuAAAAsgAAAIiAP////oAAAABAQAAAAL7AAAADgBMAG8AZwBEAG8AYwBrAQAAAAD/////AAAAhQD////7AAAAGgBEAGEAdABhAFQAYQBiAGwAZQBEAG8AYwBrAQAAAAD/////AAACIgD///8AAAZrAAABlgAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAADAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAABYAdABlAHgAdABUAG8AbwBsAEIAYQByAQAAAzv/////AAAAAAAAAAAAAAAeAGcAcgBvAHUAcABCAG8AeABUAG8AbwBsAEIAYQByAQAABhD/////AAAAAAAAAAA=</WorkingSpace>
+<ACTIONS>
+<readStat keyHD='161537890414948182' module='WriteReport' idx='0' x='-2915' y='-254' fileFormat='0' fileName=':/Input2/trades/bitfinex_btcusd.sas7bdat'/>
+<readStat module='WriteReport' idx='1' x='-2902.73' y='274.734' fileFormat='0' fileName=':/Input2/trades/bitfinex_bchusd.sas7bdat'/>
+<readStat module='WriteReport' idx='2' x='-2915.24' y='789.692' fileFormat='0' fileName=':/Input2/trades/bitfinex_eosusd.sas7bdat'/>
+<readStat module='WriteReport' idx='3' x='-2890.13' y='1884.44' fileFormat='0' fileName=':/Input2/trades/bitfinex_ethusd.sas7bdat'/>
+<readStat module='WriteReport' idx='4' x='-2904.71' y='1327.59' fileFormat='0' fileName=':/Input2/trades/bitfinex_xrpusd.sas7bdat'/>
+<ChangeDataType idx='5' x='-2768' y='-254'>
+<toZeroDouble><c>datetime</c><c>id</c><c>exchange</c><c>symbol</c><c>price</c><c>amount</c><c>sell</c><c>day</c><c>hour</c><c>volume</c></toZeroDouble>
+</ChangeDataType>
+<ChangeDataType idx='6' x='-2629' y='-252' elapsedTimeUnitOut='0' dateFormatOut='dd/MM/yyyy hh:mm:ss' referenceTimeOut='19600101 00:00:00'>
+<toStringFromET><c>datetime</c></toStringFromET>
+</ChangeDataType>
+<ChangeDataType idx='7' x='-2487' y='-251' elapsedTimeUnitOut='3' dateFormatOut='dd' referenceTimeOut='19600101 00:00:00'>
+<toStringFromET><c>day</c></toStringFromET>
+</ChangeDataType>
+<sort idx='8' x='-2351' y='-253' action='S'>
+  <field type='I' dateFormat='dd/MM/yyyy hh:mm:ss'>datetime</field>
+</sort>
+<FilterRows module='MathParser' idx='9' x='-2039.23' y='-253' dateFormat='dd/MM/yyyy hh:mm:ss'>
+ <Expression>(not(dateTimeLT(datetime, "11/08/2017 00:00:00"))) &amp;&amp; (dateTimeLT(datetime, "21/07/2018 23:59:59"))</Expression>
+ <InputVars>
+    <InputVar column='datetime' isNumber='0'/>
+ </InputVars>
+</FilterRows>
+<aggregate idx='10' x='-2206' y='-150' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='datetime' first='1' last='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<FilterRows keyHD='161538238914948905' module='MathParser' idx='11' x='-1919' y='-252'>
+ <Expression>(price > 0) &amp;&amp; (amount > 0) &amp;&amp; (volume > 0)</Expression>
+ <InputVars>
+    <InputVar column='price' meta='F'/>
+    <InputVar column='amount' meta='F'/>
+    <InputVar column='volume' meta='F'/>
+ </InputVars>
+</FilterRows>
+<ChangeDataType idx='12' x='-2759.73' y='274.734'>
+<toZeroDouble><c>datetime</c><c>id</c><c>exchange</c><c>symbol</c><c>price</c><c>amount</c><c>sell</c><c>day</c><c>hour</c><c>volume</c></toZeroDouble>
+</ChangeDataType>
+<ChangeDataType idx='13' x='-2617.73' y='274.734' elapsedTimeUnitOut='0' dateFormatOut='dd/MM/yyyy hh:mm:ss' referenceTimeOut='19600101 00:00:00'>
+<toStringFromET><c>datetime</c></toStringFromET>
+</ChangeDataType>
+<ChangeDataType idx='14' x='-2472.73' y='277.734' elapsedTimeUnitOut='3' dateFormatOut='dd' referenceTimeOut='19600101 00:00:00'>
+<toStringFromET><c>day</c></toStringFromET>
+</ChangeDataType>
+<ChangeDataType idx='15' x='-2760.24' y='791.692'>
+<toZeroDouble><c>datetime</c><c>id</c><c>exchange</c><c>symbol</c><c>price</c><c>amount</c><c>sell</c><c>day</c><c>hour</c><c>volume</c></toZeroDouble>
+</ChangeDataType>
+<ChangeDataType idx='16' x='-2617.24' y='791.692' elapsedTimeUnitOut='0' dateFormatOut='dd/MM/yyyy hh:mm:ss' referenceTimeOut='19600101 00:00:00'>
+<toStringFromET><c>datetime</c></toStringFromET>
+</ChangeDataType>
+<ChangeDataType idx='17' x='-2467.24' y='792.692' elapsedTimeUnitOut='3' dateFormatOut='dd' referenceTimeOut='19600101 00:00:00'>
+<toStringFromET><c>day</c></toStringFromET>
+</ChangeDataType>
+<ChangeDataType idx='19' x='-2751.71' y='1326.59'>
+<toZeroDouble><c>datetime</c><c>id</c><c>exchange</c><c>symbol</c><c>price</c><c>amount</c><c>sell</c><c>day</c><c>hour</c><c>volume</c></toZeroDouble>
+</ChangeDataType>
+<ChangeDataType idx='20' x='-2600.71' y='1326.59' elapsedTimeUnitOut='0' dateFormatOut='dd/MM/yyyy hh:mm:ss' referenceTimeOut='19600101 00:00:00'>
+<toStringFromET><c>datetime</c></toStringFromET>
+</ChangeDataType>
+<ChangeDataType idx='21' x='-2448.71' y='1327.59' decimalSepOut='2' elapsedTimeUnitOut='3' dateFormatOut='dd' referenceTimeOut='19600101 00:00:00'>
+<toStringFromET><c>day</c></toStringFromET>
+</ChangeDataType>
+<ChangeDataType idx='22' x='-2718.13' y='1883.44'>
+<toZeroDouble><c>datetime</c><c>id</c><c>exchange</c><c>symbol</c><c>price</c><c>amount</c><c>sell</c><c>day</c><c>hour</c><c>volume</c></toZeroDouble>
+</ChangeDataType>
+<ChangeDataType idx='23' x='-2572.13' y='1881.44' elapsedTimeUnitOut='0' dateFormatOut='dd/MM/yyyy hh:mm:ss' referenceTimeOut='19600101 00:00:00'>
+<toStringFromET><c>datetime</c></toStringFromET>
+</ChangeDataType>
+<ChangeDataType idx='24' x='-2429.13' y='1884.44' elapsedTimeUnitOut='3' dateFormatOut='dd' referenceTimeOut='19600101 00:00:00'>
+<toStringFromET><c>day</c></toStringFromET>
+</ChangeDataType>
+<sort idx='25' x='-2326.13' y='276.975' action='S'>
+  <field type='I' dateFormat='dd/MM/yyyy hh:mm:ss'>datetime</field>
+</sort>
+<sort idx='26' x='-2327.24' y='793.692' action='S'>
+  <field type='I' dateFormat='dd/MM/yyyy hh:mm:ss'>datetime</field>
+</sort>
+<sort idx='27' x='-2309.71' y='1326.59' action='S'>
+  <field type='I' dateFormat='dd/MM/yyyy hh:mm:ss'>datetime</field>
+</sort>
+<sort idx='28' x='-2287.13' y='1886.44' action='S'>
+  <field type='I' dateFormat='dd/MM/yyyy hh:mm:ss'>datetime</field>
+</sort>
+<aggregate idx='29' x='-1481.13' y='-152.069' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='datetime' first='1' last='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<SelectColumns module='DefaultActions' idx='30' x='-1479.13' y='-58.7433' keep='1'>
+ <c>datetime</c>
+ <c>price</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='31' x='-1478.13' y='34.2567' keep='1'>
+ <c>datetime</c>
+ <c>amount</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='32' x='-1478.5' y='148.54' keep='1'>
+ <c>datetime</c>
+ <c>volume</c>
+</SelectColumns>
+<writeCSV keyHD='161537923514948589' idx='33' x='-1144.71' y='-247.611' sep=',' segmentSize='0.1' filename=':/Data Cleaned V2/BTC_trade_cleaned.csv'/>
+<writeCSV keyHD='161538238014948463' idx='34' x='-1343.13' y='-57.7433' sep=',' segmentSize='0.1' filename=':/Plots/BTC_price.csv'/>
+<writeCSV idx='35' x='-1341.06' y='38.2567' sep=',' segmentSize='0.1' filename=':/Plots/BTC_amount.csv'/>
+<writeCSV idx='36' x='-1338.94' y='147.227' sep=',' segmentSize='0.1' filename=':/Plots/BTC_volume.csv'/>
+<aggregate idx='37' x='-2186.93' y='386.275' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='datetime' first='1' last='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<FilterRows module='MathParser' idx='38' x='-2028' y='277.276' dateFormat='dd/MM/yyyy hh:mm:ss'>
+ <Expression>(not(dateTimeLT(datetime, "11/08/2017 00:00:00"))) &amp;&amp; (dateTimeLT(datetime, "21/07/2018 23:59:59"))</Expression>
+ <InputVars>
+    <InputVar column='datetime' isNumber='0'/>
+ </InputVars>
+</FilterRows>
+<FilterRows keyHD='160400844866384146' module='MathParser' idx='39' x='-1911.86' y='276.879'>
+ <Expression>(price > 0) &amp;&amp; (amount > 0) &amp;&amp; (volume > 0)</Expression>
+ <InputVars>
+    <InputVar column='price' meta='F'/>
+    <InputVar column='amount' meta='F'/>
+    <InputVar column='volume' meta='F'/>
+ </InputVars>
+</FilterRows>
+<aggregate idx='40' x='-2192.13' y='910.817' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='datetime' first='1' last='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<FilterRows module='MathParser' idx='41' x='-2031.7' y='795.527' dateFormat='dd/MM/yyyy hh:mm:ss'>
+ <Expression>(not(dateTimeLT(datetime, "11/08/2017 00:00:00"))) &amp;&amp; (dateTimeLT(datetime, "21/07/2018 23:59:59"))</Expression>
+ <InputVars>
+    <InputVar column='datetime' isNumber='0'/>
+ </InputVars>
+</FilterRows>
+<FilterRows module='MathParser' idx='42' x='-1902.88' y='793.958'>
+ <Expression>(price > 0) &amp;&amp; (amount > 0) &amp;&amp; (volume > 0)</Expression>
+ <InputVars>
+    <InputVar column='price' meta='F'/>
+    <InputVar column='amount' meta='F'/>
+    <InputVar column='volume' meta='F'/>
+ </InputVars>
+</FilterRows>
+<writeCSV keyHD='160400940266384058' idx='43' x='-1116.83' y='291.805' sep=',' segmentSize='0.1' filename=':/Data Cleaned V2/BCH_trade_cleaned.csv'/>
+<aggregate idx='44' x='-1484.86' y='369.613' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='datetime' first='1' last='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<SelectColumns module='DefaultActions' idx='45' x='-1479.82' y='465.685' keep='1'>
+ <c>datetime</c>
+ <c>price</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='46' x='-1477.48' y='565.618' keep='1'>
+ <c>datetime</c>
+ <c>amount</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='47' x='-1476.3' y='663.924' keep='1'>
+ <c>datetime</c>
+ <c>volume</c>
+</SelectColumns>
+<writeCSV idx='48' x='-1339.93' y='462.126' sep=',' segmentSize='0.1' filename=':/Plots/BCH_price.csv'/>
+<writeCSV idx='49' x='-1338.31' y='565.618' sep=',' segmentSize='0.1' filename=':/Plots/BCH_amount.csv'/>
+<writeCSV idx='50' x='-1335.7' y='662.672' sep=',' segmentSize='0.1' filename=':/Plots/BCH_volume.csv'/>
+<aggregate idx='51' x='-1459.76' y='892.381' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='datetime' first='1' last='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<SelectColumns module='DefaultActions' idx='52' x='-1458.97' y='993.554' keep='1'>
+ <c>datetime</c>
+ <c>price</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='53' x='-1459.91' y='1090.83' keep='1'>
+ <c>datetime</c>
+ <c>amount</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='54' x='-1459.35' y='1186.9' keep='1'>
+ <c>datetime</c>
+ <c>volume</c>
+</SelectColumns>
+<writeCSV idx='55' x='-1323.15' y='993.618' sep=',' segmentSize='0.1' filename=':/Plots/EOS_price.csv'/>
+<writeCSV idx='56' x='-1324.23' y='1092.49' sep=',' segmentSize='0.1' filename=':/Plots/EOS_amount.csv'/>
+<writeCSV idx='57' x='-1320.47' y='1188.56' sep=',' segmentSize='0.1' filename=':/Plots/EOS_volume.csv'/>
+<writeCSV idx='58' x='-1084.72' y='801.806' sep=',' segmentSize='0.1' filename=':/Data Cleaned V2/EOS_trade_cleaned.csv'/>
+<aggregate idx='59' x='-2164.02' y='1448.59' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='datetime' first='1' last='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<FilterRows module='MathParser' idx='60' x='-2008.84' y='1327.54' dateFormat='dd/MM/yyyy hh:mm:ss'>
+ <Expression>(not(dateTimeLT(datetime, "11/08/2017 00:00:00"))) &amp;&amp; (dateTimeLT(datetime, "21/07/2018 23:59:59"))</Expression>
+ <InputVars>
+    <InputVar column='datetime' isNumber='0'/>
+ </InputVars>
+</FilterRows>
+<FilterRows module='MathParser' idx='61' x='-1887.89' y='1327.56'>
+ <Expression>(price > 0) &amp;&amp; (amount > 0) &amp;&amp; (volume > 0)</Expression>
+ <InputVars>
+    <InputVar column='price' meta='F'/>
+    <InputVar column='amount' meta='F'/>
+    <InputVar column='volume' meta='F'/>
+ </InputVars>
+</FilterRows>
+<aggregate idx='62' x='-1447.42' y='1414.06' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='datetime' first='1' last='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<SelectColumns module='DefaultActions' idx='63' x='-1440.76' y='1522.08' keep='1'>
+ <c>datetime</c>
+ <c>price</c>
+</SelectColumns>
+<writeCSV idx='64' x='-1280.37' y='1520.33' sep=',' segmentSize='0.1' filename=':/Plots/XRP_price.csv'/>
+<SelectColumns module='DefaultActions' idx='65' x='-1437.8' y='1617.04' keep='1'>
+ <c>datetime</c>
+ <c>amount</c>
+</SelectColumns>
+<writeCSV idx='66' x='-1276.89' y='1621.45' sep=',' segmentSize='0.1' filename=':/Plots/XRP_amount.csv'/>
+<SelectColumns module='DefaultActions' idx='68' x='-1437.28' y='1724.31' keep='1'>
+ <c>datetime</c>
+ <c>volume</c>
+</SelectColumns>
+<writeCSV idx='69' x='-1283.86' y='1724.31' sep=',' segmentSize='0.1' filename=':/Plots/XRP_volume.csv'/>
+<writeCSV idx='70' x='-1081.98' y='1345.02' sep=',' segmentSize='0.1' filename=':/Data Cleaned V2/XRP_trade_cleaned.csv'/>
+<aggregate idx='71' x='-2147.2' y='2017.44' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='datetime' first='1' last='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<FilterRows module='MathParser' idx='72' x='-1977.23' y='1886.45' dateFormat='dd/MM/yyyy hh:mm:ss'>
+ <Expression>(not(dateTimeLT(datetime, "11/08/2017 00:00:00"))) &amp;&amp; (dateTimeLT(datetime, "21/07/2018 23:59:59"))</Expression>
+ <InputVars>
+    <InputVar column='datetime' isNumber='0'/>
+ </InputVars>
+</FilterRows>
+<FilterRows keyHD='160401246766384473' module='MathParser' idx='73' x='-1853.95' y='1887.51'>
+ <Expression>(price > 0) &amp;&amp; (amount > 0) &amp;&amp; (volume > 0)</Expression>
+ <InputVars>
+    <InputVar column='price' meta='F'/>
+    <InputVar column='amount' meta='F'/>
+    <InputVar column='volume' meta='F'/>
+ </InputVars>
+</FilterRows>
+<aggregate idx='74' x='-1442.86' y='2019.12' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='datetime' first='1' last='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<SelectColumns module='DefaultActions' idx='75' x='-1442.68' y='2125.97' keep='1'>
+ <c>datetime</c>
+ <c>price</c>
+</SelectColumns>
+<writeCSV idx='76' x='-1292.76' y='2126.48' sep=',' segmentSize='0.1' filename=':/Plots/ETH_price.csv'/>
+<SelectColumns module='DefaultActions' idx='77' x='-1444.85' y='2226.3' keep='1'>
+ <c>datetime</c>
+ <c>amount</c>
+</SelectColumns>
+<writeCSV idx='78' x='-1291.94' y='2227.81' sep=',' segmentSize='0.1' filename=':/Plots/ETH_amount.csv'/>
+<SelectColumns module='DefaultActions' idx='79' x='-1440.85' y='2323.8' keep='1'>
+ <c>datetime</c>
+ <c>volume</c>
+</SelectColumns>
+<writeCSV idx='80' x='-1290.6' y='2327.3' sep=',' segmentSize='0.1' filename=':/Plots/ETH_volume.csv'/>
+<writeCSV keyHD='160401394866384102' idx='81' x='-1063.22' y='1883.56' sep=',' segmentSize='0.1' filename=':/Data Cleaned V2/ETH_trade_cleaned.csv'/>
+<readStat module='WriteReport' idx='82' x='-2850.28' y='3169.33' fileFormat='0' fileName=':/Input2/ob/bitfinex_bchusd.sas7bdat'/>
+<readStat module='WriteReport' idx='83' x='-2856.4' y='2826.08' fileFormat='0' fileName=':/Input2/ob/bitfinex_btcusd.sas7bdat'/>
+<readStat module='WriteReport' idx='84' x='-2853.07' y='3459.18' fileFormat='0' fileName=':/Input2/ob/bitfinex_eosusd.sas7bdat'/>
+<readStat module='WriteReport' idx='85' x='-2843.79' y='4087.89' fileFormat='0' fileName=':/Input2/ob/bitfinex_ethusd.sas7bdat'/>
+<readStat module='WriteReport' idx='86' x='-2853.04' y='3755.81' fileFormat='0' fileName=':/Input2/ob/bitfinex_xrpusd.sas7bdat'/>
+<ChangeDataType idx='87' x='-2699.87' y='2826.44'>
+<toZeroDouble><c>PB01</c><c>QB01</c><c>PB02</c><c>QB02</c><c>PB03</c><c>QB03</c><c>PB04</c><c>QB04</c><c>PB05</c><c>QB05</c><c>PB06</c><c>QB06</c><c>PB07</c><c>QB07</c><c>PB08</c><c>QB08</c><c>PB09</c><c>QB09</c><c>PB10</c><c>QB10</c><c>PA01</c><c>QA01</c><c>PA02</c><c>QA02</c><c>PA03</c><c>QA03</c><c>PA04</c><c>QA04</c><c>PA05</c><c>QA05</c><c>PA06</c><c>QA06</c><c>PA07</c><c>QA07</c><c>PA08</c><c>QA08</c><c>PA09</c><c>QA09</c><c>PA10</c><c>QA10</c></toZeroDouble>
+</ChangeDataType>
+<ChangeDataType idx='88' x='-2558.87' y='2825.44' elapsedTimeUnitOut='0' dateFormatOut='dd/MM/yyyy hh:mm:ss' referenceTimeOut='19600101 00:00:00'>
+<toStringFromET><c>datetime</c></toStringFromET>
+</ChangeDataType>
+<sort idx='89' x='-2418.87' y='2826.44' action='S'>
+  <field type='I' dateFormat='dd/MM/yyyy hh:mm:ss'>datetime</field>
+</sort>
+<aggregate idx='90' x='-2256.05' y='2929.18' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='datetime' first='1' last='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<FilterRows module='MathParser' idx='91' x='-1919.91' y='2829.69' dateFormat='dd/MM/yyyy hh:mm:ss'>
+ <Expression>(not(dateTimeLT(datetime, "11/08/2017 00:00:00"))) &amp;&amp; (dateTimeLT(datetime, "21/07/2018 23:59:59"))</Expression>
+ <InputVars>
+    <InputVar column='datetime' isNumber='0'/>
+ </InputVars>
+</FilterRows>
+<FilterRows module='MathParser' idx='92' x='-1789.91' y='2826.95'>
+ <Expression>(a > 0) &amp;&amp; (b > 0) &amp;&amp;  (c > 0) &amp;&amp;  (d > 0) &amp;&amp;  (e > 0) &amp;&amp;  (f > 0) &amp;&amp;  (g > 0) &amp;&amp;  (h > 0) &amp;&amp;  (i > 0) &amp;&amp;  (j > 0) &amp;&amp;  (k > 0) &amp;&amp;  (l > 0) &amp;&amp;  (m > 0) &amp;&amp;  (n > 0) &amp;&amp;  (o > 0) &amp;&amp;  (p > 0) &amp;&amp;  (q > 0) &amp;&amp;  (r > 0) &amp;&amp;  (s > 0) &amp;&amp;  (t > 0) &amp;&amp;  (u > 0) &amp;&amp;  (v > 0) &amp;&amp;  (w > 0) &amp;&amp;  (x > 0) &amp;&amp;  (y > 0) &amp;&amp;  (z > 0) &amp;&amp;  (aa > 0) &amp;&amp;  (bb > 0) &amp;&amp;  (cc > 0) &amp;&amp;  (dd > 0) &amp;&amp;  (ee > 0) &amp;&amp;  (ff > 0) &amp;&amp;  (gg > 0) &amp;&amp;  (hh > 0) &amp;&amp;  (ii > 0) &amp;&amp;  (jj > 0) &amp;&amp;  (kk > 0) &amp;&amp;  (ll > 0) &amp;&amp;  (mm > 0) &amp;&amp;  (nn > 0)</Expression>
+ <InputVars>
+    <InputVar column='PB01' label='a' meta='F'/>
+    <InputVar column='QB01' label='b' meta='F'/>
+    <InputVar column='PB02' label='c' meta='F'/>
+    <InputVar column='QB02' label='d' meta='F'/>
+    <InputVar column='PB03' label='e' meta='F'/>
+    <InputVar column='QB03' label='f' meta='F'/>
+    <InputVar column='PB04' label='g' meta='F'/>
+    <InputVar column='QB04' label='h' meta='F'/>
+    <InputVar column='PB05' label='i' meta='F'/>
+    <InputVar column='QB05' label='j' meta='F'/>
+    <InputVar column='PB06' label='k' meta='F'/>
+    <InputVar column='QB06' label='l' meta='F'/>
+    <InputVar column='PB07' label='m' meta='F'/>
+    <InputVar column='QB07' label='n' meta='F'/>
+    <InputVar column='PB08' label='o' meta='F'/>
+    <InputVar column='QB08' label='p' meta='F'/>
+    <InputVar column='PB09' label='q' meta='F'/>
+    <InputVar column='QB09' label='r' meta='F'/>
+    <InputVar column='PB10' label='s' meta='F'/>
+    <InputVar column='QB10' label='t' meta='F'/>
+    <InputVar column='PA01' label='u' meta='F'/>
+    <InputVar column='QA01' label='v' meta='F'/>
+    <InputVar column='PA02' label='w' meta='F'/>
+    <InputVar column='QA02' label='x' meta='F'/>
+    <InputVar column='PA03' label='y' meta='F'/>
+    <InputVar column='QA03' label='z' meta='F'/>
+    <InputVar column='PA04' label='aa' meta='F'/>
+    <InputVar column='QA04' label='bb' meta='F'/>
+    <InputVar column='PA05' label='cc' meta='F'/>
+    <InputVar column='QA05' label='dd' meta='F'/>
+    <InputVar column='PA06' label='ee' meta='F'/>
+    <InputVar column='QA06' label='ff' meta='F'/>
+    <InputVar column='PA07' label='gg' meta='F'/>
+    <InputVar column='QA07' label='hh' meta='F'/>
+    <InputVar column='PA08' label='ii' meta='F'/>
+    <InputVar column='QA08' label='jj' meta='F'/>
+    <InputVar column='PA09' label='kk' meta='F'/>
+    <InputVar column='QA09' label='ll' meta='F'/>
+    <InputVar column='PA10' label='mm' meta='F'/>
+    <InputVar column='QA10' label='nn' meta='F'/>
+ </InputVars>
+</FilterRows>
+<aggregate idx='93' x='-1644.91' y='2943.23' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='datetime' first='1' last='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<writeCSV idx='95' x='-1258.29' y='2820.26' sep=',' segmentSize='0.1' filename=':/Data Cleaned V2/BTC_ob_clean.csv'/>
+<ChangeDataType idx='96' x='-2695' y='3170.44'>
+<toZeroDouble><c>PB01</c><c>QB01</c><c>PB02</c><c>QB02</c><c>PB03</c><c>QB03</c><c>PB04</c><c>QB04</c><c>PB05</c><c>QB05</c><c>PB06</c><c>QB06</c><c>PB07</c><c>QB07</c><c>PB08</c><c>QB08</c><c>PB09</c><c>QB09</c><c>PB10</c><c>QB10</c><c>PA01</c><c>QA01</c><c>PA02</c><c>QA02</c><c>PA03</c><c>QA03</c><c>PA04</c><c>QA04</c><c>PA05</c><c>QA05</c><c>PA06</c><c>QA06</c><c>PA07</c><c>QA07</c><c>PA08</c><c>QA08</c><c>PA09</c><c>QA09</c><c>PA10</c><c>QA10</c></toZeroDouble>
+</ChangeDataType>
+<ChangeDataType idx='97' x='-2542.56' y='3168.6' elapsedTimeUnitOut='0' dateFormatOut='dd/MM/yyyy hh:mm:ss' referenceTimeOut='19600101 00:00:00'>
+<toStringFromET><c>datetime</c></toStringFromET>
+</ChangeDataType>
+<sort idx='98' x='-2403.17' y='3164.1' action='S'>
+  <field type='I' dateFormat='dd/MM/yyyy hh:mm:ss'>datetime</field>
+</sort>
+<aggregate idx='99' x='-2251.58' y='3262.98' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='datetime' first='1' last='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<FilterRows module='MathParser' idx='100' x='-1912.06' y='3165.29' dateFormat='dd/MM/yyyy hh:mm:ss'>
+ <Expression>(not(dateTimeLT(datetime, "11/08/2017 00:00:00"))) &amp;&amp; (dateTimeLT(datetime, "21/07/2018 23:59:59"))</Expression>
+ <InputVars>
+    <InputVar column='datetime' isNumber='0'/>
+ </InputVars>
+</FilterRows>
+<FilterRows module='MathParser' idx='101' x='-1779.92' y='3165.29'>
+ <Expression>(a > 0) &amp;&amp; (b > 0) &amp;&amp;  (c > 0) &amp;&amp;  (d > 0) &amp;&amp;  (e > 0) &amp;&amp;  (f > 0) &amp;&amp;  (g > 0) &amp;&amp;  (h > 0) &amp;&amp;  (i > 0) &amp;&amp;  (j > 0) &amp;&amp;  (k > 0) &amp;&amp;  (l > 0) &amp;&amp;  (m > 0) &amp;&amp;  (n > 0) &amp;&amp;  (o > 0) &amp;&amp;  (p > 0) &amp;&amp;  (q > 0) &amp;&amp;  (r > 0) &amp;&amp;  (s > 0) &amp;&amp;  (t > 0) &amp;&amp;  (u > 0) &amp;&amp;  (v > 0) &amp;&amp;  (w > 0) &amp;&amp;  (x > 0) &amp;&amp;  (y > 0) &amp;&amp;  (z > 0) &amp;&amp;  (aa > 0) &amp;&amp;  (bb > 0) &amp;&amp;  (cc > 0) &amp;&amp;  (dd > 0) &amp;&amp;  (ee > 0) &amp;&amp;  (ff > 0) &amp;&amp;  (gg > 0) &amp;&amp;  (hh > 0) &amp;&amp;  (ii > 0) &amp;&amp;  (jj > 0) &amp;&amp;  (kk > 0) &amp;&amp;  (ll > 0) &amp;&amp;  (mm > 0) &amp;&amp;  (nn > 0)</Expression>
+ <InputVars>
+    <InputVar column='PB01' label='a' meta='F'/>
+    <InputVar column='QB01' label='b' meta='F'/>
+    <InputVar column='PB02' label='c' meta='F'/>
+    <InputVar column='QB02' label='d' meta='F'/>
+    <InputVar column='PB03' label='e' meta='F'/>
+    <InputVar column='QB03' label='f' meta='F'/>
+    <InputVar column='PB04' label='g' meta='F'/>
+    <InputVar column='QB04' label='h' meta='F'/>
+    <InputVar column='PB05' label='i' meta='F'/>
+    <InputVar column='QB05' label='j' meta='F'/>
+    <InputVar column='PB06' label='k' meta='F'/>
+    <InputVar column='QB06' label='l' meta='F'/>
+    <InputVar column='PB07' label='m' meta='F'/>
+    <InputVar column='QB07' label='n' meta='F'/>
+    <InputVar column='PB08' label='o' meta='F'/>
+    <InputVar column='QB08' label='p' meta='F'/>
+    <InputVar column='PB09' label='q' meta='F'/>
+    <InputVar column='QB09' label='r' meta='F'/>
+    <InputVar column='PB10' label='s' meta='F'/>
+    <InputVar column='QB10' label='t' meta='F'/>
+    <InputVar column='PA01' label='u' meta='F'/>
+    <InputVar column='QA01' label='v' meta='F'/>
+    <InputVar column='PA02' label='w' meta='F'/>
+    <InputVar column='QA02' label='x' meta='F'/>
+    <InputVar column='PA03' label='y' meta='F'/>
+    <InputVar column='QA03' label='z' meta='F'/>
+    <InputVar column='PA04' label='aa' meta='F'/>
+    <InputVar column='QA04' label='bb' meta='F'/>
+    <InputVar column='PA05' label='cc' meta='F'/>
+    <InputVar column='QA05' label='dd' meta='F'/>
+    <InputVar column='PA06' label='ee' meta='F'/>
+    <InputVar column='QA06' label='ff' meta='F'/>
+    <InputVar column='PA07' label='gg' meta='F'/>
+    <InputVar column='QA07' label='hh' meta='F'/>
+    <InputVar column='PA08' label='ii' meta='F'/>
+    <InputVar column='QA08' label='jj' meta='F'/>
+    <InputVar column='PA09' label='kk' meta='F'/>
+    <InputVar column='QA09' label='ll' meta='F'/>
+    <InputVar column='PA10' label='mm' meta='F'/>
+    <InputVar column='QA10' label='nn' meta='F'/>
+ </InputVars>
+</FilterRows>
+<aggregate idx='102' x='-1627.54' y='3280.61' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='datetime' first='1' last='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<writeCSV keyHD='160401473404868004' idx='103' x='-1251.49' y='3169.7' sep=',' segmentSize='0.1' filename=':/Data Cleaned V2/BCH_ob_clean.csv'/>
+<ChangeDataType idx='106' x='-2691.04' y='3467.14'>
+<toZeroDouble><c>PB01</c><c>QB01</c><c>PB02</c><c>QB02</c><c>PB03</c><c>QB03</c><c>PB04</c><c>QB04</c><c>PB05</c><c>QB05</c><c>PB06</c><c>QB06</c><c>PB07</c><c>QB07</c><c>PB08</c><c>QB08</c><c>PB09</c><c>QB09</c><c>PB10</c><c>QB10</c><c>PA01</c><c>QA01</c><c>PA02</c><c>QA02</c><c>PA03</c><c>QA03</c><c>PA04</c><c>QA04</c><c>PA05</c><c>QA05</c><c>PA06</c><c>QA06</c><c>PA07</c><c>QA07</c><c>PA08</c><c>QA08</c><c>PA09</c><c>QA09</c><c>PA10</c><c>QA10</c></toZeroDouble>
+</ChangeDataType>
+<ChangeDataType idx='107' x='-2533.84' y='3467.14' elapsedTimeUnitOut='0' dateFormatOut='dd/MM/yyyy hh:mm:ss' referenceTimeOut='19600101 00:00:00'>
+<toStringFromET><c>datetime</c></toStringFromET>
+</ChangeDataType>
+<sort idx='108' x='-2391.15' y='3466.13' action='S'>
+  <field type='I' dateFormat='dd/MM/yyyy hh:mm:ss'>datetime</field>
+</sort>
+<aggregate idx='109' x='-2231.83' y='3564.11' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='datetime' first='1' last='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<FilterRows module='MathParser' idx='110' x='-1887.55' y='3464.94' dateFormat='dd/MM/yyyy hh:mm:ss'>
+ <Expression>(not(dateTimeLT(datetime, "11/08/2017 00:00:00"))) &amp;&amp; (dateTimeLT(datetime, "21/07/2018 23:59:59"))</Expression>
+ <InputVars>
+    <InputVar column='datetime' isNumber='0'/>
+ </InputVars>
+</FilterRows>
+<FilterRows module='MathParser' idx='111' x='-1756.24' y='3462.92'>
+ <Expression>(a > 0) &amp;&amp; (b > 0) &amp;&amp;  (c > 0) &amp;&amp;  (d > 0) &amp;&amp;  (e > 0) &amp;&amp;  (f > 0) &amp;&amp;  (g > 0) &amp;&amp;  (h > 0) &amp;&amp;  (i > 0) &amp;&amp;  (j > 0) &amp;&amp;  (k > 0) &amp;&amp;  (l > 0) &amp;&amp;  (m > 0) &amp;&amp;  (n > 0) &amp;&amp;  (o > 0) &amp;&amp;  (p > 0) &amp;&amp;  (q > 0) &amp;&amp;  (r > 0) &amp;&amp;  (s > 0) &amp;&amp;  (t > 0) &amp;&amp;  (u > 0) &amp;&amp;  (v > 0) &amp;&amp;  (w > 0) &amp;&amp;  (x > 0) &amp;&amp;  (y > 0) &amp;&amp;  (z > 0) &amp;&amp;  (aa > 0) &amp;&amp;  (bb > 0) &amp;&amp;  (cc > 0) &amp;&amp;  (dd > 0) &amp;&amp;  (ee > 0) &amp;&amp;  (ff > 0) &amp;&amp;  (gg > 0) &amp;&amp;  (hh > 0) &amp;&amp;  (ii > 0) &amp;&amp;  (jj > 0) &amp;&amp;  (kk > 0) &amp;&amp;  (ll > 0) &amp;&amp;  (mm > 0) &amp;&amp;  (nn > 0)</Expression>
+ <InputVars>
+    <InputVar column='PB01' label='a' meta='F'/>
+    <InputVar column='QB01' label='b' meta='F'/>
+    <InputVar column='PB02' label='c' meta='F'/>
+    <InputVar column='QB02' label='d' meta='F'/>
+    <InputVar column='PB03' label='e' meta='F'/>
+    <InputVar column='QB03' label='f' meta='F'/>
+    <InputVar column='PB04' label='g' meta='F'/>
+    <InputVar column='QB04' label='h' meta='F'/>
+    <InputVar column='PB05' label='i' meta='F'/>
+    <InputVar column='QB05' label='j' meta='F'/>
+    <InputVar column='PB06' label='k' meta='F'/>
+    <InputVar column='QB06' label='l' meta='F'/>
+    <InputVar column='PB07' label='m' meta='F'/>
+    <InputVar column='QB07' label='n' meta='F'/>
+    <InputVar column='PB08' label='o' meta='F'/>
+    <InputVar column='QB08' label='p' meta='F'/>
+    <InputVar column='PB09' label='q' meta='F'/>
+    <InputVar column='QB09' label='r' meta='F'/>
+    <InputVar column='PB10' label='s' meta='F'/>
+    <InputVar column='QB10' label='t' meta='F'/>
+    <InputVar column='PA01' label='u' meta='F'/>
+    <InputVar column='QA01' label='v' meta='F'/>
+    <InputVar column='PA02' label='w' meta='F'/>
+    <InputVar column='QA02' label='x' meta='F'/>
+    <InputVar column='PA03' label='y' meta='F'/>
+    <InputVar column='QA03' label='z' meta='F'/>
+    <InputVar column='PA04' label='aa' meta='F'/>
+    <InputVar column='QA04' label='bb' meta='F'/>
+    <InputVar column='PA05' label='cc' meta='F'/>
+    <InputVar column='QA05' label='dd' meta='F'/>
+    <InputVar column='PA06' label='ee' meta='F'/>
+    <InputVar column='QA06' label='ff' meta='F'/>
+    <InputVar column='PA07' label='gg' meta='F'/>
+    <InputVar column='QA07' label='hh' meta='F'/>
+    <InputVar column='PA08' label='ii' meta='F'/>
+    <InputVar column='QA08' label='jj' meta='F'/>
+    <InputVar column='PA09' label='kk' meta='F'/>
+    <InputVar column='QA09' label='ll' meta='F'/>
+    <InputVar column='PA10' label='mm' meta='F'/>
+    <InputVar column='QA10' label='nn' meta='F'/>
+ </InputVars>
+</FilterRows>
+<aggregate idx='112' x='-1615.73' y='3589.23' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='datetime' first='1' last='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<writeCSV keyHD='160401467004868102' idx='113' x='-1241.15' y='3460.9' sep=',' segmentSize='0.1' filename=':/Data Cleaned V2/EOS_ob_clean.csv'/>
+<ChangeDataType idx='114' x='-2696.37' y='3755.09'>
+<toZeroDouble><c>PB01</c><c>QB01</c><c>PB02</c><c>QB02</c><c>PB03</c><c>QB03</c><c>PB04</c><c>QB04</c><c>PB05</c><c>QB05</c><c>PB06</c><c>QB06</c><c>PB07</c><c>QB07</c><c>PB08</c><c>QB08</c><c>PB09</c><c>QB09</c><c>PB10</c><c>QB10</c><c>PA01</c><c>QA01</c><c>PA02</c><c>QA02</c><c>PA03</c><c>QA03</c><c>PA04</c><c>QA04</c><c>PA05</c><c>QA05</c><c>PA06</c><c>QA06</c><c>PA07</c><c>QA07</c><c>PA08</c><c>QA08</c><c>PA09</c><c>QA09</c><c>PA10</c><c>QA10</c></toZeroDouble>
+</ChangeDataType>
+<ChangeDataType idx='115' x='-2552.94' y='3753.9' elapsedTimeUnitOut='0' dateFormatOut='dd/MM/yyyy hh:mm:ss' referenceTimeOut='19600101 00:00:00'>
+<toStringFromET><c>datetime</c></toStringFromET>
+</ChangeDataType>
+<sort idx='116' x='-2394.36' y='3754.91' action='S'>
+  <field type='I' dateFormat='dd/MM/yyyy hh:mm:ss'>datetime</field>
+</sort>
+<aggregate idx='117' x='-2230.74' y='3866.19' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='datetime' first='1' last='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<FilterRows module='MathParser' idx='118' x='-1897.1' y='3765.93' dateFormat='dd/MM/yyyy hh:mm:ss'>
+ <Expression>(not(dateTimeLT(datetime, "11/08/2017 00:00:00"))) &amp;&amp; (dateTimeLT(datetime, "21/07/2018 23:59:59"))</Expression>
+ <InputVars>
+    <InputVar column='datetime' isNumber='0'/>
+ </InputVars>
+</FilterRows>
+<FilterRows module='MathParser' idx='119' x='-1749.55' y='3760.7'>
+ <Expression>(a > 0) &amp;&amp; (b > 0) &amp;&amp;  (c > 0) &amp;&amp;  (d > 0) &amp;&amp;  (e > 0) &amp;&amp;  (f > 0) &amp;&amp;  (g > 0) &amp;&amp;  (h > 0) &amp;&amp;  (i > 0) &amp;&amp;  (j > 0) &amp;&amp;  (k > 0) &amp;&amp;  (l > 0) &amp;&amp;  (m > 0) &amp;&amp;  (n > 0) &amp;&amp;  (o > 0) &amp;&amp;  (p > 0) &amp;&amp;  (q > 0) &amp;&amp;  (r > 0) &amp;&amp;  (s > 0) &amp;&amp;  (t > 0) &amp;&amp;  (u > 0) &amp;&amp;  (v > 0) &amp;&amp;  (w > 0) &amp;&amp;  (x > 0) &amp;&amp;  (y > 0) &amp;&amp;  (z > 0) &amp;&amp;  (aa > 0) &amp;&amp;  (bb > 0) &amp;&amp;  (cc > 0) &amp;&amp;  (dd > 0) &amp;&amp;  (ee > 0) &amp;&amp;  (ff > 0) &amp;&amp;  (gg > 0) &amp;&amp;  (hh > 0) &amp;&amp;  (ii > 0) &amp;&amp;  (jj > 0) &amp;&amp;  (kk > 0) &amp;&amp;  (ll > 0) &amp;&amp;  (mm > 0) &amp;&amp;  (nn > 0)</Expression>
+ <InputVars>
+    <InputVar column='PB01' label='a' meta='F'/>
+    <InputVar column='QB01' label='b' meta='F'/>
+    <InputVar column='PB02' label='c' meta='F'/>
+    <InputVar column='QB02' label='d' meta='F'/>
+    <InputVar column='PB03' label='e' meta='F'/>
+    <InputVar column='QB03' label='f' meta='F'/>
+    <InputVar column='PB04' label='g' meta='F'/>
+    <InputVar column='QB04' label='h' meta='F'/>
+    <InputVar column='PB05' label='i' meta='F'/>
+    <InputVar column='QB05' label='j' meta='F'/>
+    <InputVar column='PB06' label='k' meta='F'/>
+    <InputVar column='QB06' label='l' meta='F'/>
+    <InputVar column='PB07' label='m' meta='F'/>
+    <InputVar column='QB07' label='n' meta='F'/>
+    <InputVar column='PB08' label='o' meta='F'/>
+    <InputVar column='QB08' label='p' meta='F'/>
+    <InputVar column='PB09' label='q' meta='F'/>
+    <InputVar column='QB09' label='r' meta='F'/>
+    <InputVar column='PB10' label='s' meta='F'/>
+    <InputVar column='QB10' label='t' meta='F'/>
+    <InputVar column='PA01' label='u' meta='F'/>
+    <InputVar column='QA01' label='v' meta='F'/>
+    <InputVar column='PA02' label='w' meta='F'/>
+    <InputVar column='QA02' label='x' meta='F'/>
+    <InputVar column='PA03' label='y' meta='F'/>
+    <InputVar column='QA03' label='z' meta='F'/>
+    <InputVar column='PA04' label='aa' meta='F'/>
+    <InputVar column='QA04' label='bb' meta='F'/>
+    <InputVar column='PA05' label='cc' meta='F'/>
+    <InputVar column='QA05' label='dd' meta='F'/>
+    <InputVar column='PA06' label='ee' meta='F'/>
+    <InputVar column='QA06' label='ff' meta='F'/>
+    <InputVar column='PA07' label='gg' meta='F'/>
+    <InputVar column='QA07' label='hh' meta='F'/>
+    <InputVar column='PA08' label='ii' meta='F'/>
+    <InputVar column='QA08' label='jj' meta='F'/>
+    <InputVar column='PA09' label='kk' meta='F'/>
+    <InputVar column='QA09' label='ll' meta='F'/>
+    <InputVar column='PA10' label='mm' meta='F'/>
+    <InputVar column='QA10' label='nn' meta='F'/>
+ </InputVars>
+</FilterRows>
+<aggregate idx='120' x='-1588.68' y='3874.04' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='datetime' first='1' last='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<writeCSV keyHD='160401456004868335' idx='121' x='-1236.04' y='3763.71' sep=',' segmentSize='0.1' filename=':/Data Cleaned V2/XRP_ob_clean.csv'/>
+<ChangeDataType idx='122' x='-2690.87' y='4086.88'>
+<toZeroDouble><c>PB01</c><c>QB01</c><c>PB02</c><c>QB02</c><c>PB03</c><c>QB03</c><c>PB04</c><c>QB04</c><c>PB05</c><c>QB05</c><c>PB06</c><c>QB06</c><c>PB07</c><c>QB07</c><c>PB08</c><c>QB08</c><c>PB09</c><c>QB09</c><c>PB10</c><c>QB10</c><c>PA01</c><c>QA01</c><c>PA02</c><c>QA02</c><c>PA03</c><c>QA03</c><c>PA04</c><c>QA04</c><c>PA05</c><c>QA05</c><c>PA06</c><c>QA06</c><c>PA07</c><c>QA07</c><c>PA08</c><c>QA08</c><c>PA09</c><c>QA09</c><c>PA10</c><c>QA10</c></toZeroDouble>
+</ChangeDataType>
+<ChangeDataType idx='123' x='-2546.05' y='4081.02' elapsedTimeUnitOut='0' dateFormatOut='dd/MM/yyyy hh:mm:ss' referenceTimeOut='19600101 00:00:00'>
+<toStringFromET><c>datetime</c></toStringFromET>
+</ChangeDataType>
+<sort idx='124' x='-2378.17' y='4085.51' action='S'>
+  <field type='I' dateFormat='dd/MM/yyyy hh:mm:ss'>datetime</field>
+</sort>
+<aggregate idx='125' x='-2228.74' y='4174.48' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='datetime' first='1' last='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<FilterRows module='MathParser' idx='126' x='-1885.48' y='4085.94' dateFormat='dd/MM/yyyy hh:mm:ss'>
+ <Expression>(not(dateTimeLT(datetime, "11/08/2017 00:00:00"))) &amp;&amp; (dateTimeLT(datetime, "21/07/2018 23:59:59"))</Expression>
+ <InputVars>
+    <InputVar column='datetime' isNumber='0'/>
+ </InputVars>
+</FilterRows>
+<FilterRows module='MathParser' idx='127' x='-1753.51' y='4086.43'>
+ <Expression>(a > 0) &amp;&amp; (b > 0) &amp;&amp;  (c > 0) &amp;&amp;  (d > 0) &amp;&amp;  (e > 0) &amp;&amp;  (f > 0) &amp;&amp;  (g > 0) &amp;&amp;  (h > 0) &amp;&amp;  (i > 0) &amp;&amp;  (j > 0) &amp;&amp;  (k > 0) &amp;&amp;  (l > 0) &amp;&amp;  (m > 0) &amp;&amp;  (n > 0) &amp;&amp;  (o > 0) &amp;&amp;  (p > 0) &amp;&amp;  (q > 0) &amp;&amp;  (r > 0) &amp;&amp;  (s > 0) &amp;&amp;  (t > 0) &amp;&amp;  (u > 0) &amp;&amp;  (v > 0) &amp;&amp;  (w > 0) &amp;&amp;  (x > 0) &amp;&amp;  (y > 0) &amp;&amp;  (z > 0) &amp;&amp;  (aa > 0) &amp;&amp;  (bb > 0) &amp;&amp;  (cc > 0) &amp;&amp;  (dd > 0) &amp;&amp;  (ee > 0) &amp;&amp;  (ff > 0) &amp;&amp;  (gg > 0) &amp;&amp;  (hh > 0) &amp;&amp;  (ii > 0) &amp;&amp;  (jj > 0) &amp;&amp;  (kk > 0) &amp;&amp;  (ll > 0) &amp;&amp;  (mm > 0) &amp;&amp;  (nn > 0)</Expression>
+ <InputVars>
+    <InputVar column='PB01' label='a' meta='F'/>
+    <InputVar column='QB01' label='b' meta='F'/>
+    <InputVar column='PB02' label='c' meta='F'/>
+    <InputVar column='QB02' label='d' meta='F'/>
+    <InputVar column='PB03' label='e' meta='F'/>
+    <InputVar column='QB03' label='f' meta='F'/>
+    <InputVar column='PB04' label='g' meta='F'/>
+    <InputVar column='QB04' label='h' meta='F'/>
+    <InputVar column='PB05' label='i' meta='F'/>
+    <InputVar column='QB05' label='j' meta='F'/>
+    <InputVar column='PB06' label='k' meta='F'/>
+    <InputVar column='QB06' label='l' meta='F'/>
+    <InputVar column='PB07' label='m' meta='F'/>
+    <InputVar column='QB07' label='n' meta='F'/>
+    <InputVar column='PB08' label='o' meta='F'/>
+    <InputVar column='QB08' label='p' meta='F'/>
+    <InputVar column='PB09' label='q' meta='F'/>
+    <InputVar column='QB09' label='r' meta='F'/>
+    <InputVar column='PB10' label='s' meta='F'/>
+    <InputVar column='QB10' label='t' meta='F'/>
+    <InputVar column='PA01' label='u' meta='F'/>
+    <InputVar column='QA01' label='v' meta='F'/>
+    <InputVar column='PA02' label='w' meta='F'/>
+    <InputVar column='QA02' label='x' meta='F'/>
+    <InputVar column='PA03' label='y' meta='F'/>
+    <InputVar column='QA03' label='z' meta='F'/>
+    <InputVar column='PA04' label='aa' meta='F'/>
+    <InputVar column='QA04' label='bb' meta='F'/>
+    <InputVar column='PA05' label='cc' meta='F'/>
+    <InputVar column='QA05' label='dd' meta='F'/>
+    <InputVar column='PA06' label='ee' meta='F'/>
+    <InputVar column='QA06' label='ff' meta='F'/>
+    <InputVar column='PA07' label='gg' meta='F'/>
+    <InputVar column='QA07' label='hh' meta='F'/>
+    <InputVar column='PA08' label='ii' meta='F'/>
+    <InputVar column='QA08' label='jj' meta='F'/>
+    <InputVar column='PA09' label='kk' meta='F'/>
+    <InputVar column='QA09' label='ll' meta='F'/>
+    <InputVar column='PA10' label='mm' meta='F'/>
+    <InputVar column='QA10' label='nn' meta='F'/>
+ </InputVars>
+</FilterRows>
+<aggregate idx='128' x='-1624.52' y='4198.3' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+  </GroupBy>
+  <OutputVars>
+   <v name='datetime' first='1' last='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<writeCSV keyHD='160401485904868635' idx='129' x='-1224.69' y='4088.4' sep=',' segmentSize='0.1' filename=':/Data Cleaned V2/ETH_ob_clean.csv'/>
+<RunToFinishLine idx='130' x='-558.014' y='-301.056' nPinIn='400'/>
+<readStat module='WriteReport' idx='131' x='-2906.91' y='-120.59' fileFormat='0' fileName=':/Mémoire/Input2/trades/bitfinex_btcusd.sas7bdat'/>
+<readCSV idx='134' x='-872.825' y='2644.49' fileName=':/Plots3/BTC_ob_clean.csv'/>
+</ACTIONS>
+<CONNECTORS>
+<Connection idxSrc='0' idxDest='5'/>
+<Connection idxSrc='5' idxDest='6'/>
+<Connection idxSrc='6' idxDest='7'/>
+<Connection idxSrc='7' idxDest='8'/>
+<Connection idxSrc='8' idxDest='9'/>
+<Connection idxSrc='8' idxDest='10'/>
+<Connection idxSrc='9' idxDest='11'/>
+<Connection idxSrc='1' idxDest='12'/>
+<Connection idxSrc='12' idxDest='13'/>
+<Connection idxSrc='13' idxDest='14'/>
+<Connection idxSrc='2' idxDest='15'/>
+<Connection idxSrc='15' idxDest='16'/>
+<Connection idxSrc='16' idxDest='17'/>
+<Connection idxSrc='4' idxDest='19'/>
+<Connection idxSrc='19' idxDest='20'/>
+<Connection idxSrc='20' idxDest='21'/>
+<Connection idxSrc='3' idxDest='22'/>
+<Connection idxSrc='23' idxDest='24'/>
+<Connection idxSrc='22' idxDest='23'/>
+<Connection idxSrc='11' idxDest='29'/>
+<Connection idxSrc='11' idxDest='30'/>
+<Connection idxSrc='11' idxDest='31'/>
+<Connection idxSrc='11' idxDest='32'/>
+<Connection idxSrc='11' idxDest='33'/>
+<Connection idxSrc='30' idxDest='34'/>
+<Connection idxSrc='31' idxDest='35'/>
+<Connection idxSrc='32' idxDest='36'/>
+<Connection idxSrc='14' idxDest='25'/>
+<Connection idxSrc='17' idxDest='26'/>
+<Connection idxSrc='21' idxDest='27'/>
+<Connection idxSrc='24' idxDest='28'/>
+<Connection idxSrc='25' idxDest='38'/>
+<Connection idxSrc='25' idxDest='37'/>
+<Connection idxSrc='38' idxDest='39'/>
+<Connection idxSrc='39' idxDest='43'/>
+<Connection idxSrc='39' idxDest='44'/>
+<Connection idxSrc='39' idxDest='45'/>
+<Connection idxSrc='39' idxDest='46'/>
+<Connection idxSrc='39' idxDest='47'/>
+<Connection idxSrc='45' idxDest='48'/>
+<Connection idxSrc='46' idxDest='49'/>
+<Connection idxSrc='47' idxDest='50'/>
+<Connection idxSrc='26' idxDest='40'/>
+<Connection idxSrc='26' idxDest='41'/>
+<Connection idxSrc='41' idxDest='42'/>
+<Connection idxSrc='42' idxDest='58'/>
+<Connection idxSrc='42' idxDest='51'/>
+<Connection idxSrc='42' idxDest='52'/>
+<Connection idxSrc='52' idxDest='55'/>
+<Connection idxSrc='42' idxDest='53'/>
+<Connection idxSrc='53' idxDest='56'/>
+<Connection idxSrc='42' idxDest='54'/>
+<Connection idxSrc='54' idxDest='57'/>
+<Connection idxSrc='27' idxDest='59'/>
+<Connection idxSrc='27' idxDest='60'/>
+<Connection idxSrc='60' idxDest='61'/>
+<Connection idxSrc='61' idxDest='62'/>
+<Connection idxSrc='61' idxDest='70'/>
+<Connection idxSrc='61' idxDest='63'/>
+<Connection idxSrc='61' idxDest='65'/>
+<Connection idxSrc='61' idxDest='68'/>
+<Connection idxSrc='63' idxDest='64'/>
+<Connection idxSrc='65' idxDest='66'/>
+<Connection idxSrc='68' idxDest='69'/>
+<Connection idxSrc='28' idxDest='72'/>
+<Connection idxSrc='28' idxDest='71'/>
+<Connection idxSrc='72' idxDest='73'/>
+<Connection idxSrc='73' idxDest='81'/>
+<Connection idxSrc='73' idxDest='74'/>
+<Connection idxSrc='73' idxDest='75'/>
+<Connection idxSrc='73' idxDest='77'/>
+<Connection idxSrc='73' idxDest='79'/>
+<Connection idxSrc='75' idxDest='76'/>
+<Connection idxSrc='77' idxDest='78'/>
+<Connection idxSrc='79' idxDest='80'/>
+<Connection idxSrc='83' idxDest='87'/>
+<Connection idxSrc='87' idxDest='88'/>
+<Connection idxSrc='88' idxDest='89'/>
+<Connection idxSrc='89' idxDest='90'/>
+<Connection idxSrc='89' idxDest='91'/>
+<Connection idxSrc='91' idxDest='92'/>
+<Connection idxSrc='92' idxDest='93'/>
+<Connection idxSrc='92' idxDest='95'/>
+<Connection idxSrc='82' idxDest='96'/>
+<Connection idxSrc='96' idxDest='97'/>
+<Connection idxSrc='97' idxDest='98'/>
+<Connection idxSrc='98' idxDest='100'/>
+<Connection idxSrc='98' idxDest='99'/>
+<Connection idxSrc='100' idxDest='101'/>
+<Connection idxSrc='101' idxDest='102'/>
+<Connection idxSrc='101' idxDest='103'/>
+<Connection idxSrc='84' idxDest='106'/>
+<Connection idxSrc='108' idxDest='109'/>
+<Connection idxSrc='106' idxDest='107'/>
+<Connection idxSrc='107' idxDest='108'/>
+<Connection idxSrc='108' idxDest='110'/>
+<Connection idxSrc='110' idxDest='111'/>
+<Connection idxSrc='111' idxDest='112'/>
+<Connection idxSrc='86' idxDest='114'/>
+<Connection idxSrc='114' idxDest='115'/>
+<Connection idxSrc='115' idxDest='116'/>
+<Connection idxSrc='116' idxDest='118'/>
+<Connection idxSrc='116' idxDest='117'/>
+<Connection idxSrc='118' idxDest='119'/>
+<Connection idxSrc='119' idxDest='120'/>
+<Connection idxSrc='119' idxDest='121'/>
+<Connection idxSrc='122' idxDest='123'/>
+<Connection idxSrc='85' idxDest='122'/>
+<Connection idxSrc='123' idxDest='124'/>
+<Connection idxSrc='124' idxDest='125'/>
+<Connection idxSrc='124' idxDest='126'/>
+<Connection idxSrc='126' idxDest='127'/>
+<Connection idxSrc='127' idxDest='129'/>
+<Connection idxSrc='127' idxDest='128'/>
+<Connection idxSrc='111' idxDest='113'/>
+<Connection idxSrc='95' idxDest='130' idxPinIn='261'/>
+<Connection idxSrc='103' idxDest='130' idxPinIn='290'/>
+<Connection idxSrc='113' idxDest='130' idxPinIn='316'/>
+<Connection idxSrc='121' idxDest='130' idxPinIn='340'/>
+<Connection idxSrc='129' idxDest='130' idxPinIn='367'/>
+</CONNECTORS>
+<TEXTANNOTATIONS>
+  <Annotation x='-3016' y='-224' size='12' bold='1'>BTC</Annotation>
+  <Annotation x='-3004.73' y='300.734' size='12' bold='1'>BCH</Annotation>
+  <Annotation x='-3013.24' y='820.692' size='12' bold='1'>EOS</Annotation>
+  <Annotation x='-2996.04' y='1354.47' size='12' bold='1'>XRP</Annotation>
+  <Annotation x='-2988.13' y='1917.44' size='12' bold='1'>ETH</Annotation>
+  <Annotation x='-3131.5' y='-448.187' size='18' bold='1'>Import data, convert datetime and sort
+on datetime</Annotation>
+  <Annotation x='-2123.41' y='-459.739' size='18' bold='1'>Check for missing and negative
+values, restrict on working 
+interval</Annotation>
+  <Annotation x='-1457.36' y='-457.562' size='18' bold='1'>Output clean data</Annotation>
+  <Annotation x='-2185.07' y='473.881' size='10'>First and last obs</Annotation>
+  <Annotation x='-1359.25' y='400.122' size='10'>First and last obs</Annotation>
+  <Annotation x='-2209.27' y='-37.2402' size='10'>First and last obs</Annotation>
+  <Annotation x='-1358.17' y='-123.769' size='10'>First and last obs</Annotation>
+  <Annotation x='-2192.79' y='1004.39' size='10'>First and last obs</Annotation>
+  <Annotation x='-1324.63' y='926.202' size='10'>First and last obs</Annotation>
+  <Annotation x='-1213.59' y='-18.6201' size='10'>Price</Annotation>
+  <Annotation x='-1209.21' y='78.8616' size='10'>Amount</Annotation>
+  <Annotation x='-1207.02' y='184.01' size='10'>Volume</Annotation>
+  <Annotation x='-1202.84' y='688.044' size='10'>Volume</Annotation>
+  <Annotation x='-1199.41' y='596.753' size='10'>Amount</Annotation>
+  <Annotation x='-1197.94' y='499.264' size='10'>Price</Annotation>
+  <Annotation x='-1194.76' y='1022.56' size='10'>Price</Annotation>
+  <Annotation x='-1194.76' y='1124.61' size='10'>Amount</Annotation>
+  <Annotation x='-1182.01' y='1226.65' size='10'>Volume</Annotation>
+  <Annotation x='-2162.57' y='1544.48' size='10'>First and last obs</Annotation>
+  <Annotation x='-1297.54' y='1451.69' size='10'>First and last obs</Annotation>
+  <Annotation x='-1143.39' y='1553.46' size='10'>Price</Annotation>
+  <Annotation x='-1143.39' y='1659.71' size='10'>Amount</Annotation>
+  <Annotation x='-1141.89' y='1759.98' size='10'>Volume</Annotation>
+  <Annotation x='-2137.5' y='2128.83' size='10'>First and last obs</Annotation>
+  <Annotation x='-1296.38' y='2048.62' size='10'>First and last obs</Annotation>
+  <Annotation x='-1157.63' y='2163.52' size='10'>Price</Annotation>
+  <Annotation x='-1155.47' y='2269.74' size='10'>Amount</Annotation>
+  <Annotation x='-1151.13' y='2352.12' size='10'>Volume</Annotation>
+  <Annotation x='-3613.04' y='-422.838' size='22' bold='1'>TRADE DATA</Annotation>
+  <Annotation x='-2970' y='2854' size='12' bold='1'>BTC</Annotation>
+  <Annotation x='-2951' y='3199' size='12' bold='1'>BCH</Annotation>
+  <Annotation x='-2962' y='3503' size='12' bold='1'>EOS</Annotation>
+  <Annotation x='-2958' y='3783' size='12' bold='1'>XRP</Annotation>
+  <Annotation x='-2942' y='4120' size='12' bold='1'>ETH</Annotation>
+  <Annotation x='-3124.32' y='2654.68' size='18' bold='1'>Import data, convert datetime and sort
+on datetime</Annotation>
+  <Annotation x='-3561.16' y='2649.3' size='22' bold='1'>ORDER BOOK</Annotation>
+  <Annotation x='-2001.22' y='2642.78' size='18' bold='1'>Check for missing and negative
+values, restrict on working 
+interval</Annotation>
+  <Annotation x='-1327.09' y='2644.41' size='18' bold='1'>Output clean data</Annotation>
+</TEXTANNOTATIONS>
+<GROUPBOXANNOTATIONS>
+  <Groupbox x='-3167.23' y='-476.928' w='1003.72' h='2885.41' color='#afeeee'/>
+  <Groupbox x='-2135.34' y='-468.256' w='587.488' h='2876.74' color='#ffdab9'/>
+  <Groupbox x='-1530.15' y='-468.585' w='584.524' h='2874.31' color='#c1cdc1'/>
+  <Groupbox x='-3146.23' y='2618.86' w='1041.23' h='1667.77' color='#87cefa'/>
+  <Groupbox x='-2026.12' y='2618.86' w='635.557' h='1672.28' color='#7fffd4'/>
+  <Groupbox x='-1325.2' y='2627.87' w='329.047' h='1656.5' color='#98fb98'/>
+</GROUPBOXANNOTATIONS>
+</ANATELLA>

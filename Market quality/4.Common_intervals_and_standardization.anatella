@@ -1,0 +1,2331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ANATELLA version='2.27'>
+<GlobalParameters wDirLoc='1' dataDirWrite=':/Standardised'>
+</GlobalParameters>
+<WorkingSpace>AAAA/wAAAAD9AAAAAgAAAAEAAAEPAAAB9fwCAAAAAfsAAAAcAEEAbABsAEEAYwB0AGkAbwBuAHMARABvAGMAawEAAABeAAAB9QAAAHgA////AAAAAwAAB4AAAAGB/AEAAAAC+wAAACgAQQBjAHQAaQBvAG4AUAByAG8AcABlAHIAdABpAGUAcwBEAG8AYwBrAQAAAAAAAANfAAACfQD////8AAADZQAABBsAAAIiAP////oAAAABAQAAAAL7AAAADgBMAG8AZwBEAG8AYwBrAQAAAAD/////AAAAhQD////7AAAAGgBEAGEAdABhAFQAYQBiAGwAZQBEAG8AYwBrAQAAAAD/////AAACIgD///8AAAZrAAAB9QAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAADAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAABYAdABlAHgAdABUAG8AbwBsAEIAYQByAQAAAzv/////AAAAAAAAAAAAAAAeAGcAcgBvAHUAcABCAG8AeABUAG8AbwBsAEIAYQByAQAABhD/////AAAAAAAAAAA=</WorkingSpace>
+<ACTIONS>
+<readCSV forceHDBuffering='1' idx='0' x='-674.548' y='-68.8603' fileName=':/Merged/BCH_15.csv'/>
+<readCSV idx='1' x='-660.943' y='-162.907' fileName=':/Merged/BTC_15.csv'/>
+<readCSV idx='2' x='-673.641' y='27.9069' fileName=':/Merged/EOS_15.csv'/>
+<readCSV idx='3' x='-672.502' y='217.953' fileName=':/Merged/ETH_15.csv'/>
+<readCSV idx='4' x='-670.362' y='123.093' fileName=':/Merged/XRP_15.csv'/>
+<SelectColumns module='DefaultActions' idx='9' x='-257' y='217' keep='1'>
+ <c>Rounded Time</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='10' x='-258' y='128' keep='1'>
+ <c>Rounded Time</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='11' x='-257' y='34' keep='1'>
+ <c>Rounded Time</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='12' x='-263' y='-67' keep='1'>
+ <c>Rounded Time</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='13' x='-262' y='-163' keep='1'>
+ <c>Rounded Time</c>
+</SelectColumns>
+<sort idx='14' x='-94' y='-165' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<sort idx='15' x='-93' y='-67' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<sort idx='16' x='-90.0466' y='25.8137' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<sort idx='17' x='-84' y='127' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<sort idx='18' x='-84' y='217' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<Join module='DefaultActions' idx='21' x='109' y='129' joinMode='1' keyA='Rounded Time' new='1'>
+<SlaveKeys><c>Rounded Time</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<Join module='DefaultActions' idx='22' x='229' y='28.9069' joinMode='1' keyA='Rounded Time' new='1'>
+<SlaveKeys><c>Rounded Time</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<Join module='DefaultActions' idx='23' x='368' y='-68' joinMode='1' keyA='Rounded Time' new='1'>
+<SlaveKeys><c>Rounded Time</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<Join module='DefaultActions' idx='24' x='502' y='-162' joinMode='1' keyA='Rounded Time' new='1'>
+<SlaveKeys><c>Rounded Time</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<writeCSV idx='25' x='804' y='-165' sep=',' segmentSize='0.1' filename=':/Standardised/liste_intervals_15.csv'/>
+<Python idx='501' x='342' y='-288' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+import datetime
+import pandas
+
+
+d = datetime.timedelta(minutes = 30)
+date_start = datetime.datetime.strptime( "11/08/2017 00:00:00", '%d/%m/%Y %H:%M:%S')
+date = datetime.datetime.strptime( "11/08/2017 00:00:00", '%d/%m/%Y %H:%M:%S')
+date_end =datetime.datetime.strptime( "22/07/2018 00:00:00", '%d/%m/%Y %H:%M:%S')
+liste = []
+
+while(date &lt; date_end) :
+    liste.append(str(date))
+    date = date + d
+    print(date)
+
+df = pandas.DataFrame(liste)
+Py_Output = df
+</Script>
+</Python>
+<sort idx='502' x='646' y='-163' action='S'>
+  <field type='I' dateFormat='yyyy-MM-dd hh:mm:ss'>Rounded Time</field>
+</sort>
+<sort idx='504' x='485' y='-289' action='S'>
+  <field type='A'>C0</field>
+</sort>
+<Join module='DefaultActions' idx='505' x='659' y='-289' joinMode='3' keyA='C0' new='1'>
+<SlaveKeys><c>Rounded Time</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<sort idx='507' x='801' y='-293' action='S'>
+  <field type='I' dateFormat='dd/MM/yyyy hh:mm:ss'>C0</field>
+</sort>
+<writeCSV idx='508' x='956' y='-291' sep=',' segmentSize='0.1' filename=':/Standardised/liste_missing_intervals_15.csv'/>
+<readCSV idx='509' x='-669.951' y='539.803' fileName=':/Merged/BTC_15.csv'/>
+<readCSV idx='510' x='-665.951' y='739.71' fileName=':/Merged/BCH_15.csv'/>
+<readCSV idx='511' x='-666.951' y='930.803' fileName=':/Merged/EOS_15.csv'/>
+<readCSV idx='512' x='-664.951' y='1119.8' fileName=':/Merged/XRP_15.csv'/>
+<readCSV idx='513' x='-666.951' y='1302.71' fileName=':/Merged/ETH_15.csv'/>
+<readCSV idx='514' x='-669.951' y='436.803' fileName=':/Standardised/liste_intervals_15.csv'/>
+<sort idx='515' x='-528.951' y='444.803' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<sort idx='516' x='-530.951' y='534.803' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<Join module='DefaultActions' idx='517' x='-364.951' y='445.803' joinMode='0' keyA='Rounded Time' new='1'>
+<SlaveKeys><c>Rounded Time</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<readCSV idx='518' x='-669.951' y='641.803' fileName=':/Standardised/liste_intervals_15.csv'/>
+<readCSV idx='521' x='-670.951' y='837.803' fileName=':/Standardised/liste_intervals_15.csv'/>
+<readCSV idx='524' x='-664.951' y='1026.8' fileName=':/Standardised/liste_intervals_15.csv'/>
+<readCSV idx='527' x='-662.951' y='1214.8' fileName=':/Standardised/liste_intervals_15.csv'/>
+<sort idx='530' x='-531.951' y='636.71' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<sort idx='531' x='-528.951' y='743.803' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<sort idx='532' x='-528.951' y='841.803' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<sort idx='533' x='-531.951' y='926.71' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<sort idx='534' x='-533.951' y='1022.8' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<sort idx='535' x='-532.951' y='1117.8' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<sort idx='536' x='-528.951' y='1207.8' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<sort idx='537' x='-528.951' y='1306.8' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<Join module='DefaultActions' idx='538' x='-368.951' y='635.803' joinMode='0' keyA='Rounded Time' new='1'>
+<SlaveKeys><c>Rounded Time</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<Join module='DefaultActions' idx='539' x='-365.951' y='836.803' joinMode='0' keyA='Rounded Time' new='1'>
+<SlaveKeys><c>Rounded Time</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<Join module='DefaultActions' idx='540' x='-366.951' y='1022.8' joinMode='0' keyA='Rounded Time' new='1'>
+<SlaveKeys><c>Rounded Time</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<Join module='DefaultActions' idx='541' x='-363.951' y='1208.8' joinMode='0' keyA='Rounded Time' new='1'>
+<SlaveKeys><c>Rounded Time</c></SlaveKeys>
+<Prefixes><c></c><c></c></Prefixes>
+</Join>
+<writeCSV idx='542' x='-196.997' y='442.617' sep=',' segmentSize='0.1' filename=':/Standardised/BTC_restricted_15.csv'/>
+<writeCSV idx='543' x='-196.951' y='632.803' sep=',' segmentSize='0.1' filename=':/Standardised/BCH_restricted_15.csv'/>
+<writeCSV idx='544' x='-196.951' y='835.803' sep=',' segmentSize='0.1' filename=':/Standardised/EOS_restricted_15.csv'/>
+<writeCSV idx='545' x='-195.951' y='1016.8' sep=',' segmentSize='0.1' filename=':/Standardised/XRP_restricted_15.csv'/>
+<writeCSV idx='546' x='-189.951' y='1198.8' sep=',' segmentSize='0.1' filename=':/Standardised/ETH_restricted_15.csv'/>
+<readCSV idx='547' x='275.282' y='1176.74' fileName=':/Standardised/BCH_restricted.csv'/>
+<readCSV idx='548' x='291.282' y='631.736' fileName=':/Standardised/BTC_restricted.csv'/>
+<readCSV idx='549' x='1134.69' y='624.637' fileName=':/Standardised/EOS_restricted.csv'/>
+<readCSV idx='550' x='1974.48' y='512.718' fileName=':/Standardised/ETH_restricted.csv'/>
+<readCSV idx='551' x='1139.31' y='1114.7' fileName=':/Standardised/XRP_restricted.csv'/>
+<SelectColumns module='DefaultActions' idx='553' x='443.282' y='377.736' keep='1'>
+ <c>Realized Spread</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='554' x='440.964' y='475.736' keep='1'>
+ <c>PPI</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='555' x='441.282' y='561.736' keep='1'>
+ <c>Illiq</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='556' x='443.282' y='650.736' keep='1'>
+ <c>Abs (Autocorrelation)</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='557' x='444.282' y='735.736' keep='1'>
+ <c>Realized Volatility</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='558' x='443.282' y='824.736' keep='1'>
+ <c>SD(Return 5min)</c>
+</SelectColumns>
+<Python idx='559' x='688.352' y='368.331' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<ChangeDataType idx='560' x='565.282' y='374.736'>
+<toDouble><c>Realized Spread</c></toDouble>
+</ChangeDataType>
+<readCSV idx='561' x='-707.136' y='1796.13' fileName=':/Standardised/BTC_restricted_15.csv'/>
+<ReplaceStrings module='DefaultActions' idx='562' x='-551.904' y='1789.73'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeFirst='11'>
+<c>Rounded Time</c></Processing></ReplaceStrings>
+<sort idx='563' x='-385.136' y='1796.13' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<aggregate idx='564' x='-228.136' y='1795.13' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+   <v name='Rounded Time' type='0'/>
+  </GroupBy>
+  <OutputVars>
+   <v name='Realized Spread' mean='1' stdDev='1'/>
+   <v name='PPI' mean='1' stdDev='1'/>
+   <v name='Illiq' mean='1' stdDev='1'/>
+   <v name='Abs (Autocorrelation)' mean='1' stdDev='1'/>
+   <v name='Realized Volatility' mean='1' stdDev='1'/>
+   <v name='SD(Return 5min)' mean='1' stdDev='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<InsertKey module='DefaultActions' idx='565' x='-96.1358' y='1792.13' startCount='0' columnName='Key'/>
+<readCSV idx='566' x='858.898' y='1712.87' fileName=':/Standardised/BTC_restricted_15.csv'/>
+<Calculator module='MathParser' idx='567' x='1016.9' y='1711.87'>
+  <InputVars>
+    <InputVar column='Rounded Time' label='rt' isNumber='0'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Flag' meta='U'>right(rt, 8) == "00:00:00" ? "0" : right(rt, 8) == "00:30:00" ? "1" :  right(rt, 8) == "01:00:00" ? "2" :  right(rt, 8) == "01:30:00" ? "3" : right(rt, 8) == "02:00:00" ? "4" : right(rt, 8) == "02:30:00" ? "5" :  right(rt, 8) == "03:00:00" ? "6" : right(rt, 8) == "03:30:00" ? "7" : right(rt, 8) == "04:00:00" ? "8" : right(rt, 8) == "04:30:00" ? "9" : right(rt, 8) == "05:00:00" ? "10" : right(rt, 8) == "05:30:00" ? "11" : right(rt, 8) == "06:00:00" ? "12" : right(rt, 8) == "06:30:00" ? "13" : right(rt, 8) == "07:00:00" ? "14" : right(rt, 8) == "07:30:00" ? "15" : right(rt, 8) == "08:00:00" ? "16" : right(rt, 8) == "08:30:00" ? "17" : right(rt, 8) == "09:00:00" ? "18" : right(rt, 8) == "09:30:00" ? "19" : right(rt, 8) == "10:00:00" ? "20" : right(rt, 8) == "10:30:00" ? "21" : right(rt, 8) == "11:00:00" ? "22" : right(rt, 8) == "11:30:00" ? "23" :  right(rt, 8) == "12:00:00" ? "24" :
+right(rt, 8) == "12:30:00" ? "25": right(rt, 8) == "13:00:00" ? "26" : right(rt, 8) == "13:30:00" ? "27" : 
+right(rt, 8) == "14:00:00" ? "28" : right(rt, 8) == "14:30:00" ? "29" : right(rt, 8) == "15:00:00" ? "30" :  right(rt, 8) == "15:30:00" ? "31" : right(rt, 8) == "16:00:00" ? "32" : right(rt, 8) == "16:30:00" ? "33" : right(rt, 8) == "17:00:00" ? "34" : right(rt, 8) == "17:30:00" ? "35" : right(rt, 8) == "18:00:00" ? "36" : right(rt, 8) == "18:30:00" ? "37" : right(rt, 8) == "19:00:00" ? "38" : right(rt, 8) == "19:30:00" ? "39" : right(rt, 8) == "20:00:00" ? "40" : right(rt, 8) == "20:30:00" ? "41" : right(rt, 8) == "21:00:00" ? "42" : right(rt, 8) == "21:30:00" ? "43" : right(rt, 8) == "22:00:00" ? "44" : right(rt, 8) == "22:30:00" ? "45" : right(rt, 8) == "23:00:00" ? "46" : right(rt, 8) == "23:30:00"  ? "47" : "bug"</OutputVar>
+  </OutputVars>
+</Calculator>
+<writeCSV idx='568' x='41.8642' y='1790.5' sep=',' segmentSize='0.1' filename=':/Standardised/BTC_stats_intervals_15.csv'/>
+<readCSV idx='569' x='1025.9' y='1811.87' fileName=':/Standardised/BTC_stats_intervals_15.csv'/>
+<MultiJoin module='DefaultActions' idx='570' x='1189.9' y='1711.87'>
+  <Join pin='1' mainKey='Flag' slaveKey='Key' prefix='2' copyAll='0'>
+  <c>Realized Spread_mean</c><c>Realized Spread_stdDev</c><c>PPI_mean</c><c>PPI_stdDev</c><c>Illiq_mean</c><c>Illiq_stdDev</c><c>Abs (Autocorrelation)_mean</c><c>Abs (Autocorrelation)_stdDev</c><c>Realized Volatility_mean</c><c>Realized Volatility_stdDev</c><c>SD(Return 5min)_mean</c><c>SD(Return 5min)_stdDev</c>
+  </Join>
+</MultiJoin>
+<Calculator module='MathParser' idx='571' x='1325.9' y='1708.87'>
+  <InputVars>
+    <InputVar column='Realized Spread' label='rs'/>
+    <InputVar column='2Realized Spread_mean' label='rs_m'/>
+    <InputVar column='2Realized Spread_stdDev' label='rs_std'/>
+    <InputVar column='PPI' label='ppi'/>
+    <InputVar column='2PPI_mean' label='ppi_m'/>
+    <InputVar column='2PPI_stdDev' label='ppi_std'/>
+    <InputVar column='Illiq' label='illiq'/>
+    <InputVar column='2Illiq_mean' label='illiq_m'/>
+    <InputVar column='2Illiq_stdDev' label='illiq_std'/>
+    <InputVar column='Abs (Autocorrelation)' label='autoc'/>
+    <InputVar column='2Abs (Autocorrelation)_mean' label='autoc_m'/>
+    <InputVar column='2Abs (Autocorrelation)_stdDev' label='autoc_std'/>
+    <InputVar column='Realized Volatility' label='rv'/>
+    <InputVar column='2Realized Volatility_mean' label='rv_m'/>
+    <InputVar column='2Realized Volatility_stdDev' label='rv_std'/>
+    <InputVar column='SD(Return 5min)' label='qr'/>
+    <InputVar column='2SD(Return 5min)_mean' label='qr_m'/>
+    <InputVar column='2SD(Return 5min)_stdDev' label='qr_std'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Realized Spread (standardised)'>(rs - rs_m) / rs_std</OutputVar>
+    <OutputVar name='PPI (standardised)'>(ppi - ppi_m) / ppi_std</OutputVar>
+    <OutputVar name='Amihud (standardised)'>(illiq - illiq_m) / illiq_std</OutputVar>
+    <OutputVar name='Return Autocorrelation (standardised)'>(autoc - autoc_m) / autoc_std</OutputVar>
+    <OutputVar name='Realized Volatility (standardised)'>(rv - rv_m) / rv_std</OutputVar>
+    <OutputVar name='Quote Return (standardised)'>(qr - qr_m) / qr_std</OutputVar>
+  </OutputVars>
+</Calculator>
+<SelectColumns module='DefaultActions' idx='572' x='1454.9' y='1708.87' keep='1'>
+ <c>Rounded Time</c>
+ <c>Realized Spread (standardised)</c>
+ <c>PPI (standardised)</c>
+ <c>Amihud (standardised)</c>
+ <c>Return Autocorrelation (standardised)</c>
+ <c>Realized Volatility (standardised)</c>
+ <c>Quote Return (standardised)</c>
+</SelectColumns>
+<writeCSV idx='573' x='1606.9' y='1706.87' sep=',' segmentSize='0.1' filename=':/Standardised/BTC_standardised_15.csv'/>
+<ChangeDataType idx='575' x='568.282' y='472.736'>
+<toDouble><c>PPI</c></toDouble>
+</ChangeDataType>
+<Python idx='576' x='708.235' y='465.643' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<ChangeDataType idx='577' x='570.282' y='559.736'>
+<toDouble><c>Illiq</c></toDouble>
+</ChangeDataType>
+<Python idx='578' x='706.096' y='559.876' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<ChangeDataType idx='579' x='570.282' y='645.643'>
+<toDouble><c>Abs (Autocorrelation)</c></toDouble>
+</ChangeDataType>
+<Python idx='580' x='713.189' y='644.503' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<ChangeDataType idx='581' x='568.282' y='733.736'>
+<toDouble><c>Realized Volatility</c></toDouble>
+</ChangeDataType>
+<Python idx='582' x='717.235' y='732.643' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<ChangeDataType idx='583' x='577.282' y='821.736'>
+<toDouble><c>SD(Return 5min)</c></toDouble>
+</ChangeDataType>
+<Python idx='584' x='723.235' y='826.643' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<SelectColumns module='DefaultActions' idx='585' x='445.282' y='942.736' keep='1'>
+ <c>Realized Spread</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='586' x='443.964' y='1040.1' keep='1'>
+ <c>PPI</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='587' x='447.282' y='1137.74' keep='1'>
+ <c>Illiq</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='588' x='447.282' y='1227.74' keep='1'>
+ <c>Abs (Autocorrelation)</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='589' x='452.282' y='1309.74' keep='1'>
+ <c>Realized Volatility</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='590' x='449.282' y='1394.74' keep='1'>
+ <c>SD(Return 5min)</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='591' x='2240.88' y='388.434' keep='1'>
+ <c>Realized Spread</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='592' x='2240.88' y='488.434' keep='1'>
+ <c>PPI</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='593' x='2244.88' y='589.434' keep='1'>
+ <c>Illiq</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='594' x='2246.88' y='678.434' keep='1'>
+ <c>Abs (Autocorrelation)</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='595' x='2242.88' y='765.434' keep='1'>
+ <c>Realized Volatility</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='596' x='2244.48' y='854.233' keep='1'>
+ <c>SD(Return 5min)</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='597' x='1338.89' y='997.744' keep='1'>
+ <c>Realized Spread</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='598' x='1331.78' y='385.401' keep='1'>
+ <c>Realized Spread</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='599' x='1343.89' y='1099.74' keep='1'>
+ <c>PPI</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='600' x='1328.48' y='487.401' keep='1'>
+ <c>PPI</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='601' x='1338.25' y='1197.11' keep='1'>
+ <c>Illiq</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='602' x='1335.48' y='586.401' keep='1'>
+ <c>Illiq</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='603' x='1340.51' y='1290.98' keep='1'>
+ <c>Abs (Autocorrelation)</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='604' x='1334.48' y='680.401' keep='1'>
+ <c>Abs (Autocorrelation)</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='605' x='1342.89' y='1380.75' keep='1'>
+ <c>Realized Volatility</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='606' x='1338.48' y='771.401' keep='1'>
+ <c>Realized Volatility</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='607' x='1343.89' y='1467.75' keep='1'>
+ <c>SD(Return 5min)</c>
+</SelectColumns>
+<SelectColumns module='DefaultActions' idx='608' x='1339.48' y='855.401' keep='1'>
+ <c>SD(Return 5min)</c>
+</SelectColumns>
+<ChangeDataType idx='609' x='591.977' y='939.544'>
+<toDouble><c>Realized Spread</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='615' x='1479.98' y='379.898'>
+<toDouble><c>Realized Spread</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='616' x='1496.86' y='996.336'>
+<toDouble><c>Realized Spread</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='617' x='2394.98' y='378.503'>
+<toDouble><c>Realized Spread</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='633' x='593.072' y='1042.89'>
+<toDouble><c>PPI</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='634' x='593.072' y='1140.82'>
+<toDouble><c>Illiq</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='635' x='591.784' y='1231.02'>
+<toDouble><c>Abs (Autocorrelation)</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='636' x='590.495' y='1314.78'>
+<toDouble><c>Realized Volatility</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='637' x='590.495' y='1402.41'>
+<toDouble><c>SD(Return 5min)</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='638' x='2400.47' y='497.306'>
+<toDouble><c>PPI</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='639' x='2399.18' y='597.816'>
+<toDouble><c>Illiq</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='640' x='1498.28' y='1099.42'>
+<toDouble><c>PPI</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='641' x='1479.27' y='490.459'>
+<toDouble><c>PPI</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='642' x='1498.28' y='1196.06'>
+<toDouble><c>Illiq</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='643' x='1481.85' y='585.814'>
+<toDouble><c>Illiq</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='644' x='2399.18' y='690.594'>
+<toDouble><c>Abs (Autocorrelation)</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='645' x='1500.85' y='1296.58'>
+<toDouble><c>Abs (Autocorrelation)</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='646' x='1485.72' y='690.19'>
+<toDouble><c>Abs (Autocorrelation)</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='647' x='2401.76' y='778.218'>
+<toDouble><c>Realized Volatility</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='648' x='1504.38' y='1382.23'>
+<toDouble><c>Realized Volatility</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='649' x='1487' y='777.814'>
+<toDouble><c>Realized Volatility</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='650' x='2398.99' y='860.306'>
+<toDouble><c>SD(Return 5min)</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='651' x='1507.73' y='1472.26'>
+<toDouble><c>SD(Return 5min)</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='652' x='1489.49' y='867.824'>
+<toDouble><c>SD(Return 5min)</c></toDouble>
+</ChangeDataType>
+<Python idx='653' x='727.056' y='934.588' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<Python idx='654' x='729.904' y='1040.8' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<Python idx='655' x='732.24' y='1142.11' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<Python idx='656' x='729.904' y='1228.93' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<Python idx='657' x='734.817' y='1318.65' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<Python idx='658' x='734.105' y='1404.85' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<Python idx='659' x='2557.68' y='380.044' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+  <Parameter id='col' text='a short description' type='onecolumn'><meta>0</meta><data>Realized Spread</data></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<Python idx='660' x='1647.75' y='995.042' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+  <Parameter id='col' text='a short description' type='onecolumn'><meta>0</meta><data>Realized Spread</data></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<Python idx='661' x='1639.06' y='378.351' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<Python idx='662' x='2557.11' y='484.904' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<Python idx='663' x='1654.19' y='1099.42' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<Python idx='664' x='1640.15' y='481.248' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<Python idx='665' x='2552.39' y='577.95' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<Python idx='666' x='1653.39' y='1193.97' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<Python idx='667' x='1639.48' y='579.855' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<Python idx='668' x='2565.41' y='676.42' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<Python idx='669' x='1660.64' y='1286.27' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<Python idx='670' x='1649.37' y='674.727' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<Python idx='671' x='2562.83' y='764.044' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<Python idx='672' x='2567.79' y='850.188' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<Python idx='673' x='1663.21' y='1381.62' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<Python idx='674' x='1667.08' y='1469.25' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<Python idx='675' x='1654.52' y='768.794' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<Python idx='676' x='1649.37' y='858.995' id='My_pythonTemplate'
+  orignalId='pythonTemplate'
+ deprecated='1'
+  longName='this operator simply &quot;pass by&quot; the rows without doing anything'
+  image='PythonTemplate.png'
+  author='Frank Vanden Berghen'
+  revision='0.01'
+  tags='390_Python'
+  pdfDestination='9_2_3_python_integration_inside'>
+<Description>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:21px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:21px;&quot;&gt;This operator simply &amp;quot;pass by&amp;quot; the rows from the input pin to the output pin without doing any treatment.&lt;br /&gt;This operator is simply a &amp;quot;Basic Template&amp;quot; that you can can &amp;quot;tweak&amp;quot; to create your own, complex operator.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</Description>
+<Parameters>
+  <Parameter id='mytable' text='whole table' type='allcolumns'></Parameter>
+</Parameters>
+<Script>
+from scipy.stats import kurtosis
+from scipy.stats import skew
+import pandas
+
+sk = skew(mytable)
+kur = kurtosis(mytable)
+mn = mytable.mean()
+sd = mytable.std()
+md = mytable.median()
+
+data = [mn, sd, md, sk , kur]
+cols = ['Mean', 'StdDev', 'Median', 'Skewness', 'Kurtosis']
+
+df = pandas.DataFrame({'Mean' : mn, 'StdDev' : sd, 'Median' : md, 'Skewness' : sk, 'Kurtosis' : kur})
+
+Py_Output = df
+</Script>
+</Python>
+<readCSV idx='677' x='-711.149' y='1956.96' fileName=':/Standardised/BCH_restricted_15.csv'/>
+<readCSV idx='678' x='-713.972' y='2100.92' fileName=':/Standardised/EOS_restricted_15.csv'/>
+<readCSV idx='679' x='-721.029' y='2401.54' fileName=':/Standardised/ETH_restricted_15.csv'/>
+<readCSV idx='680' x='-716.795' y='2253.54' fileName=':/Standardised/XRP_restricted_15.csv'/>
+<ReplaceStrings module='DefaultActions' idx='681' x='-541.776' y='1957.08'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeFirst='11'>
+<c>Rounded Time</c></Processing></ReplaceStrings>
+<sort idx='682' x='-385.112' y='1951.43' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<aggregate idx='683' x='-228.447' y='1950.02' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+   <v name='Rounded Time' type='0'/>
+  </GroupBy>
+  <OutputVars>
+   <v name='Realized Spread' mean='1' stdDev='1'/>
+   <v name='PPI' mean='1' stdDev='1'/>
+   <v name='Illiq' mean='1' stdDev='1'/>
+   <v name='Abs (Autocorrelation)' mean='1' stdDev='1'/>
+   <v name='Realized Volatility' mean='1' stdDev='1'/>
+   <v name='SD(Return 5min)' mean='1' stdDev='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<InsertKey module='DefaultActions' idx='684' x='-87.3078' y='1945.78' startCount='0' columnName='Key'/>
+<writeCSV idx='685' x='55.2422' y='1942.96' sep=',' segmentSize='0.1' filename=':/Standardised/BCH_stats_intervals_15.csv'/>
+<ReplaceStrings module='DefaultActions' idx='686' x='-540.365' y='2101.04'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeFirst='11'>
+<c>Rounded Time</c></Processing></ReplaceStrings>
+<sort idx='687' x='-379.466' y='2099.63' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<aggregate idx='688' x='-222.802' y='2099.63' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+   <v name='Rounded Time' type='0'/>
+  </GroupBy>
+  <OutputVars>
+   <v name='Realized Spread' mean='1' stdDev='1'/>
+   <v name='PPI' mean='1' stdDev='1'/>
+   <v name='Illiq' mean='1' stdDev='1'/>
+   <v name='Abs (Autocorrelation)' mean='1' stdDev='1'/>
+   <v name='Realized Volatility' mean='1' stdDev='1'/>
+   <v name='SD(Return 5min)' mean='1' stdDev='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<InsertKey module='DefaultActions' idx='689' x='-83.0738' y='2098.21' startCount='0' columnName='Key'/>
+<writeCSV idx='690' x='58.0652' y='2093.98' sep=',' segmentSize='0.1' filename=':/Standardised/EOS_stats_intervals_15.csv'/>
+<ReplaceStrings module='DefaultActions' idx='691' x='-531.896' y='2249.23'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeFirst='11'>
+<c>Rounded Time</c></Processing></ReplaceStrings>
+<sort idx='692' x='-372.409' y='2243.59' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<aggregate idx='693' x='-224.116' y='2238.14' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+   <v name='Rounded Time' type='0'/>
+  </GroupBy>
+  <OutputVars>
+   <v name='Realized Spread' mean='1' stdDev='1'/>
+   <v name='PPI' mean='1' stdDev='1'/>
+   <v name='Illiq' mean='1' stdDev='1'/>
+   <v name='Abs (Autocorrelation)' mean='1' stdDev='1'/>
+   <v name='Realized Volatility' mean='1' stdDev='1'/>
+   <v name='SD(Return 5min)' mean='1' stdDev='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<InsertKey module='DefaultActions' idx='694' x='-74.6058' y='2240.77' startCount='0' columnName='Key'/>
+<writeCSV idx='695' x='67.9442' y='2239.35' sep=',' segmentSize='0.1' filename=':/Standardised/XRP_stats_intervals_15.csv'/>
+<ReplaceStrings module='DefaultActions' idx='696' x='-529.073' y='2405.9'>
+<Global>
+</Global><String>
+</String><RegExp>
+</RegExp>
+<Processing removeFirst='11'>
+<c>Rounded Time</c></Processing></ReplaceStrings>
+<sort idx='697' x='-369.586' y='2401.66' action='S'>
+  <field type='A'>Rounded Time</field>
+</sort>
+<aggregate idx='698' x='-212.922' y='2394.61' inRAMAlgo='0'>
+ <OneAggregate>
+  <GroupBy>
+   <v name='Rounded Time' type='0'/>
+  </GroupBy>
+  <OutputVars>
+   <v name='Realized Spread' mean='1' stdDev='1'/>
+   <v name='PPI' mean='1' stdDev='1'/>
+   <v name='Illiq' mean='1' stdDev='1'/>
+   <v name='Abs (Autocorrelation)' mean='1' stdDev='1'/>
+   <v name='Realized Volatility' mean='1' stdDev='1'/>
+   <v name='SD(Return 5min)' mean='1' stdDev='1'/>
+  </OutputVars>
+ </OneAggregate>
+</aggregate>
+<InsertKey module='DefaultActions' idx='699' x='-73.1948' y='2390.37' startCount='0' columnName='Key'/>
+<writeCSV idx='700' x='73.5902' y='2380.49' sep=',' segmentSize='0.1' filename=':/Standardised/ETH_stats_intervals_15.csv'/>
+<readCSV idx='701' x='861.758' y='1943.87' fileName=':/Standardised/BCH_restricted_15.csv'/>
+<readCSV idx='702' x='858.935' y='2214.86' fileName=':/Standardised/EOS_restricted_15.csv'/>
+<readCSV idx='703' x='839.176' y='2780.83' fileName=':/Standardised/ETH_restricted_15.csv'/>
+<readCSV idx='704' x='842.193' y='2493.1' fileName=':/Standardised/XRP_restricted_15.csv'/>
+<readCSV idx='705' x='1011.37' y='2892.33' fileName=':/Standardised/ETH_stats_intervals_15.csv'/>
+<readCSV idx='706' x='1017.01' y='2624.16' fileName=':/Standardised/XRP_stats_intervals_15.csv'/>
+<readCSV idx='707' x='1011.37' y='2330.59' fileName=':/Standardised/EOS_stats_intervals_15.csv'/>
+<readCSV idx='708' x='1024.07' y='2051.14' fileName=':/Standardised/BCH_stats_intervals_15.csv'/>
+<Calculator module='MathParser' idx='709' x='1026.9' y='1943.99'>
+  <InputVars>
+    <InputVar column='Rounded Time' label='rt' isNumber='0'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Flag' meta='U'>right(rt, 8) == "00:00:00" ? "0" : right(rt, 8) == "00:30:00" ? "1" :  right(rt, 8) == "01:00:00" ? "2" :  right(rt, 8) == "01:30:00" ? "3" : right(rt, 8) == "02:00:00" ? "4" : right(rt, 8) == "02:30:00" ? "5" :  right(rt, 8) == "03:00:00" ? "6" : right(rt, 8) == "03:30:00" ? "7" : right(rt, 8) == "04:00:00" ? "8" : right(rt, 8) == "04:30:00" ? "9" : right(rt, 8) == "05:00:00" ? "10" : right(rt, 8) == "05:30:00" ? "11" : right(rt, 8) == "06:00:00" ? "12" : right(rt, 8) == "06:30:00" ? "13" : right(rt, 8) == "07:00:00" ? "14" : right(rt, 8) == "07:30:00" ? "15" : right(rt, 8) == "08:00:00" ? "16" : right(rt, 8) == "08:30:00" ? "17" : right(rt, 8) == "09:00:00" ? "18" : right(rt, 8) == "09:30:00" ? "19" : right(rt, 8) == "10:00:00" ? "20" : right(rt, 8) == "10:30:00" ? "21" : right(rt, 8) == "11:00:00" ? "22" : right(rt, 8) == "11:30:00" ? "23" :  right(rt, 8) == "12:00:00" ? "24" :
+right(rt, 8) == "12:30:00" ? "25": right(rt, 8) == "13:00:00" ? "26" : right(rt, 8) == "13:30:00" ? "27" : 
+right(rt, 8) == "14:00:00" ? "28" : right(rt, 8) == "14:30:00" ? "29" : right(rt, 8) == "15:00:00" ? "30" :  right(rt, 8) == "15:30:00" ? "31" : right(rt, 8) == "16:00:00" ? "32" : right(rt, 8) == "16:30:00" ? "33" : right(rt, 8) == "17:00:00" ? "34" : right(rt, 8) == "17:30:00" ? "35" : right(rt, 8) == "18:00:00" ? "36" : right(rt, 8) == "18:30:00" ? "37" : right(rt, 8) == "19:00:00" ? "38" : right(rt, 8) == "19:30:00" ? "39" : right(rt, 8) == "20:00:00" ? "40" : right(rt, 8) == "20:30:00" ? "41" : right(rt, 8) == "21:00:00" ? "42" : right(rt, 8) == "21:30:00" ? "43" : right(rt, 8) == "22:00:00" ? "44" : right(rt, 8) == "22:30:00" ? "45" : right(rt, 8) == "23:00:00" ? "46" : right(rt, 8) == "23:30:00"  ? "47" : "bug"</OutputVar>
+  </OutputVars>
+</Calculator>
+<MultiJoin module='DefaultActions' idx='710' x='1190.62' y='1936.94'>
+  <Join pin='1' mainKey='Flag' slaveKey='Key' prefix='2' copyAll='0'>
+  <c>Realized Spread_mean</c><c>Realized Spread_stdDev</c><c>PPI_mean</c><c>PPI_stdDev</c><c>Illiq_mean</c><c>Illiq_stdDev</c><c>Abs (Autocorrelation)_mean</c><c>Abs (Autocorrelation)_stdDev</c><c>Realized Volatility_mean</c><c>Realized Volatility_stdDev</c><c>SD(Return 5min)_mean</c><c>SD(Return 5min)_stdDev</c>
+  </Join>
+</MultiJoin>
+<Calculator module='MathParser' idx='711' x='1335.99' y='1936.94'>
+  <InputVars>
+    <InputVar column='Realized Spread' label='rs'/>
+    <InputVar column='2Realized Spread_mean' label='rs_m'/>
+    <InputVar column='2Realized Spread_stdDev' label='rs_std'/>
+    <InputVar column='PPI' label='ppi'/>
+    <InputVar column='2PPI_mean' label='ppi_m'/>
+    <InputVar column='2PPI_stdDev' label='ppi_std'/>
+    <InputVar column='Illiq' label='illiq'/>
+    <InputVar column='2Illiq_mean' label='illiq_m'/>
+    <InputVar column='2Illiq_stdDev' label='illiq_std'/>
+    <InputVar column='Abs (Autocorrelation)' label='autoc'/>
+    <InputVar column='2Abs (Autocorrelation)_mean' label='autoc_m'/>
+    <InputVar column='2Abs (Autocorrelation)_stdDev' label='autoc_std'/>
+    <InputVar column='Realized Volatility' label='rv'/>
+    <InputVar column='2Realized Volatility_mean' label='rv_m'/>
+    <InputVar column='2Realized Volatility_stdDev' label='rv_std'/>
+    <InputVar column='SD(Return 5min)' label='qr'/>
+    <InputVar column='2SD(Return 5min)_mean' label='qr_m'/>
+    <InputVar column='2SD(Return 5min)_stdDev' label='qr_std'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Realized Spread (standardised)'>(rs - rs_m) / rs_std</OutputVar>
+    <OutputVar name='PPI (standardised)'>(ppi - ppi_m) / ppi_std</OutputVar>
+    <OutputVar name='Amihud (standardised)'>(illiq - illiq_m) / illiq_std</OutputVar>
+    <OutputVar name='Return Autocorrelation (standardised)'>(autoc - autoc_m) / autoc_std</OutputVar>
+    <OutputVar name='Realized Volatility (standardised)'>(rv - rv_m) / rv_std</OutputVar>
+    <OutputVar name='Quote Return (standardised)'>(qr - qr_m) / qr_std</OutputVar>
+  </OutputVars>
+</Calculator>
+<SelectColumns module='DefaultActions' idx='712' x='1479.95' y='1929.88' keep='1'>
+ <c>Rounded Time</c>
+ <c>Realized Spread (standardised)</c>
+ <c>PPI (standardised)</c>
+ <c>Amihud (standardised)</c>
+ <c>Return Autocorrelation (standardised)</c>
+ <c>Realized Volatility (standardised)</c>
+ <c>Quote Return (standardised)</c>
+</SelectColumns>
+<writeCSV idx='713' x='1638.03' y='1922.82' sep=',' segmentSize='0.1' filename=':/Standardised/BCH_standardised_15.csv'/>
+<Calculator module='MathParser' idx='714' x='1021.25' y='2219.21'>
+  <InputVars>
+    <InputVar column='Rounded Time' label='rt' isNumber='0'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Flag' meta='U'>right(rt, 8) == "00:00:00" ? "0" : right(rt, 8) == "00:30:00" ? "1" :  right(rt, 8) == "01:00:00" ? "2" :  right(rt, 8) == "01:30:00" ? "3" : right(rt, 8) == "02:00:00" ? "4" : right(rt, 8) == "02:30:00" ? "5" :  right(rt, 8) == "03:00:00" ? "6" : right(rt, 8) == "03:30:00" ? "7" : right(rt, 8) == "04:00:00" ? "8" : right(rt, 8) == "04:30:00" ? "9" : right(rt, 8) == "05:00:00" ? "10" : right(rt, 8) == "05:30:00" ? "11" : right(rt, 8) == "06:00:00" ? "12" : right(rt, 8) == "06:30:00" ? "13" : right(rt, 8) == "07:00:00" ? "14" : right(rt, 8) == "07:30:00" ? "15" : right(rt, 8) == "08:00:00" ? "16" : right(rt, 8) == "08:30:00" ? "17" : right(rt, 8) == "09:00:00" ? "18" : right(rt, 8) == "09:30:00" ? "19" : right(rt, 8) == "10:00:00" ? "20" : right(rt, 8) == "10:30:00" ? "21" : right(rt, 8) == "11:00:00" ? "22" : right(rt, 8) == "11:30:00" ? "23" :  right(rt, 8) == "12:00:00" ? "24" :
+right(rt, 8) == "12:30:00" ? "25": right(rt, 8) == "13:00:00" ? "26" : right(rt, 8) == "13:30:00" ? "27" : 
+right(rt, 8) == "14:00:00" ? "28" : right(rt, 8) == "14:30:00" ? "29" : right(rt, 8) == "15:00:00" ? "30" :  right(rt, 8) == "15:30:00" ? "31" : right(rt, 8) == "16:00:00" ? "32" : right(rt, 8) == "16:30:00" ? "33" : right(rt, 8) == "17:00:00" ? "34" : right(rt, 8) == "17:30:00" ? "35" : right(rt, 8) == "18:00:00" ? "36" : right(rt, 8) == "18:30:00" ? "37" : right(rt, 8) == "19:00:00" ? "38" : right(rt, 8) == "19:30:00" ? "39" : right(rt, 8) == "20:00:00" ? "40" : right(rt, 8) == "20:30:00" ? "41" : right(rt, 8) == "21:00:00" ? "42" : right(rt, 8) == "21:30:00" ? "43" : right(rt, 8) == "22:00:00" ? "44" : right(rt, 8) == "22:30:00" ? "45" : right(rt, 8) == "23:00:00" ? "46" : right(rt, 8) == "23:30:00"  ? "47" : "bug"</OutputVar>
+  </OutputVars>
+</Calculator>
+<MultiJoin module='DefaultActions' idx='715' x='1194.85' y='2222.04'>
+  <Join pin='1' mainKey='Flag' slaveKey='Key' prefix='2' copyAll='0'>
+  <c>Realized Spread_mean</c><c>Realized Spread_stdDev</c><c>PPI_mean</c><c>PPI_stdDev</c><c>Illiq_mean</c><c>Illiq_stdDev</c><c>Abs (Autocorrelation)_mean</c><c>Abs (Autocorrelation)_stdDev</c><c>Realized Volatility_mean</c><c>Realized Volatility_stdDev</c><c>SD(Return 5min)_mean</c><c>SD(Return 5min)_stdDev</c>
+  </Join>
+</MultiJoin>
+<Calculator module='MathParser' idx='716' x='1336.18' y='2209.53'>
+  <InputVars>
+    <InputVar column='Realized Spread' label='rs'/>
+    <InputVar column='2Realized Spread_mean' label='rs_m'/>
+    <InputVar column='2Realized Spread_stdDev' label='rs_std'/>
+    <InputVar column='PPI' label='ppi'/>
+    <InputVar column='2PPI_mean' label='ppi_m'/>
+    <InputVar column='2PPI_stdDev' label='ppi_std'/>
+    <InputVar column='Illiq' label='illiq'/>
+    <InputVar column='2Illiq_mean' label='illiq_m'/>
+    <InputVar column='2Illiq_stdDev' label='illiq_std'/>
+    <InputVar column='Abs (Autocorrelation)' label='autoc'/>
+    <InputVar column='2Abs (Autocorrelation)_mean' label='autoc_m'/>
+    <InputVar column='2Abs (Autocorrelation)_stdDev' label='autoc_std'/>
+    <InputVar column='Realized Volatility' label='rv'/>
+    <InputVar column='2Realized Volatility_mean' label='rv_m'/>
+    <InputVar column='2Realized Volatility_stdDev' label='rv_std'/>
+    <InputVar column='SD(Return 5min)' label='qr'/>
+    <InputVar column='2SD(Return 5min)_mean' label='qr_m'/>
+    <InputVar column='2SD(Return 5min)_stdDev' label='qr_std'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Realized Spread (standardised)'>(rs - rs_m) / rs_std</OutputVar>
+    <OutputVar name='PPI (standardised)'>(ppi - ppi_m) / ppi_std</OutputVar>
+    <OutputVar name='Amihud (standardised)'>(illiq - illiq_m) / illiq_std</OutputVar>
+    <OutputVar name='Return Autocorrelation (standardised)'>(autoc - autoc_m) / autoc_std</OutputVar>
+    <OutputVar name='Realized Volatility (standardised)'>(rv - rv_m) / rv_std</OutputVar>
+    <OutputVar name='Quote Return (standardised)'>(qr - qr_m) / qr_std</OutputVar>
+  </OutputVars>
+</Calculator>
+<SelectColumns module='DefaultActions' idx='717' x='1492.66' y='2207.92' keep='1'>
+ <c>Rounded Time</c>
+ <c>Realized Spread (standardised)</c>
+ <c>PPI (standardised)</c>
+ <c>Amihud (standardised)</c>
+ <c>Return Autocorrelation (standardised)</c>
+ <c>Realized Volatility (standardised)</c>
+ <c>Quote Return (standardised)</c>
+</SelectColumns>
+<writeCSV idx='718' x='1646.5' y='2210.75' sep=',' segmentSize='0.1' filename=':/Standardised/EOS_standardised_15.csv'/>
+<Calculator module='MathParser' idx='719' x='1018.43' y='2498.67'>
+  <InputVars>
+    <InputVar column='Rounded Time' label='rt' isNumber='0'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Flag' meta='U'>right(rt, 8) == "00:00:00" ? "0" : right(rt, 8) == "00:30:00" ? "1" :  right(rt, 8) == "01:00:00" ? "2" :  right(rt, 8) == "01:30:00" ? "3" : right(rt, 8) == "02:00:00" ? "4" : right(rt, 8) == "02:30:00" ? "5" :  right(rt, 8) == "03:00:00" ? "6" : right(rt, 8) == "03:30:00" ? "7" : right(rt, 8) == "04:00:00" ? "8" : right(rt, 8) == "04:30:00" ? "9" : right(rt, 8) == "05:00:00" ? "10" : right(rt, 8) == "05:30:00" ? "11" : right(rt, 8) == "06:00:00" ? "12" : right(rt, 8) == "06:30:00" ? "13" : right(rt, 8) == "07:00:00" ? "14" : right(rt, 8) == "07:30:00" ? "15" : right(rt, 8) == "08:00:00" ? "16" : right(rt, 8) == "08:30:00" ? "17" : right(rt, 8) == "09:00:00" ? "18" : right(rt, 8) == "09:30:00" ? "19" : right(rt, 8) == "10:00:00" ? "20" : right(rt, 8) == "10:30:00" ? "21" : right(rt, 8) == "11:00:00" ? "22" : right(rt, 8) == "11:30:00" ? "23" :  right(rt, 8) == "12:00:00" ? "24" :
+right(rt, 8) == "12:30:00" ? "25": right(rt, 8) == "13:00:00" ? "26" : right(rt, 8) == "13:30:00" ? "27" : 
+right(rt, 8) == "14:00:00" ? "28" : right(rt, 8) == "14:30:00" ? "29" : right(rt, 8) == "15:00:00" ? "30" :  right(rt, 8) == "15:30:00" ? "31" : right(rt, 8) == "16:00:00" ? "32" : right(rt, 8) == "16:30:00" ? "33" : right(rt, 8) == "17:00:00" ? "34" : right(rt, 8) == "17:30:00" ? "35" : right(rt, 8) == "18:00:00" ? "36" : right(rt, 8) == "18:30:00" ? "37" : right(rt, 8) == "19:00:00" ? "38" : right(rt, 8) == "19:30:00" ? "39" : right(rt, 8) == "20:00:00" ? "40" : right(rt, 8) == "20:30:00" ? "41" : right(rt, 8) == "21:00:00" ? "42" : right(rt, 8) == "21:30:00" ? "43" : right(rt, 8) == "22:00:00" ? "44" : right(rt, 8) == "22:30:00" ? "45" : right(rt, 8) == "23:00:00" ? "46" : right(rt, 8) == "23:30:00"  ? "47" : "bug"</OutputVar>
+  </OutputVars>
+</Calculator>
+<MultiJoin module='DefaultActions' idx='720' x='1204.73' y='2500.08'>
+  <Join pin='1' mainKey='Flag' slaveKey='Key' prefix='2' copyAll='0'>
+  <c>Realized Spread_mean</c><c>Realized Spread_stdDev</c><c>PPI_mean</c><c>PPI_stdDev</c><c>Illiq_mean</c><c>Illiq_stdDev</c><c>Abs (Autocorrelation)_mean</c><c>Abs (Autocorrelation)_stdDev</c><c>Realized Volatility_mean</c><c>Realized Volatility_stdDev</c><c>SD(Return 5min)_mean</c><c>SD(Return 5min)_stdDev</c>
+  </Join>
+</MultiJoin>
+<Calculator module='MathParser' idx='721' x='1357.16' y='2491.61'>
+  <InputVars>
+    <InputVar column='Realized Spread' label='rs'/>
+    <InputVar column='2Realized Spread_mean' label='rs_m'/>
+    <InputVar column='2Realized Spread_stdDev' label='rs_std'/>
+    <InputVar column='PPI' label='ppi'/>
+    <InputVar column='2PPI_mean' label='ppi_m'/>
+    <InputVar column='2PPI_stdDev' label='ppi_std'/>
+    <InputVar column='Illiq' label='illiq'/>
+    <InputVar column='2Illiq_mean' label='illiq_m'/>
+    <InputVar column='2Illiq_stdDev' label='illiq_std'/>
+    <InputVar column='Abs (Autocorrelation)' label='autoc'/>
+    <InputVar column='2Abs (Autocorrelation)_mean' label='autoc_m'/>
+    <InputVar column='2Abs (Autocorrelation)_stdDev' label='autoc_std'/>
+    <InputVar column='Realized Volatility' label='rv'/>
+    <InputVar column='2Realized Volatility_mean' label='rv_m'/>
+    <InputVar column='2Realized Volatility_stdDev' label='rv_std'/>
+    <InputVar column='SD(Return 5min)' label='qr'/>
+    <InputVar column='2SD(Return 5min)_mean' label='qr_m'/>
+    <InputVar column='2SD(Return 5min)_stdDev' label='qr_std'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Realized Spread (standardised)'>(rs - rs_m) / rs_std</OutputVar>
+    <OutputVar name='PPI (standardised)'>(ppi - ppi_m) / ppi_std</OutputVar>
+    <OutputVar name='Amihud (standardised)'>(illiq - illiq_m) / illiq_std</OutputVar>
+    <OutputVar name='Return Autocorrelation (standardised)'>(autoc - autoc_m) / autoc_std</OutputVar>
+    <OutputVar name='Realized Volatility (standardised)'>(rv - rv_m) / rv_std</OutputVar>
+    <OutputVar name='Quote Return (standardised)'>(qr - qr_m) / qr_std</OutputVar>
+  </OutputVars>
+</Calculator>
+<SelectColumns module='DefaultActions' idx='722' x='1505.36' y='2485.97' keep='1'>
+ <c>Rounded Time</c>
+ <c>Realized Spread (standardised)</c>
+ <c>PPI (standardised)</c>
+ <c>Amihud (standardised)</c>
+ <c>Return Autocorrelation (standardised)</c>
+ <c>Realized Volatility (standardised)</c>
+ <c>Quote Return (standardised)</c>
+</SelectColumns>
+<writeCSV idx='723' x='1667.67' y='2487.38' sep=',' segmentSize='0.1' filename=':/Standardised/XRP_standardised_15.csv'/>
+<Calculator module='MathParser' idx='724' x='1014.19' y='2779.54'>
+  <InputVars>
+    <InputVar column='Rounded Time' label='rt' isNumber='0'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Flag' meta='U'>right(rt, 8) == "00:00:00" ? "0" : right(rt, 8) == "00:30:00" ? "1" :  right(rt, 8) == "01:00:00" ? "2" :  right(rt, 8) == "01:30:00" ? "3" : right(rt, 8) == "02:00:00" ? "4" : right(rt, 8) == "02:30:00" ? "5" :  right(rt, 8) == "03:00:00" ? "6" : right(rt, 8) == "03:30:00" ? "7" : right(rt, 8) == "04:00:00" ? "8" : right(rt, 8) == "04:30:00" ? "9" : right(rt, 8) == "05:00:00" ? "10" : right(rt, 8) == "05:30:00" ? "11" : right(rt, 8) == "06:00:00" ? "12" : right(rt, 8) == "06:30:00" ? "13" : right(rt, 8) == "07:00:00" ? "14" : right(rt, 8) == "07:30:00" ? "15" : right(rt, 8) == "08:00:00" ? "16" : right(rt, 8) == "08:30:00" ? "17" : right(rt, 8) == "09:00:00" ? "18" : right(rt, 8) == "09:30:00" ? "19" : right(rt, 8) == "10:00:00" ? "20" : right(rt, 8) == "10:30:00" ? "21" : right(rt, 8) == "11:00:00" ? "22" : right(rt, 8) == "11:30:00" ? "23" :  right(rt, 8) == "12:00:00" ? "24" :
+right(rt, 8) == "12:30:00" ? "25": right(rt, 8) == "13:00:00" ? "26" : right(rt, 8) == "13:30:00" ? "27" : 
+right(rt, 8) == "14:00:00" ? "28" : right(rt, 8) == "14:30:00" ? "29" : right(rt, 8) == "15:00:00" ? "30" :  right(rt, 8) == "15:30:00" ? "31" : right(rt, 8) == "16:00:00" ? "32" : right(rt, 8) == "16:30:00" ? "33" : right(rt, 8) == "17:00:00" ? "34" : right(rt, 8) == "17:30:00" ? "35" : right(rt, 8) == "18:00:00" ? "36" : right(rt, 8) == "18:30:00" ? "37" : right(rt, 8) == "19:00:00" ? "38" : right(rt, 8) == "19:30:00" ? "39" : right(rt, 8) == "20:00:00" ? "40" : right(rt, 8) == "20:30:00" ? "41" : right(rt, 8) == "21:00:00" ? "42" : right(rt, 8) == "21:30:00" ? "43" : right(rt, 8) == "22:00:00" ? "44" : right(rt, 8) == "22:30:00" ? "45" : right(rt, 8) == "23:00:00" ? "46" : right(rt, 8) == "23:30:00"  ? "47" : "bug"</OutputVar>
+  </OutputVars>
+</Calculator>
+<MultiJoin module='DefaultActions' idx='725' x='1204.73' y='2776.71'>
+  <Join pin='1' mainKey='Flag' slaveKey='Key' prefix='2' copyAll='0'>
+  <c>Realized Spread_mean</c><c>Realized Spread_stdDev</c><c>PPI_mean</c><c>PPI_stdDev</c><c>Illiq_mean</c><c>Illiq_stdDev</c><c>Abs (Autocorrelation)_mean</c><c>Abs (Autocorrelation)_stdDev</c><c>Realized Volatility_mean</c><c>Realized Volatility_stdDev</c><c>SD(Return 5min)_mean</c><c>SD(Return 5min)_stdDev</c>
+  </Join>
+</MultiJoin>
+<Calculator module='MathParser' idx='726' x='1361.4' y='2773.89'>
+  <InputVars>
+    <InputVar column='Realized Spread' label='rs'/>
+    <InputVar column='2Realized Spread_mean' label='rs_m'/>
+    <InputVar column='2Realized Spread_stdDev' label='rs_std'/>
+    <InputVar column='PPI' label='ppi'/>
+    <InputVar column='2PPI_mean' label='ppi_m'/>
+    <InputVar column='2PPI_stdDev' label='ppi_std'/>
+    <InputVar column='Illiq' label='illiq'/>
+    <InputVar column='2Illiq_mean' label='illiq_m'/>
+    <InputVar column='2Illiq_stdDev' label='illiq_std'/>
+    <InputVar column='Abs (Autocorrelation)' label='autoc'/>
+    <InputVar column='2Abs (Autocorrelation)_mean' label='autoc_m'/>
+    <InputVar column='2Abs (Autocorrelation)_stdDev' label='autoc_std'/>
+    <InputVar column='Realized Volatility' label='rv'/>
+    <InputVar column='2Realized Volatility_mean' label='rv_m'/>
+    <InputVar column='2Realized Volatility_stdDev' label='rv_std'/>
+    <InputVar column='SD(Return 5min)' label='qr'/>
+    <InputVar column='2SD(Return 5min)_mean' label='qr_m'/>
+    <InputVar column='2SD(Return 5min)_stdDev' label='qr_std'/>
+  </InputVars>
+  <OutputVars>
+    <OutputVar name='Realized Spread (standardised)'>(rs - rs_m) / rs_std</OutputVar>
+    <OutputVar name='PPI (standardised)'>(ppi - ppi_m) / ppi_std</OutputVar>
+    <OutputVar name='Amihud (standardised)'>(illiq - illiq_m) / illiq_std</OutputVar>
+    <OutputVar name='Return Autocorrelation (standardised)'>(autoc - autoc_m) / autoc_std</OutputVar>
+    <OutputVar name='Realized Volatility (standardised)'>(rv - rv_m) / rv_std</OutputVar>
+    <OutputVar name='Quote Return (standardised)'>(qr - qr_m) / qr_std</OutputVar>
+  </OutputVars>
+</Calculator>
+<SelectColumns module='DefaultActions' idx='727' x='1525.12' y='2772.48' keep='1'>
+ <c>Rounded Time</c>
+ <c>Realized Spread (standardised)</c>
+ <c>PPI (standardised)</c>
+ <c>Amihud (standardised)</c>
+ <c>Return Autocorrelation (standardised)</c>
+ <c>Realized Volatility (standardised)</c>
+ <c>Quote Return (standardised)</c>
+</SelectColumns>
+<writeCSV idx='728' x='1671.9' y='2764.01' sep=',' segmentSize='0.1' filename=':/Standardised/ETH_standardised_15.csv'/>
+<ChangeDataType idx='739' x='825.572' y='363.853' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='740' x='858.862' y='936.996' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='741' x='1770.9' y='379.078' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='742' x='1796.02' y='992.36' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='743' x='2706.54' y='379.078' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='744' x='1772.29' y='481.501' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='745' x='1799.97' y='1097.42' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='746' x='834.752' y='465.444' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='747' x='860.922' y='1043.15' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='748' x='2711.24' y='484.282' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='749' x='834.752' y='555.448' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='750' x='863.012' y='1141.52' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='751' x='1768.79' y='581.613' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='752' x='1800.73' y='1189.67' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='753' x='2715.43' y='576.38' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='754' x='838.942' y='645.453' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='759' x='-538.516' y='-163.612'>
+<toDouble><c>Abs (Autocorrelation)</c></toDouble>
+</ChangeDataType>
+<FilterRows module='MathParser' idx='760' x='-418.161' y='-164.659'>
+ <Expression>not(isNull(a))</Expression>
+ <InputVars>
+    <InputVar column='Abs (Autocorrelation)' label='a' meta='F'/>
+ </InputVars>
+</FilterRows>
+<ChangeDataType idx='761' x='-540.028' y='-71.5611'>
+<toDouble><c>Abs (Autocorrelation)</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='762' x='-536.888' y='26.8161'>
+<toDouble><c>Abs (Autocorrelation)</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='763' x='-541.074' y='123.1'>
+<toDouble><c>Abs (Autocorrelation)</c></toDouble>
+</ChangeDataType>
+<ChangeDataType idx='764' x='-536.888' y='216.244'>
+<toDouble><c>Abs (Autocorrelation)</c></toDouble>
+</ChangeDataType>
+<FilterRows module='MathParser' idx='765' x='-413.393' y='-71.5611'>
+ <Expression>not(isNull(a))</Expression>
+ <InputVars>
+    <InputVar column='Abs (Autocorrelation)' label='a' meta='F'/>
+ </InputVars>
+</FilterRows>
+<FilterRows module='MathParser' idx='766' x='-406.067' y='27.8626'>
+ <Expression>not(isNull(a))</Expression>
+ <InputVars>
+    <InputVar column='Abs (Autocorrelation)' label='a' meta='F'/>
+ </InputVars>
+</FilterRows>
+<FilterRows module='MathParser' idx='767' x='-403.974' y='124.147'>
+ <Expression>not(isNull(a))</Expression>
+ <InputVars>
+    <InputVar column='Abs (Autocorrelation)' label='a' meta='F'/>
+ </InputVars>
+</FilterRows>
+<FilterRows module='MathParser' idx='768' x='-403.974' y='212.058'>
+ <Expression>not(isNull(a))</Expression>
+ <InputVars>
+    <InputVar column='Abs (Autocorrelation)' label='a' meta='F'/>
+ </InputVars>
+</FilterRows>
+<ChangeDataType idx='769' x='841.282' y='733.736' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='770' x='848.282' y='820.736' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='771' x='863.282' y='1224.74' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='772' x='860.962' y='1309.1' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='773' x='863.282' y='1400.74' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='774' x='1778.28' y='676.736' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='775' x='1783.28' y='766.736' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='776' x='1783.28' y='855.736' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='777' x='1801.28' y='1285.74' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='778' x='1794.64' y='1374.1' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='779' x='1796.28' y='1470.74' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='780' x='2710.3' y='670.43' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='781' x='2703.95' y='756.807' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+<ChangeDataType idx='782' x='2712.46' y='846.783' floatToString='%f'>
+<toStringFromFloat><c>Mean</c><c>StdDev</c><c>Median</c><c>Skewness</c><c>Kurtosis</c></toStringFromFloat>
+</ChangeDataType>
+</ACTIONS>
+<CONNECTORS>
+<Connection idxSrc='13' idxDest='14'/>
+<Connection idxSrc='12' idxDest='15'/>
+<Connection idxSrc='11' idxDest='16'/>
+<Connection idxSrc='10' idxDest='17'/>
+<Connection idxSrc='9' idxDest='18'/>
+<Connection idxSrc='17' idxDest='21'/>
+<Connection idxSrc='18' idxDest='21' idxPinIn='1'/>
+<Connection idxSrc='16' idxDest='22'/>
+<Connection idxSrc='21' idxDest='22' idxPinIn='1'/>
+<Connection idxSrc='15' idxDest='23'/>
+<Connection idxSrc='22' idxDest='23' idxPinIn='1'/>
+<Connection idxSrc='14' idxDest='24'/>
+<Connection idxSrc='23' idxDest='24' idxPinIn='1'/>
+<Connection idxSrc='24' idxDest='502'/>
+<Connection idxSrc='502' idxDest='25'/>
+<Connection idxSrc='501' idxDest='504'/>
+<Connection idxSrc='504' idxDest='505'/>
+<Connection idxSrc='24' idxDest='505' idxPinIn='1'/>
+<Connection idxSrc='505' idxDest='507'/>
+<Connection idxSrc='507' idxDest='508'/>
+<Connection idxSrc='514' idxDest='515'/>
+<Connection idxSrc='509' idxDest='516'/>
+<Connection idxSrc='515' idxDest='517'/>
+<Connection idxSrc='516' idxDest='517' idxPinIn='1'/>
+<Connection idxSrc='518' idxDest='530'/>
+<Connection idxSrc='510' idxDest='531'/>
+<Connection idxSrc='530' idxDest='538'/>
+<Connection idxSrc='531' idxDest='538' idxPinIn='1'/>
+<Connection idxSrc='521' idxDest='532'/>
+<Connection idxSrc='511' idxDest='533'/>
+<Connection idxSrc='532' idxDest='539'/>
+<Connection idxSrc='533' idxDest='539' idxPinIn='1'/>
+<Connection idxSrc='524' idxDest='534'/>
+<Connection idxSrc='512' idxDest='535'/>
+<Connection idxSrc='534' idxDest='540'/>
+<Connection idxSrc='535' idxDest='540' idxPinIn='1'/>
+<Connection idxSrc='527' idxDest='536'/>
+<Connection idxSrc='513' idxDest='537'/>
+<Connection idxSrc='536' idxDest='541'/>
+<Connection idxSrc='537' idxDest='541' idxPinIn='1'/>
+<Connection idxSrc='517' idxDest='542'/>
+<Connection idxSrc='538' idxDest='543'/>
+<Connection idxSrc='539' idxDest='544'/>
+<Connection idxSrc='540' idxDest='545'/>
+<Connection idxSrc='541' idxDest='546'/>
+<Connection idxSrc='548' idxDest='553'/>
+<Connection idxSrc='548' idxDest='554'/>
+<Connection idxSrc='548' idxDest='555'/>
+<Connection idxSrc='548' idxDest='556'/>
+<Connection idxSrc='548' idxDest='557'/>
+<Connection idxSrc='548' idxDest='558'/>
+<Connection idxSrc='553' idxDest='560'/>
+<Connection idxSrc='560' idxDest='559'/>
+<Connection idxSrc='561' idxDest='562'/>
+<Connection idxSrc='562' idxDest='563'/>
+<Connection idxSrc='563' idxDest='564'/>
+<Connection idxSrc='564' idxDest='565'/>
+<Connection idxSrc='566' idxDest='567'/>
+<Connection idxSrc='565' idxDest='568'/>
+<Connection idxSrc='567' idxDest='570'/>
+<Connection idxSrc='569' idxDest='570' idxPinIn='1'/>
+<Connection idxSrc='570' idxDest='571'/>
+<Connection idxSrc='571' idxDest='572'/>
+<Connection idxSrc='572' idxDest='573'/>
+<Connection idxSrc='554' idxDest='575'/>
+<Connection idxSrc='575' idxDest='576'/>
+<Connection idxSrc='555' idxDest='577'/>
+<Connection idxSrc='577' idxDest='578'/>
+<Connection idxSrc='556' idxDest='579'/>
+<Connection idxSrc='579' idxDest='580'/>
+<Connection idxSrc='557' idxDest='581'/>
+<Connection idxSrc='581' idxDest='582'/>
+<Connection idxSrc='558' idxDest='583'/>
+<Connection idxSrc='583' idxDest='584'/>
+<Connection idxSrc='547' idxDest='585'/>
+<Connection idxSrc='547' idxDest='586'/>
+<Connection idxSrc='547' idxDest='587'/>
+<Connection idxSrc='547' idxDest='588'/>
+<Connection idxSrc='547' idxDest='589'/>
+<Connection idxSrc='547' idxDest='590'/>
+<Connection idxSrc='585' idxDest='609'/>
+<Connection idxSrc='586' idxDest='633'/>
+<Connection idxSrc='587' idxDest='634'/>
+<Connection idxSrc='588' idxDest='635'/>
+<Connection idxSrc='609' idxDest='653'/>
+<Connection idxSrc='633' idxDest='654'/>
+<Connection idxSrc='634' idxDest='655'/>
+<Connection idxSrc='635' idxDest='656'/>
+<Connection idxSrc='636' idxDest='657'/>
+<Connection idxSrc='637' idxDest='658'/>
+<Connection idxSrc='549' idxDest='598'/>
+<Connection idxSrc='549' idxDest='600'/>
+<Connection idxSrc='549' idxDest='602'/>
+<Connection idxSrc='549' idxDest='604'/>
+<Connection idxSrc='549' idxDest='606'/>
+<Connection idxSrc='549' idxDest='608'/>
+<Connection idxSrc='598' idxDest='615'/>
+<Connection idxSrc='600' idxDest='641'/>
+<Connection idxSrc='602' idxDest='643'/>
+<Connection idxSrc='604' idxDest='646'/>
+<Connection idxSrc='606' idxDest='649'/>
+<Connection idxSrc='608' idxDest='652'/>
+<Connection idxSrc='615' idxDest='661'/>
+<Connection idxSrc='641' idxDest='664'/>
+<Connection idxSrc='643' idxDest='667'/>
+<Connection idxSrc='646' idxDest='670'/>
+<Connection idxSrc='649' idxDest='675'/>
+<Connection idxSrc='652' idxDest='676'/>
+<Connection idxSrc='551' idxDest='597'/>
+<Connection idxSrc='551' idxDest='599'/>
+<Connection idxSrc='551' idxDest='601'/>
+<Connection idxSrc='551' idxDest='603'/>
+<Connection idxSrc='551' idxDest='605'/>
+<Connection idxSrc='551' idxDest='607'/>
+<Connection idxSrc='597' idxDest='616'/>
+<Connection idxSrc='616' idxDest='660'/>
+<Connection idxSrc='599' idxDest='640'/>
+<Connection idxSrc='640' idxDest='663'/>
+<Connection idxSrc='601' idxDest='642'/>
+<Connection idxSrc='642' idxDest='666'/>
+<Connection idxSrc='603' idxDest='645'/>
+<Connection idxSrc='645' idxDest='669'/>
+<Connection idxSrc='605' idxDest='648'/>
+<Connection idxSrc='648' idxDest='673'/>
+<Connection idxSrc='607' idxDest='651'/>
+<Connection idxSrc='651' idxDest='674'/>
+<Connection idxSrc='550' idxDest='591'/>
+<Connection idxSrc='550' idxDest='592'/>
+<Connection idxSrc='550' idxDest='593'/>
+<Connection idxSrc='550' idxDest='594'/>
+<Connection idxSrc='550' idxDest='595'/>
+<Connection idxSrc='550' idxDest='596'/>
+<Connection idxSrc='591' idxDest='617'/>
+<Connection idxSrc='592' idxDest='638'/>
+<Connection idxSrc='593' idxDest='639'/>
+<Connection idxSrc='594' idxDest='644'/>
+<Connection idxSrc='595' idxDest='647'/>
+<Connection idxSrc='596' idxDest='650'/>
+<Connection idxSrc='617' idxDest='659'/>
+<Connection idxSrc='638' idxDest='662'/>
+<Connection idxSrc='639' idxDest='665'/>
+<Connection idxSrc='644' idxDest='668'/>
+<Connection idxSrc='647' idxDest='671'/>
+<Connection idxSrc='650' idxDest='672'/>
+<Connection idxSrc='677' idxDest='681'/>
+<Connection idxSrc='678' idxDest='686'/>
+<Connection idxSrc='680' idxDest='691'/>
+<Connection idxSrc='679' idxDest='696'/>
+<Connection idxSrc='696' idxDest='697'/>
+<Connection idxSrc='697' idxDest='698'/>
+<Connection idxSrc='698' idxDest='699'/>
+<Connection idxSrc='699' idxDest='700'/>
+<Connection idxSrc='691' idxDest='692'/>
+<Connection idxSrc='692' idxDest='693'/>
+<Connection idxSrc='693' idxDest='694'/>
+<Connection idxSrc='694' idxDest='695'/>
+<Connection idxSrc='686' idxDest='687'/>
+<Connection idxSrc='687' idxDest='688'>
+  <Point x='-277.846' y='2115.04'/>
+</Connection>
+<Connection idxSrc='688' idxDest='689'/>
+<Connection idxSrc='689' idxDest='690'/>
+<Connection idxSrc='681' idxDest='682'/>
+<Connection idxSrc='682' idxDest='683'/>
+<Connection idxSrc='683' idxDest='684'/>
+<Connection idxSrc='684' idxDest='685'/>
+<Connection idxSrc='719' idxDest='720'/>
+<Connection idxSrc='720' idxDest='721'/>
+<Connection idxSrc='721' idxDest='722'/>
+<Connection idxSrc='722' idxDest='723'/>
+<Connection idxSrc='701' idxDest='709'/>
+<Connection idxSrc='709' idxDest='710'/>
+<Connection idxSrc='708' idxDest='710' idxPinIn='1'/>
+<Connection idxSrc='710' idxDest='711'/>
+<Connection idxSrc='711' idxDest='712'>
+  <Point x='1434.79' y='1950.94'/>
+</Connection>
+<Connection idxSrc='712' idxDest='713'/>
+<Connection idxSrc='702' idxDest='714'/>
+<Connection idxSrc='714' idxDest='715'/>
+<Connection idxSrc='707' idxDest='715' idxPinIn='1'/>
+<Connection idxSrc='715' idxDest='716'/>
+<Connection idxSrc='716' idxDest='717'/>
+<Connection idxSrc='717' idxDest='718'/>
+<Connection idxSrc='704' idxDest='719'/>
+<Connection idxSrc='706' idxDest='720' idxPinIn='1'/>
+<Connection idxSrc='703' idxDest='724'/>
+<Connection idxSrc='724' idxDest='725'/>
+<Connection idxSrc='705' idxDest='725' idxPinIn='1'/>
+<Connection idxSrc='725' idxDest='726'/>
+<Connection idxSrc='726' idxDest='727'/>
+<Connection idxSrc='727' idxDest='728'/>
+<Connection idxSrc='589' idxDest='636'/>
+<Connection idxSrc='590' idxDest='637'/>
+<Connection idxSrc='559' idxDest='739'/>
+<Connection idxSrc='653' idxDest='740'/>
+<Connection idxSrc='661' idxDest='741'/>
+<Connection idxSrc='660' idxDest='742'/>
+<Connection idxSrc='659' idxDest='743'/>
+<Connection idxSrc='664' idxDest='744'/>
+<Connection idxSrc='576' idxDest='746'/>
+<Connection idxSrc='654' idxDest='747'/>
+<Connection idxSrc='663' idxDest='745'/>
+<Connection idxSrc='662' idxDest='748'/>
+<Connection idxSrc='578' idxDest='749'/>
+<Connection idxSrc='655' idxDest='750'/>
+<Connection idxSrc='667' idxDest='751'/>
+<Connection idxSrc='666' idxDest='752'/>
+<Connection idxSrc='665' idxDest='753'/>
+<Connection idxSrc='580' idxDest='754'/>
+<Connection idxSrc='1' idxDest='759'/>
+<Connection idxSrc='759' idxDest='760'/>
+<Connection idxSrc='760' idxDest='13'/>
+<Connection idxSrc='3' idxDest='764'/>
+<Connection idxSrc='0' idxDest='761'/>
+<Connection idxSrc='2' idxDest='762'/>
+<Connection idxSrc='4' idxDest='763'/>
+<Connection idxSrc='761' idxDest='765'/>
+<Connection idxSrc='762' idxDest='766'/>
+<Connection idxSrc='763' idxDest='767'/>
+<Connection idxSrc='764' idxDest='768'/>
+<Connection idxSrc='765' idxDest='12'/>
+<Connection idxSrc='766' idxDest='11'/>
+<Connection idxSrc='767' idxDest='10'/>
+<Connection idxSrc='768' idxDest='9'/>
+<Connection idxSrc='582' idxDest='769'/>
+<Connection idxSrc='584' idxDest='770'/>
+<Connection idxSrc='656' idxDest='771'/>
+<Connection idxSrc='657' idxDest='772'/>
+<Connection idxSrc='658' idxDest='773'/>
+<Connection idxSrc='670' idxDest='774'/>
+<Connection idxSrc='675' idxDest='775'/>
+<Connection idxSrc='676' idxDest='776'/>
+<Connection idxSrc='669' idxDest='777'/>
+<Connection idxSrc='673' idxDest='778'/>
+<Connection idxSrc='674' idxDest='779'/>
+<Connection idxSrc='668' idxDest='780'/>
+<Connection idxSrc='671' idxDest='781'/>
+<Connection idxSrc='672' idxDest='782'/>
+</CONNECTORS>
+<TEXTANNOTATIONS>
+  <Annotation x='964.642' y='403.736' size='10' bold='1'>RS</Annotation>
+  <Annotation x='982.252' y='498.432' size='10' bold='1'>PPI</Annotation>
+  <Annotation x='980.252' y='580.67' size='10' bold='1'>Liq</Annotation>
+  <Annotation x='953.572' y='648.829' size='10' bold='1'>Autocorr</Annotation>
+  <Annotation x='994.022' y='729.525' size='10' bold='1'>RV</Annotation>
+  <Annotation x='993.482' y='820.909' size='10' bold='1'>SD</Annotation>
+  <Annotation x='-471.933' y='-213.556' bold='1'>Exclude missing interavls</Annotation>
+  <Annotation x='60.6394' y='-213.556' bold='1'>Sort and merge</Annotation>
+  <Annotation x='632.759' y='-58.0029' bold='1'>Data for common intervals</Annotation>
+  <Annotation x='781.721' y='-336.153' bold='1'>Missing intervals</Annotation>
+  <Annotation x='-711.112' y='369.778' size='20' bold='1'>Exclude intervals with missing proxies</Annotation>
+  <Annotation x='-691.556' y='-304' size='20' bold='1'>Find the list of common intervals</Annotation>
+  <Annotation x='2216.89' y='1166.22' size='20' bold='1'>Summary statistics</Annotation>
+  <Annotation x='-718.223' y='2572.45' size='20' bold='1'>Compute interval-specific means and 
+standard deviations</Annotation>
+  <Annotation x='1863.11' y='1850.67' size='20' bold='1'>Standardization</Annotation>
+</TEXTANNOTATIONS>
+<GROUPBOXANNOTATIONS>
+  <Groupbox x='-723.731' y='-324.857' w='1969.7' h='637.377' color='#afeeee'/>
+  <Groupbox x='-727.844' y='353.641' w='838.871' h='1155.5' color='#ffdab9'/>
+  <Groupbox x='172.709' y='357.754' w='2985.39' h='1208.96' color='#c1cdc1'/>
+  <Groupbox x='-777.189' y='1718.86' w='1089.71' h='1036.25' color='#87cefa'/>
+  <Groupbox x='423.547' y='1694.19' w='1932.69' h='1328.21' color='#7fffd4'/>
+</GROUPBOXANNOTATIONS>
+</ANATELLA>
